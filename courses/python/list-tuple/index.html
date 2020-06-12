@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Trong hai bài trước chúng ta đã tìm hiểu về các kiểu dữ liệu cơ bản. Bây giờ chúng ta sẽ tìm hiểu về các kiểu dữ liệu tập hợp, chứa nhiều phần tử, mỗi phần tử có kiểu dữ liệu cơ bản như số hay chuỗi.">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/list-tuple/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/list-tuple/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/list-tuple/">
+  <meta property="og:title" content="Kiểu dữ liệu list và tuple | Hứng">
+  <meta property="og:description" content="Trong hai bài trước chúng ta đã tìm hiểu về các kiểu dữ liệu cơ bản. Bây giờ chúng ta sẽ tìm hiểu về các kiểu dữ liệu tập hợp, chứa nhiều phần tử, mỗi phần tử có kiểu dữ liệu cơ bản như số hay chuỗi."><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-09T05:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-09T05:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Kiểu dữ liệu list và tuple | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kiu-list">Kiểu list</a></li>
+    <li><a href="#kiu-tuple">Kiểu tuple</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Kiểu dữ liệu list và tuple</h1>
+
+          <div class="article-style">
+            <p>Trong hai bài trước chúng ta đã tìm hiểu về các kiểu dữ liệu cơ bản. Bây giờ chúng ta sẽ tìm hiểu về các kiểu dữ liệu tập hợp, chứa nhiều phần tử, mỗi phần tử có kiểu dữ liệu cơ bản như số hay chuỗi. Trước tiên là kiểu dữ liệu list và tuple.</p>
+<h2 id="kiu-list">Kiểu list</h2>
+<p>List là kiểu dữ liệu tập hợp gồm các phần tử có thứ tự nhất định khi được tạo. Các phần tử của list có thể khác kiểu dữ liệu. List là một trong những kiểu dữ liệu được sử dụng nhiều nhất trong Python vì rất linh hoạt. Khai báo list là một danh sách các phần tử cách nhau dấu phẩy, đặt trong cặp ngoặc vuông [].</p>
+<pre><code class="language-python">    a = []
+    print(a)        # []
+    a = [1, 2, 3, 'Python']
+    print(a)        # [1, 2, 3, 'Python']
+    print(type(a))  # &lt;class 'list'&gt;
+</code></pre>
+<p><strong>Một số toán tử , hàm và phương thức phổ biến cho kiểu list trong Python:</strong></p>
+<ul>
+<li><strong>[ ]</strong>: tương tự như với kiểu str, chúng ta có thể dùng [] để truy xuất phần tử hay list con trong kiểu list. Chúng ta cũng có thể dùng phép gán từng phần tử để thay đổi giá trị của phần tử.</li>
+<li><strong>Hàm len()</strong>: lấy số phần tử list.</li>
+<li><strong>append(element)</strong>: phương thức thêm một phần tử vào list. Mỗi lần gọi sẽ thêm phần tử element vào cuối list.</li>
+<li><strong>extend(list1)</strong>: phương thức thêm nhiều phần tử vào list. Các phần tử của list1 sẽ được thêm vào cuối list theo đúng thứ tự trước đó trong list1.</li>
+<li><strong>insert(index, element)</strong>: phương thức chèn phần tử element tại vị trí index. index = 0 sẽ chèn vào vị trí đầu tiên còn nếu index &gt; số phần tử của list thì sẽ thêm vào cuối cùng như phương thức append.</li>
+<li><strong>remove(element)</strong>: phương thức xóa phần tử đầu tiên có giá trị bằng giá trị của element. Nếu tìm không ra phần tử như vậy, Python sẽ báo lỗi: <em>list.remove(x): x not in list</em>.</li>
+<li><strong>pop(index)</strong>: phương thức trả về phần tử thứ index của list và xóa nó khỏi list. Nếu không cung cấp index, phần tử cuối cùng của list sẽ được chọn.</li>
+<li><strong>index(element)</strong>: phương thức trả về vị trí phần tử đầu tiên có giá trị bằng element. Nếu không có phần tử giống, Python báo lỗi: <em>is not in list</em>.</li>
+<li><strong>count(element)</strong>: phương thức trả về số lần xuất hiện phần tử có giá trị như element trong list.</li>
+<li><strong>sort()</strong>: phương thức sắp xếp list theo thứ tự tăng dần. Trong trường hợp các phần tử thuộc loại không so sánh được với nhau, như kiểu int và str, thì Python sẽ báo lỗi: <em>&lsquo;&lt;&rsquo; not supported between instances of &lsquo;str&rsquo; and &lsquo;int&rsquo;</em>.</li>
+<li><strong>reverse()</strong>: Ngược với sort(), phương thức reverse sẽ sắp xếp list theo thứ tự giảm dần. Python cũng sẽ báo lỗi nếu việc sắp xếp thất bại do không so sánh được.</li>
+</ul>
+<pre><code class="language-python">    a = [1, 2, 3, 'python']
+    print(a[0])                 # 1
+    print(a[-1])                # 'python'
+    print(a[4])                 # (Lỗi: list index out of range)
+    print(a[:3])                # [1, 2, 3]
+    a[3] = 'Python'             # (Gán chuỗi 'Python' cho phần tử cuối)
+    print(a[3])                 # 'Python'
+    print(len(a))               # 4
+    a.append('Go')              # (Thêm 'Go' vào cuối list)
+    print(a)                    # [1, 2, 3, 'Python', 'Go']
+    a.extend(['R', 'Julia'])    # (Thêm list ['R', 'Julia'] vào)
+    print(a)                    # [1, 2, 3, 'Python', 'Go', 'R', 'Julia']
+    a.insert(0, 0)              # (Chèn 0 vào vị trí đầu tiên)
+    print(a)                    # [0, 1, 2, 3, 'Python', 'Go', 'R', 'Julia']
+    a.remove(0)                 # (Xóa phần tử đầu tiên)
+    print(a)                    # [1, 2, 3, 'Python', 'Go', 'R', 'Julia']
+    print(a.pop(0))             # 1 (đồng thời xóa phần tử đầu tiên)
+    print(a.pop())              # 'Julia' (đồng thời xóa phần tử cuối cùng)
+    print(a)                    # [2, 3, 'Python', 'Go', 'R']
+    print(a.index(2))           # 0
+    print(a.index(1))           # (Lỗi: 1 is not in list)
+    print(a.count(2))           # 1
+    a.sort()                    # (Lỗi '&lt;' not supported between instances of 'str' and 'int')
+    b = a[2:]                   # (b = ['Python', 'Go', 'R'])
+    b.sort()                    # (Sắp xếp list tăng dần)
+    print(b)                    # ['Go', 'Python', 'R']
+    b.reverse()                 # (Sắp xếp list giảm dần)
+    print(b)                    # ['R', 'Python', 'Go']
+</code></pre>
+<p>Kiểu list hỗ trợ các khai báo nhiều biến bằng cách gán phần tử của list như sau. Lưu ý số biến phải đúng bằng số phần tử của list</p>
+<pre><code class="language-python">    a = [1, 2, 3]
+    x, y, z = a
+    print(x, y, z)  # 1 2 3
+</code></pre>
+<h2 id="kiu-tuple">Kiểu tuple</h2>
+<p>Kiểu tuple gần giống kiểu list, chỉ khác nhau ở điểm là một khi đã tạo thì ta không thể thay đổi số phần tử và giá trị từng phần tử nó được nữa. Khái báo tuple là một danh sách phần tử cách nhau dấu phẩy được bọc trong cặp ngoặc đơn <strong>()</strong> nhưng cũng có thể bỏ qua cặp () khi khai báo.</p>
+<pre><code class="language-python">    a = ()
+    print(a)        # ()
+    a = (1, 2, 3, 'Python')
+    print(a)        # (1, 2, 3, 'Python')
+    print(type(a))  # &lt;class 'tuple'&gt;
+    b = 1, 2, 3     # (Cách tạo tuple không cần ())
+    print(b)        # (1, 2, 3)
+    c = (1,) * 5    # (Tạo 5 phần tử 1 giống nhau cho tuple c)
+    print(c)       # (1, 1, 1, 1, 1)    
+</code></pre>
+<p>Do đặc thù không thể thay đổi số phần tử và giá trị các phần tử nên toán tử và phương thức của tuple ít hơn hẳn của list:</p>
+<ul>
+<li><strong>[ ]</strong>: tương tự như với kiểu list, chúng ta có thể dùng [] để truy xuất phần tử hay tuple con trong kiểu tuple. Tuy nhiên chúng ta không thể dùng phép gán từng phần tử để thay đổi giá trị của phần tử tuple.</li>
+<li><strong>+</strong>: chúng ta có thể dùng toán tử + để ghép 2 tuple thành một tuple mới như phương thức extend() của list nhưng kết quả trả về tuple mới, không phải trên tuple cũ. Có thể dùng toán tử gán += để gán lại vào biến tuple cũ. Lúc này kết quả giống extend() của list.</li>
+<li><strong>*</strong>: chúng ta có thể nhân số phần tử của tuple lên n lần với phép nhân.  Có thể dùng toán tử gán *=.</li>
+<li><strong>Hàm len()</strong>: lấy số phần tử tuple.</li>
+<li><strong>index(element)</strong>: phương thức trả về vị trí phần tử đầu tiên có giá trị bằng element. Nếu không có phần tử giống, Python báo lỗi: <em>is not in tuple</em>.</li>
+<li><strong>count(element)</strong>: phương thức trả về số lần xuất hiện phần tử có giá trị như element trong list.</li>
+</ul>
+<pre><code class="language-python">    a = (1, 2, 3, 'python')
+    print(a[0])                 # 1
+    print(a[-1])                # 'python'
+    print(a[4])                 # (Lỗi: tuple index out of range)
+    print(a[:3])                # (1, 2, 3)
+    a[3] = 'Python'             # (Lỗi: 'tuple' object does not support item assignment)
+    print(len(a))               # 4
+    a += ('Go', 'R', 'Julia')   # Gán tuple mới cho a bằng cách gộp a cũ và tuple ('Go', 'R', 'Julia')
+    print(a)                    # (1, 2, 3, 'Python', 'Go', 'R', 'Julia')
+    print(a[0:3] * 3)           # (1, 2, 3, 1, 2, 3, 1, 2, 3)
+    print(a.index(2))           # 1
+    print(a.index(0))           # (Lỗi: 0 is not in tuple)
+    print(a.count(2))           # 1
+</code></pre>
+<p>Tương tự kiểu list, tuple cũng hỗ trợ các khai báo nhiều biến bằng cách gán phần tử của tuple như sau. Lưu ý số biến phải đúng bằng số phần tử của tuple.</p>
+<pre><code class="language-python">    a = (1, 2, 3)
+    x, y, z = a
+    print(x, y, z)  # 1 2 3
+    x, y = a        # Lỗi: too many values to unpack
+</code></pre>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Kiểu dữ liệu list gồm nhiều phần tử, có thể khác nhau kiểu dữ liệu, khai báo bằng cách nhóm trong cặp [], các phần tử cách nhau dấu phẩy.</li>
+<li>Python cung cấp các toán tử, hàm và phương thức để xử lý list.</li>
+<li>Kiểu dữ liệu tuple gồm nhiều phần tử, có thể khác nhau kiểu dữ liệu, khai báo bằng cách nhóm trong cặp (), các phần tử cách nhau dấu phẩy.</li>
+<li>Khác với list, chúng ta không thể cập nhật giá trị phần tử của tuple cũng như thêm hay xóa bớt số phần tử.</li>
+<li>Có thể khai báo nhanh nhiều biến bằng cách gán chúng với 1 list hay tuple, điều kiện là số biến phải khớp với số phần tử của list hay tuple.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/string/" rel="next">Kiểu dữ liệu chuỗi</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/set-dict/" rel="prev">Kiểu dữ liệu set và dict</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 09/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

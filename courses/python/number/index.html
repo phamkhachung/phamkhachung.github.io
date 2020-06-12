@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Trong lập trình máy tính, một kiểu dữ liệu (data type) là một cách phân loại dữ liệu cho trình biên dịch hoặc thông dịch hiểu các lập trình viên muốn sử dụng loại dữ liệu gì.">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/number/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/number/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/number/">
+  <meta property="og:title" content="Kiểu dữ liệu số và luận lý | Hứng">
+  <meta property="og:description" content="Trong lập trình máy tính, một kiểu dữ liệu (data type) là một cách phân loại dữ liệu cho trình biên dịch hoặc thông dịch hiểu các lập trình viên muốn sử dụng loại dữ liệu gì."><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-08T05:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-08T05:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Kiểu dữ liệu số và luận lý | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kiu-d-liu-s">Kiểu dữ liệu số</a></li>
+    <li><a href="#kiu-d-liu-lun-l">Kiểu dữ liệu luận lý</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+    <li><a href="#bi-tp">Bài tập</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Kiểu dữ liệu số và luận lý</h1>
+
+          <div class="article-style">
+            <p>Trong lập trình máy tính, một kiểu dữ liệu (data type) là một cách phân loại dữ liệu cho trình biên dịch hoặc thông dịch hiểu các lập trình viên muốn sử dụng loại dữ liệu gì. Trong bài trước chúng ta đã tìm hiểu về các loại chuỗi giá trị và từng loại chuỗi giá trị cũng như kết hợp các chuỗi giá trị như vậy hình thành các kiểu dữ liệu khác nhau trong Python.</p>
+<h2 id="kiu-d-liu-s">Kiểu dữ liệu số</h2>
+<p>Có ba loại kiểu dữ liệu thuộc nhóm dữ liệu số là:</p>
+<ul>
+<li><strong>int</strong>: số nguyên. Ví dụ: -4, 0, 100, v.v&hellip; Độ lớn của số nguyên trong Python không giới hạn theo số bit như các ngôn ngữ khác mà theo bộ nhớ hiện có.</li>
+<li><strong>float</strong>: số thực. Ví dụ: -4.0, 3.14156, v.v&hellip; Độ chính xác của số thực đến 15 số sau dấu thập phân.</li>
+<li><strong>complex</strong>: số phức. Ví dụ: -3 + 4j, 3.4 - 5.0j, v.v&hellip;</li>
+</ul>
+<p>Python cung cấp các toán tử số học phục vụ nhu cầu tính toán cho kiểu dữ liệu số như sau:</p>
+<table>
+<thead>
+<tr>
+<th>Toán tử</th>
+<th>Ý nghĩa</th>
+<th>Ví dụ (x = 7, y = 5)</th>
+<th>Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Phép cộng</td>
+<td>x + y</td>
+<td>12</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Phép trừ</td>
+<td>x - y</td>
+<td>2</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Phép nhân</td>
+<td>x * y</td>
+<td>35</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Phép chia</td>
+<td>x / y</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Phép chia lấy dư</td>
+<td>x % y</td>
+<td>2</td>
+</tr>
+<tr>
+<td>**</td>
+<td>Phép lũy thừa</td>
+<td>x ** y</td>
+<td>16807</td>
+</tr>
+<tr>
+<td>//</td>
+<td>Phép chia lấy phần nguyên</td>
+<td>x // y</td>
+<td>1</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>Phép nhân logic bit</td>
+<td>x &amp; y</td>
+<td>5</td>
+</tr>
+<tr>
+<td>|</td>
+<td>Phép cộng logic bit</td>
+<td>x | y</td>
+<td>7</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Phép cộng loại trừ logic</td>
+<td>x ^ y</td>
+<td>2</td>
+</tr>
+<tr>
+<td>~</td>
+<td>Phép đảo bit</td>
+<td>~x</td>
+<td>-8</td>
+</tr>
+<tr>
+<td>&laquo;</td>
+<td>Phép dịch bit qua trái</td>
+<td>x &laquo; 2</td>
+<td>28</td>
+</tr>
+<tr>
+<td>&raquo;</td>
+<td>Phép dịch bit qua phải</td>
+<td>x &raquo; 2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>và các toán tử gán:</p>
+<table>
+<thead>
+<tr>
+<th>Toán tử</th>
+<th>Ý nghĩa</th>
+<th>Ví dụ (x = 7, y = 5)</th>
+<th>Tương ứng</th>
+<th>Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Phép gán bằng</td>
+<td>x = y</td>
+<td>x = y</td>
+<td>x = 5</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>Phép cộng rồi gán lại</td>
+<td>x += y</td>
+<td>x = x + y</td>
+<td>x = 12</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>Phép trừ rồi gán lại</td>
+<td>x -= y</td>
+<td>x = x - y</td>
+<td>x = 2</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>Phép nhân rồi gán lại</td>
+<td>x *= y</td>
+<td>x = x * y</td>
+<td>x = 35</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>Phép chia rồi gán lại</td>
+<td>x /= y</td>
+<td>x = x / y</td>
+<td>x = 1.4</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>Phép chia lấy dư rồi gán lại</td>
+<td>x %= y</td>
+<td>x = x % y</td>
+<td>x = 2</td>
+</tr>
+<tr>
+<td>**=</td>
+<td>Phép lũy thừa rồi gán lại</td>
+<td>x **= y</td>
+<td>x = x ** y</td>
+<td>x = 16807</td>
+</tr>
+<tr>
+<td>//=</td>
+<td>Phép chia lấy phần nguyên rồi gán lại</td>
+<td>x //= y</td>
+<td>x = x // y</td>
+<td>x = 1</td>
+</tr>
+<tr>
+<td>&amp;=</td>
+<td>Phép nhân logic bit rồi gán lại</td>
+<td>x &amp;= y</td>
+<td>x = x &amp; y</td>
+<td>x = 5</td>
+</tr>
+<tr>
+<td>|=</td>
+<td>Phép cộng logic bit rồi gán lại</td>
+<td>x |= y</td>
+<td>x = x | y</td>
+<td>x = 7</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>Phép cộng loại trừ logic bit rồi gán lại</td>
+<td>x ^= y</td>
+<td>x = x ^ y</td>
+<td>x = 2</td>
+</tr>
+<tr>
+<td>&laquo;=</td>
+<td>Phép dịch bit trái rồi gán lại</td>
+<td>x &laquo;= 2</td>
+<td>x = x &laquo; 2</td>
+<td>x = 28</td>
+</tr>
+<tr>
+<td>&raquo;=</td>
+<td>Phép dịch bit phải rồi gán lại</td>
+<td>x &raquo;= 2</td>
+<td>x = x &raquo; 2</td>
+<td>x = 1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kiu-d-liu-lun-l">Kiểu dữ liệu luận lý</h2>
+<p>Kiểu dữ liệu luận lý (bool) cung cấp 2 giá trị là <strong>True</strong> và <strong>False</strong> ứng với đúng và sai. Lưu ý những cách viết khác như true, TRUE hay &ldquo;true&rdquo; không thể hiện giá trị kiểu dữ liệu này.
+Thường kết quả các phép toán so sánh là giá trị kiểu bool:</p>
+<table>
+<thead>
+<tr>
+<th>x = 5</th>
+<th>Kết quả</th>
+<th>So sánh</th>
+<th>Kết quả</th>
+<th>So sánh</th>
+<th>Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x == 5</td>
+<td>True</td>
+<td>x &lt; 5</td>
+<td>False</td>
+<td>x &gt; 5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>x != 5</td>
+<td>False</td>
+<td>x &lt;= 5</td>
+<td>True</td>
+<td>x &gt;= 5</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>Một số phép toán với bool:</p>
+<ul>
+<li><strong>not</strong>: đảo giá trị, True thành False và False thành True.</li>
+<li><strong>and</strong>: phép logic và: True khi cả 2 vế cùng True, còn lại đều cho giá trị False. Một cách suy kết quả khác là nếu vế đầu là False thì kết quả là False, còn nếu vế đầu là True thì lấy giá trị vế sau làm kết quả cho phép and.</li>
+<li><strong>or</strong>: phép logic hoặc: True khi có ít nhất 1 vế là True. Một cách suy kết quả khác là nếu vế đầu là True thì kết quả là True, còn nếu vế đầu là False thì lấy giá trị vế sau làm kết quả cho phép or.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>x = 5 (A)</th>
+<th>y = 7 (B)</th>
+<th>not(A)</th>
+<th>A and B</th>
+<th>A or B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x &lt; 5</td>
+<td>y &lt; 5</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>x &gt; 5</td>
+<td>y &gt; 5</td>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>x &lt; 7</td>
+<td>y &lt; 7</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>x &lt;= 5</td>
+<td>y &gt;= 7</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Python cung cấp 3 kiểu dữ liệu số là int cho số nguyên, float cho số thực và complex cho số phức.</li>
+<li>Python cung cấp đầy đủ các toán tử số học, toán tử bit.</li>
+<li>Python cung cấp kiểu dữ liệu luận lý là bool có 2 giá trị True và False. Kết quả các phép so sánh sẽ cho giá trị luận lý</li>
+<li>Python cung cấp các phép toán luận lý not, and và or.</li>
+</ul>
+  </div>
+</div>
+<h2 id="bi-tp">Bài tập</h2>
+<ol>
+<li>Kết quả đoạn chương trình bên dưới là gì?</li>
+</ol>
+<pre><code class="language-python">  a = 5
+  a + 2.7
+  a
+</code></pre>
+<p>a. 7  b. 7.7  c. Không phải 2 giá trị trên  d. Lỗi</p>
+<ol start="2">
+<li>Kết quả đoạn chương trình bên dưới là gì?</li>
+</ol>
+<pre><code class="language-python">  a = 5
+  b = 2
+  a/b
+</code></pre>
+<p>a. 2  b. 2.5  c. 3  d. Không phải các giá trị trên</p>
+<ol start="3">
+<li>Kết quả đoạn chương trình bên dưới là gì?</li>
+</ol>
+<pre><code class="language-python">  a, b = 2, 5
+  a, b = b, a
+  (a, b)
+</code></pre>
+<p>a. (2, 5)  b. (5, 2)  c. (5, 5)  d. Không phải các giá trị trên</p>
+<ol start="4">
+<li>Kết quả đoạn chương trình bên dưới là gì?</li>
+</ol>
+<pre><code class="language-python">  a, b = 2, 5
+  a = a + b
+  b = a - b
+  a = a - b
+  a
+</code></pre>
+<p>a. 5  b. 2  c. Lỗi  d. Không phải các giá trị trên</p>
+<ol start="5">
+<li>Kết quả đoạn chương trình bên dưới là gì?</li>
+</ol>
+<pre><code class="language-python">  a, b = 2, 5
+  a = a &gt; 1 or b != 5
+  b = a and b &lt;= 5
+  a, b
+</code></pre>
+<p>a. 2, 5  b. True, True  c. False, False  d. Không phải các giá trị trên</p>
+<ol start="6">
+<li>Viết đoạn chương trình đảo giá trị 2 biến a và b có dùng biến trung gian. Ví dụ cho a = 5, b = 2 thì kết quả xuất ra là 2, 5.</li>
+</ol>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/variable/" rel="next">Biến số và hằng số</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/string/" rel="prev">Kiểu dữ liệu chuỗi</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 08/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

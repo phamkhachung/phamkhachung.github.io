@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giới thiệu | Hứng</title>
+    <link>/ebooks/</link>
+      <atom:link href="/ebooks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Giới thiệu</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <title>Giới thiệu</title>
+      <link>/ebooks/</link>
+    </image>
+    
+  </channel>
+</rss>

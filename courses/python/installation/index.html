@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Để lập trình được Python, đầu tiên chúng ta phải cài đặt bộ công cụ phát triển (software development kit - SDK) chứa file thực thi dịch mã nguồn chúng ta viết ra mã mãy để chạy và các thư viện viết sẵn giúp chúng ta sử dụng để tiết kiệm thời gian lập trình.">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/installation/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/installation/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/installation/">
+  <meta property="og:title" content="Cài đặt Python | Hứng">
+  <meta property="og:description" content="Để lập trình được Python, đầu tiên chúng ta phải cài đặt bộ công cụ phát triển (software development kit - SDK) chứa file thực thi dịch mã nguồn chúng ta viết ra mã mãy để chạy và các thư viện viết sẵn giúp chúng ta sử dụng để tiết kiệm thời gian lập trình."><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-05T05:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-05T05:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Cài đặt Python | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ci-t-anaconda">Cài đặt Anaconda</a></li>
+    <li><a href="#s-dng-jupyter-notebook">Sử dụng Jupyter Notebook</a></li>
+    <li><a href="#s-dng-google-colab">Sử dụng Google Colab</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Cài đặt Python</h1>
+
+          <div class="article-style">
+            <p>Để lập trình được Python, đầu tiên chúng ta phải cài đặt bộ công cụ phát triển (software development kit - SDK) chứa file thực thi dịch mã nguồn chúng ta viết ra mã mãy để chạy và các thư viện viết sẵn giúp chúng ta sử dụng để tiết kiệm thời gian lập trình. Sau SDK, chúng ta cần môi trường phát triển tích hợp (integrated development environment - IDE) cung cấp công cụ soạn thảo, kiểm lỗi, v.v&hellip; trong quá trình lập trình. Có nhiều bộ cài đặt SDK và IDE cho Python khác nhau nhưng trong bài này chúng ta sẽ tìm hiểu bộ Anacoda và Google Colab.</p>
+<h2 id="ci-t-anaconda">Cài đặt Anaconda</h2>
+<p>Công cụ Anaconda là cách dễ nhất để cài đặt Python và các thư viện. Với hơn 19 triệu người dùng trên toàn thế giới, Anaconda cung cấp cài đặt Python, quản lý hàng ngàn thư viện phục vụ cho nhiều nhu cầu lập trình khác nhau.</p>
+<p>Anaconda hỗ trợ gói cài đặt cho 3 hệ điều hành Windows, Linux và macOS <a href="https://www.anaconda.com/distribution/">tại đây</a>. Vui lòng chọn đúng gói cài đặt phù hợp với hệ điều hành trên máy của bạn. Với các máy Windows, các bạn chỉ đơn giản thực thi file download và làm theo hướng dẫn. Với các hệ điều hành macOS và Linux bạn có thể thực hiện lệnh <em>bash &lt;file download .sh&gt;</em> ở Terminal và làm theo hướng dẫn:</p>
+<blockquote>
+<p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i> bash &lt;file download .sh&gt;</p>
+</blockquote>
+<h2 id="s-dng-jupyter-notebook">Sử dụng Jupyter Notebook</h2>
+<p>Jupyter Notebook là một ứng dụng web mã nguồn mở cho phép bạn tạo hoặc chia sẻ những văn bản chứa mã nguồn, tài liệu hoặc mô phỏng. Jupyter Notebook là một công cụ tuyệt vời để trải nghiệm khoa học dữ liệu bởi nó có thể giúp chúng ta:</p>
+<ul>
+<li>Học và thử nghiệm với Python</li>
+<li>Xử lý, biến đổi dữ liệu</li>
+<li>Trình diễn, mô phỏng dữ liệu dưới dạng biểu đồ</li>
+<li>Thực hiện mô hình hóa dữ liệu với các thuật toán học máy</li>
+</ul>
+<p>Jupyter Notebook được tích hợp sẵn trong Anaconda nên sau khi cài đặt xong Anaconda, chúng ta có thể thực thi Jupyter Notebook bằng cách chọn từ Start Menu trong Windows hay chạy dòng lệnh sau trong Terminal/Command Prompt trên các hệ điều hành:</p>
+<blockquote>
+<p>
+  <i class="fas fa-terminal  pr-1 fa-fw"></i> jupyter notebook</p>
+</blockquote>
+<p>Nếu việc cài đặt thành công, Jupyter Notebook sẽ thực thi và mở 1 trang web cục bộ ở trình duyệt như hình bên dưới:
+<img src="../img/installation1.png" alt=""></p>
+<p>Chọn New ở góc trên bên phải và chọn Python 3, tab mới được tạo như bên dưới cho chúng ta biết chúng ta đã có một môi trường để viết code và thử nghiệm Python 3 cũng như các dự án Khoa học dữ liệu sau này:
+<img src="../img/installation2.png" alt=""></p>
+<ul>
+<li>Một notebook bao gồm nhiều ô (cell). Khi tạo mới một notebook, bạn luôn được tạo sẵn một ô rỗng đầu tiên:
+<img src="../img/installation3.png" alt=""></li>
+<li>Ô trên có kiểu là “Code” như trong hình, điều đó có nghĩa là bạn có thể gõ code Python và thực thi ngay lập tức. Để thực thi code, bạn có thể nhấn nút Run cell hoặc nhấn Ctrl + Enter hoặc Shift + Enter để thực thi và mở ô mới.
+<img src="../img/installation4.png" alt=""></li>
+<li>Bạn có thể chuyển loại ô từ Code thành Markdown để viết những đoạn văn bản giải thích code của bạn chẳng hạn. Để chuyển đổi bạn click vào ComboBox Code và chọn Markdown như hình:
+<img src="../img/installation5.png" alt=""></li>
+<li>Để tiện việc sử dụng notebook, bạn nên tham khảo danh sách các phím tắt bằng việc vào <strong>Help-&gt; Keyboard Shortcuts</strong> để tham khảo:
+<img src="../img/installation6.png" alt=""></li>
+<li>Đổi tên notebook bằng cách chọn vào tên file để đổi, như trong hình đầu tiên là <strong>Untitled5</strong>.</li>
+<li>Một trong những chức năng cực hay của Jupyter Notebook là Checkpoints. Bằng cách tạo các Checkpoints lưu trạng thái hiện tại của notebook, Jupyter Notebook cho phép bạn có thể quay lại thời điểm tạo Checkpoints để kiểm tra hoặc hoàn tác trước đó. Để tạo Checkpoint, chọn <strong>File -&gt; Save and Checkpoint</strong>. Nếu bạn muốn xem lại các Checkpoints trước đó thì chọn <strong>File -&gt; Revert to Checkpoint</strong>.</li>
+<li>Jupyter Noteboook cho phép bạn export notebook của bạn ra một vài loại file như: PDF, HTML, . . . Để làm được điều đó, bạn chọn <strong>File-&gt;Download as</strong>
+<img src="../img/installation7.png" alt=""></li>
+</ul>
+<h2 id="s-dng-google-colab">Sử dụng Google Colab</h2>
+<p>Google colab khá giống với Jupyter Notebook nên bạn sẽ không bỡ ngỡ khi sử dụng Colab. Google Colab là dự án miễn phí của Google cung cấp cung cụ giúp chúng ta thực hiện các dự án Khoa học dữ liệu với nguồn tài nguyên của Google. Với những máy tính cá nhân thì việc cần GPU để huấn luyện là chuyện không dễ dàng nên Google Colab giúp chúng ta giải tỏa nỗi lo này.</p>
+<p>Google Colab được tích hợp trong Google Drive. Nếu lần đầu bạn sử dụng Colab ở Drive của mình thì bạn cần phải cài đặt nó bằng cách thực hiện các bước sau ở Google Drive của bạn:</p>
+<ul>
+<li>Chọn Mới (New) -&gt; Ứng dụng khác (More) -&gt; Kết nối ứng dụng khác (Connect more apps).</li>
+<li>Tìm kiếm Google Colab và chọn Kết nối (Connect) với ứng dụng Colaboratory tại cửa sổ popup
+<img src="../img/installation8.png" alt=""></li>
+</ul>
+<p>Bây giờ bạn hãy đến thư mục mà bạn dự định lưu các file được tạo bởi Colab, thực hiện thao tác như ở trên nhưng thay vì kết nối ứng dụng khác thì chúng ta chọn Google Colaboratory có sẵn trong danh sách.
+<img src="../img/installation9.png" alt=""></p>
+<p>Các chức năng trên Google Colab tương tự như Jupyter Notebook nên tôi để bạn tự khám phá nhé.</p>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Anaconda là bộ công cụ hỗ cài đặt Python và rất nhiều thư viện.</li>
+<li>Jupyter Notebook là trang web chạy local hỗ trợ soạn thảo và thực thi mã Python và có thể lưu thành một báo cáo hoàn chỉnh. Jupyter Notebook đi kèm trong bộ Anacoda.</li>
+<li>Google Colab là công cụ tương tự Jupyter Notebook nhưng được tích hợp sẵn trong Google Drive.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/introduction/" rel="next">Giới thiệu Python</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/basic/" rel="prev">Khái niệm cơ bản trong Python</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 05/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

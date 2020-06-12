@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Trong các bài về kiểu dữ liệu tập hợp, chúng ta thấy mỗi kiểu gồm nhiều phần tử khác nhau. Vậy làm thế nào để lấy phần tử của một biến tập hợp có n phần tử?">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/for-while/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/for-while/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/for-while/">
+  <meta property="og:title" content="Vòng lặp | Hứng">
+  <meta property="og:description" content="Trong các bài về kiểu dữ liệu tập hợp, chúng ta thấy mỗi kiểu gồm nhiều phần tử khác nhau. Vậy làm thế nào để lấy phần tử của một biến tập hợp có n phần tử?"><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-10T20:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-10T20:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Vòng lặp | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#lp-while">Lặp while</a></li>
+    <li><a href="#lnh-for">Lệnh for</a>
+      <ul>
+        <li><a href="#hm-range">Hàm range()</a></li>
+        <li><a href="#vng-lp-lng-nhau">Vòng lặp lồng nhau</a></li>
+      </ul>
+    </li>
+    <li><a href="#t-kha-break">Từ khóa break</a></li>
+    <li><a href="#t-kha-continue">Từ khóa continue</a></li>
+    <li><a href="#t-kha-pass">Từ khóa pass</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Vòng lặp</h1>
+
+          <div class="article-style">
+            <p>Trong các bài về kiểu dữ liệu tập hợp, chúng ta thấy mỗi kiểu gồm nhiều phần tử khác nhau. Vậy làm thế nào để lấy phần tử của một biến tập hợp có n phần tử? Chúng ta có thể dùng toán tử [] n lần? Cũng như các ngôn ngữ khác, Python cung cấp câu lệnh lặp for để giải quyết vấn đề này. Python cũng cung cấp lệnh while để giải 1 số vấn đề lặp khác.</p>
+<h2 id="lp-while">Lặp while</h2>
+<p>Câu lệnh while trong Python được sử dụng để lặp lại việc thực thi mã hoặc khối mã được điều khiển bởi một biểu thức điều kiện. Cú pháp cho một vòng lặp while như sau:</p>
+<pre><code class="language-python">    while &lt;biểu thức điều kiện&gt;:
+        &lt;Khối lệnh while&gt;
+    else:
+        &lt;Khối lệnh else&gt;
+</code></pre>
+<p>Một câu lệnh while cho phép chúng ta lặp lại việc thực thi khối lệnh bên dưới cho đến khi một biểu thức điều kiện trở thành sai, cho giá trị False. Lúc đó khối lệnh else sẽ được thực thi. Nhánh else có thể lượt bỏ tùy theo nhu cầu.
+Hãy xem xét vòng lặp while sau đây:</p>
+<pre><code class="language-python">    i = 1               
+    n = 100                  
+    count = 0
+    while i &lt;= n:
+        count += i
+        i += 2
+    else:
+        print(count)        # 2500
+</code></pre>
+<ul>
+<li>Đây là đoạn mã thể hiện yêu cầu tính tổng các số lẻ từ 1 đến 100</li>
+<li>Biến đếm i được tạo gán giá trị 1</li>
+<li>Biến n được tạo gán giá trị 100</li>
+<li>Biến count được tạo gán giá trị 0</li>
+<li>Điều kiện lặp ở while là i &lt;= n nghĩa là nếu i vẫn chưa lớn hơn n thì khối lệnh while tiếp tục thực thi mãi. Vì như vậy nên chú ý là nếu khối lệnh của while không làm thay đổi giá trị của i hoặc n thì khối lệnh này sẽ thực thi mãi mãi và gây treo chương trình.</li>
+<li>Khối lệnh while gồm 2 bước là cộng dồn i vào count và tăng giá trị i thêm 2. Nhờ việc tăng i này là sẽ có lúc i lớn hơn n để vòng lặp while kết thúc.</li>
+<li>Khi i = 101, tức lớn hơn n = 100, biểu thức điều kiện ở while không còn đúng nữa nên vòng lặp while kết thúc. Do có else nên khối lệnh ở else sẽ được thực thi.</li>
+<li>Kết quả chúng ta nhận là 2500, đó là kết quả cộng dồn i vào count từ 1 đến 100 hay count = 1 + 3 + 5 + &hellip; + 97 + 99</li>
+</ul>
+<h2 id="lnh-for">Lệnh for</h2>
+<p>Câu lệnh for trong Python là một dạng vòng lặp khác với while. Nó lặp lại qua một chuỗi các đối tượng. Đó là, nó sẽ duyệt qua từng phần tử của một dãy các phần tử liên tiếp như như giá trị các kiểu list, tuple, set, dict hay str mà chúng ta đã tìm hiểu ở các bài trước. Cú pháp của một lệnh for như sau:</p>
+<pre><code class="language-python">    for &lt;phần tử&gt; in &lt;dãy&gt;:
+        &lt;Khối lệnh for&gt;
+    else:
+        &lt;Khối lệnh else&gt;
+</code></pre>
+<p>Câu lệnh for còn được gọi là vòng lặp for..in trong Python. &lt;Phần tử&gt; trong cú pháp trên là biến sẽ lưu giá trị từng phần tử của dãy mỗi lần lặp cho đến hết phần tử thuộc dãy. Khi vòng lặp for kết thúc, nhánh else được thực thi. Nhánh else là tùy chọn, không có cũng được.</p>
+<div class="alert alert-warning">
+  <div>
+    Lưu ý là nếu dãy có số phần tử biến động hoặc khối lệnh for làm thay đổi số phần tử của dãy thì có khả năng vòng lặp bị lặp vô tận.
+  </div>
+</div>
+<p>Ví dụ lặp trong str:</p>
+<pre><code class="language-python">    for char in 'Python':
+        print(char)
+</code></pre>
+<p>Kết quả chúng ta sẽ có 6 dòng, mỗi dòng là từng chữ cái trong chuỗi &lsquo;Python&rsquo;: &lsquo;P&rsquo;, &lsquo;y&rsquo;, &lsquo;t&rsquo;, &lsquo;h&rsquo;, &lsquo;o&rsquo;, &lsquo;n&rsquo;.</p>
+<p>Ví dụ lặp trong list:</p>
+<pre><code class="language-python">    for item in ['Python', 'Go', 'Java']:
+        print(item)
+</code></pre>
+<p>Kết quả chúng ta sẽ có 3 dòng, mỗi dòng là từng ngôn ngữ: &lsquo;Python&rsquo;, &lsquo;Go&rsquo;, &lsquo;Java&rsquo;.</p>
+<p>Ví dụ lặp trong dict:</p>
+<pre><code class="language-python">    d = {'.py': 'Python file', '.go': 'Go file', '.java': 'Java File'}
+    for item in d.keys():
+        print(item)
+</code></pre>
+<p>Kết quả chúng ta sẽ có 3 dòng, mỗi dòng là khóa của dict: &lsquo;.py&rsquo;, &lsquo;.go&rsquo;, &lsquo;.java&rsquo;.</p>
+<h3 id="hm-range">Hàm range()</h3>
+<p>So với các ngôn ngữ khác thì trông có vẻ vòng lặp for hơi kém linh hoạt nhưng thực ra Python cung cấp hàm range() để tạo một chuỗi số, bắt đầu từ 0 (mặc định) và tăng thêm 1 (mặc định) và kết thúc tại một số được chỉ định như cú pháp for &lt;Tạo giá trị bắt đầu&gt;; &lt;Biểu thức điều kiện&gt;; &lt;Bước lặp&gt; ở các ngôn ngữ khác. Cú pháp của range() như sau:</p>
+<pre><code class="language-python">    range([&lt;bắt đầu&gt;,] &lt;kết thúc&gt; [, &lt;bước nhảy&gt;])
+</code></pre>
+<ul>
+<li>Chỉ số bắt đầu nếu không cung cấp, Python sẽ cho bắt đầu từ 0.</li>
+<li>Chỉ số kết thúc là bắt buộc phải có. Khi gặp chỉ số này, vòng for sẽ kết thúc nên tại giá trị này, khối lệnh vòng for không có thực thi.</li>
+<li>Chỉ số bước nhảy nếu không cung cấp, Python lấy mặc định là 1.
+Ví dụ với bài toán tính tổng số lẻ từ 1 đến 100 mà chúng ta đã xem qua ở vòng lặp while thì kết hợp for và range chúng ta viết như sau:</li>
+</ul>
+<pre><code class="language-python">    count = 0
+    for i in range(1, 101, 2):
+        count += i
+    else:
+        print(count)        # 2500
+</code></pre>
+<ul>
+<li>Chỉ số bắt đầu là 1 và bước nhảy là 2 để chúng ta luôn lấy giá trị tiếp theo của i là số lẻ.</li>
+<li>Chỉ số kết thúc phải để 101 để i có thể nhận giá trị 100 nhưng do chỉ quan tâm số lẻ nên để 100 cũng cho kết quả đúng dù về mặt logic có chút không ổn.</li>
+</ul>
+<h3 id="vng-lp-lng-nhau">Vòng lặp lồng nhau</h3>
+<p>Thỉnh thoảng chúng ta cần lặp lại nhiều chuỗi liên tục. Python cho phép sử dụng một vòng lặp bên trong một vòng lặp khác. Hãy xem xét một kịch bản trong đó chúng ta cần tạo các bảng cửu chương từ 1 đến 9. Chúng ta có thể làm như vậy bằng cách sử dụng các vòng lặp lồng nhau như được đưa ra dưới đây:</p>
+<pre><code class="language-python">    for i in range(1, 11):
+        print(f'Bảng nhân {i}:')
+        for j in range(1, 11):
+            print(f'{i} * {j} = {i*j}')
+        print('\n')
+</code></pre>
+<p>Kết quả chúng ta sẽ có 10 bản nhân từ 1 đến 10.</p>
+<h2 id="t-kha-break">Từ khóa break</h2>
+<p>Như vòng lặp ở ngôn ngữ khác, Python cung cấp từ khóa break để ngưng các vòng lặp. Khi thực thi đến break, lập tức vòng lặp sẽ ngưng và tiếp tục thực thi lệnh ngang cấp lệnh lặp while hay for. Lưu ý là nhánh else của while cũng sẽ không được thực thi nếu break được thực thi. Ví dụ ở phần while có thể viết lại khi dùng với break như sau:</p>
+<pre><code class="language-python">    i = 1               
+    n = 100                  
+    count = 0
+    while True:
+        count += i
+        i += 2
+        if i &gt; n:
+            break
+    print(count)        # 2500
+</code></pre>
+<ul>
+<li>Biểu thức điều kiện là True, nghĩa là nó luôn đúng và sẽ luôn được thực thi. Vậy thoát khỏi lặp while như thế nào? Chính là nhờ lệnh break bên dưới. Để ý sẽ thấy cách tạo lệnh while này giống như cú pháp do while ở 1 số ngôn ngữ khác.</li>
+<li>Câu lệnh if bổ sung sẽ kiểm tra nếu i quá n thì ngưng lại. Do ngưng như vậy nhánh else không có được thực thi nên chúng ta bỏ hẳn nhánh else luôn.</li>
+<li>Kết quả chúng ta chỉ nhận giá trị 2500 như cách ở while.</li>
+</ul>
+<h2 id="t-kha-continue">Từ khóa continue</h2>
+<p>Python cũng cung cấp từ khóa continue để yêu cầu tiếp tục vòng lặp mới mà bỏ qua các lệnh bên dưới trong khối lệnh vòng lặp. Ví dụ, giờ chúng ta muốn tính tổng số lẻ từ 1 đến 100 nhưng dùng for và sử dụng continue:</p>
+<pre><code class="language-python">    count = 0
+    for i in range(1, 101):
+        if i % 2 == 0:
+            continue
+        count += i
+    else:
+        print(count)        # 2500
+</code></pre>
+<ul>
+<li>Chỉ số bước nhảy bỏ qua, tức là dùng bước nhảy mặc định là 1. Điều đó có nghĩa i sẽ nhận các giá trị liên tiếp gồm cả chẵn và lẻ.</li>
+<li>Để đảm bảo count cho kết quả đúng thì chúng ta phải loại các giá trị chẵn ra và đó là cách lệnh if được đưa vào.</li>
+<li>Lệnh if kiểm tra nếu i chia hết cho 2, tức i chẵn thì gọi lệnh continue, tức sẽ ngay lập tức lặp tiếp mà không quan tâm đến các dòng lệnh bên dưới trong khối lệnh for mà cụ thể ở đây là lệnh cộng dồn i vào count.</li>
+<li>Kết quả chúng ta vẫn có giá trị tổng cần tìm.</li>
+</ul>
+<h2 id="t-kha-pass">Từ khóa pass</h2>
+<p>Đôi khi do nhu cầu, chúng ta tạo các vòng lặp while hay for mà không có nhu cầu đưa khối lệnh vào. Lúc này từ khóa pass cần đến để Python biết ta tạm thời không cần đặt gì trong khối lệnh lặp cả. Ví dụ như sau:</p>
+<pre><code class="language-python">    for item in ['Python', 'Go', 'Java']:
+        pass
+    else
+        print('Đã duyệt xong list')
+</code></pre>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Lặp while thực thi lặp lại khối lệnh của nó cho đến khi biểu thức điều kiện ở while cho giá trị False. Lúc này khối lệnh ở else (nếu có) sẽ được thực thi.</li>
+<li>Lặp for sẽ thực hiện lặp lại khối lệnh của nó cho đến khi duyệt hết các phần tử của 1 dãy khai báo ở lệnh for. Lúc này khối lệnh else sẽ được thực thi nếu có.</li>
+<li>Hàm range giúp tạo ra dãy các phần tử để cung cấp cho lệnh for thực thi phục vụ các nhu cầu khác nhau.</li>
+<li>Lệnh for hỗ trợ khai báo nhiều lệnh for liên tiếp giúp thực thi các vòng lặp lồng vào nhau.</li>
+<li>Từ khóa break được dùng để cắt ngang việc thực thi khối lệnh vòng lặp và thoát ra ngoài, bỏ qua khối lệnh else luôn.</li>
+<li>Từ khóa continue ngay lập tức quay lên thực hiện chu lỳ lặp mới.</li>
+<li>Từ khóa pass được sử dụng khi cần khối lệnh vòng lặp rỗng.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/if-else/" rel="next">Lệnh điều khiển if else</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/function/" rel="prev">Cơ bản về hàm</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 10/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Kiến thức lập trình Python cơ bản.">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/courses/python/index.xml" type="application/rss+xml" title="Hứng">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/">
+  <meta property="og:title" content="Lập trình Python cơ bản | Hứng">
+  <meta property="og:description" content="Kiến thức lập trình Python cơ bản."><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    <meta property="og:updated_time" content="2020-04-01T12:00:00&#43;07:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Lập trình Python cơ bản | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ti-sao-li-chn-python">Tại sao lại chọn Python?</a></li>
+    <li><a href="#nhc-im-ca-python-l-g">Nhược điểm của Python là gì?</a></li>
+    <li><a href="#python-ph-hp-cho-nhng-ai">Python phù hợp cho những ai?</a></li>
+    <li><a href="#hc-g-vi-python">Học gì với Python?</a></li>
+    <li><a href="#cch-hc">Cách học</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Lập trình Python cơ bản</h1>
+
+          <div class="article-style">
+            <p>Ngày nay, <a href="https://www.python.org/">Python</a> là một trong những ngôn ngữ lập trình được các lập trình viên yêu thích và sử dụng nhiều nhất. Nhiều doanh nghiệp và người khổng lồ trong ngành Phần mềm đã chọn python làm ngôn ngữ để lập trình.</p>
+<h2 id="ti-sao-li-chn-python">Tại sao lại chọn Python?</h2>
+<p>Python có một số điểm nổi bật khiến nó được nhiều công ty và lập trình viên lựa chọn:</p>
+<ul>
+<li><strong>Miễn phí:</strong> Python là một ngôn ngữ mã nguồn mở và nó miễn phí. Tất cả các công cụ cần thiết cho lập trình python như bộ công cụ phát triển, môi trường phát triển, các phương tiện hỗ trợ, và thư viện sử dụng hoàn toàn miễn phí và hỗ trợ trên mọi hệ điều hành phổ biến.</li>
+<li><strong>Mã nguồn ngắn:</strong> Python có cú pháp rất đơn giản và gần gũi với ngôn ngữ tự nhiên. Đôi khi nếu bạn cần 10 dòng mã trong ngôn ngữ C++ thì chỉ cần 4 dòng trong Python để thực thi cùng một tác vụ. Ví dụ để đảo giá trị 2 biến ta chỉ đơn giản viết: a, b = b, a. Điều mà ở đa phần các ngôn ngữ khác chúng ta cần đến ít nhất 4 dòng lệnh. Có mã nguồn ít hơn sẽ yêu cầu ít không gian lưu trữ hơn, ít thời gian viết mã hơn, thời gian kiểm thử và sửa lỗi cũng sẽ ít hơn nên Python được các lập trình viên đánh giá cao. Python còn cung cấp rất nhiều thư viện và thư viện tích hợp giúp lập trình viên tiết kiệm thời gian viết mã hơn, do đó, giúp giảm chi phí và mang lại nhiều lợi nhuận hơn.</li>
+<li><strong>Phù hợp với công ty khởi nghiệp:</strong> Khả năng tạo ứng dụng và phần mềm nhanh chóng và ít tốn kém giúp Python phù hợp nhất với các công ty khởi nghiệp, vì chúng có thể tồn tại trong môi trường cạnh tranh cao bằng cách tận dụng tốc độ của ngôn ngữ Python. Python không chỉ phù hợp với các công ty vừa và nhỏ, mà các công ty hàng đầu như Google, Spotify, Instagram và Dropbox, cũng chứng minh cho sự phát triển của Python so với các ngôn ngữ khác. NASA, Electronic Arts và Disney là những người khổng lồ ngoài ngành CNTT đã chọn Python.</li>
+<li><strong>Xu hướng trong lập trình:</strong> Mặc dù Java, C/C++, Javascript vẫn đang thống trị nhưng với lợi ích nêu trên cộng với sự nổi lên của trí tuệ nhân tạo (artificial intelligence - AI) trong những năm vừa qua mà Python là ngôn ngữ phổ biến nhất trong lĩnh vực này thì Python hiện tại đang trở thành ngôn ngữ lựa chọn cho rất nhiều mục đích: làm quen lập trình, lập trình web, lập trình back-end, lập trình IOT, lập trình AI, v.v&hellip;</li>
+</ul>
+<h2 id="nhc-im-ca-python-l-g">Nhược điểm của Python là gì?</h2>
+<p>Bên cạnh những điểm mạnh tuyệt vời kể trên thì Python cũng tồn tại những điểm yếu:</p>
+<ul>
+<li><strong>Chậm:</strong> Là một ngôn ngữ thông dịch, khi so sánh với một ngôn ngữ biên dịch, tốc độ thực thi của Python thường chậm hơn nhất là đối với các ứng dụng liên quan đến tập dữ liệu lớn hay toán học phức tạp.</li>
+<li><strong>Bảo mật mã nguồn kém:</strong> Nhược điểm thứ hai của python là bảo vệ mã nguồn. Do Python là ngôn ngữ thông dịch nên hệ điều hành biên dịch mã nguồn ra mã máy tại thời điểm thực thi nên chúng ta phải lưu trữ mã nguồn ở máy thực thi. Việc này khiến mã nguồn dễ rơi vào tay những kẻ tò mò. Hiện tại có những công cụ để đóng gói mã Python thành gói thực thi để giảm thiểu việc đọc mã nguồn.</li>
+<li><strong>Không hỗ trợ đa luồng (multi-threading):</strong> Đa luồng không được Python hỗ trợ, điều này hạn chế hiệu năng của Python. Python có giới hạn này vì đồng hồ thông dịch toàn cầu (GIL). Nó chỉ cho phép một luồng thực thi tại một thời điểm. Các chương trình đơn luồng chậm hơn so với các chương trình đa luồng. Tuy nhiên, tình huống này có thể được xử lý bằng cách sử dụng các ứng dụng đa xử lý (multi-processing) thay cho các chương trình đa luồng.</li>
+<li><strong>Tiềm ẩn lỗi:</strong> Là một ngôn ngữ kiểu động, tức kiểu dữ liệu của biến không được khai báo tường minh và cố định. Một biến trong Python có thể có nhiều kiểu dữ liệu khác nhau tại các thời điểm thực thi khác nhau. Việc này tiềm ẩn nhiều lỗi mà chỉ phát hiện khi thực thi.</li>
+</ul>
+<h2 id="python-ph-hp-cho-nhng-ai">Python phù hợp cho những ai?</h2>
+<p>Python hỗ trợ lập trình từ thiết bị IOT, ứng dụng di động, ứng dụng web, lập trình logic cho đến AI, khoa học dữ liệu, v.v&hellip; Nhưng với những ưu và nhược điểm nêu trên, Python phù hợp nhất cho các nhóm sau:</p>
+<ul>
+<li><strong>Làm quen lập trình:</strong> Là ngôn ngữ có cú pháp đơn giản, dễ học, Python phù hợp cho các bạn mới làm quen lập trình để hiểu các khái niệm trong lập trình và dễ dàng tạo ra các ứng dụng mà không tốn quá nhiều thời gian và đau đầu với những mã nguồn phức tạp.</li>
+<li><strong>Lập trình devops:</strong> Python giúp xây dựng nhanh chóng các công cụ quản lý, thực thi các tác vụ hệ thống với nguồn thư viện dồi dào mà nó cung cấp. Các công cụ này thường ít đặt nặng tốc độ thực thi và bảo mật mã nguồn nhưng đòi hỏi triển khai nhanh nên khá phù hợp khi lựa chọn Python.</li>
+<li><strong>Lập trình AI:</strong> Các lĩnh vực như lập trình ngôn ngữ tự nhiên (natural language processing - NLP), thị giác máy tính (computer vision), hay khoa học dữ liệu (data science), v.v&hellip; đều có rất nhiều thư viện hỗ trợ viết bằng Python nên Python trở thành ngôn ngữ phổ biến nhất trong lập trình AI dù nhược điểm thực thi chậm đang khiến các lập trình viên không hài lòng nhất là với những tác vụ cần xử lý lượng dữ liệu lớn hay tính toán phức tạp.</li>
+</ul>
+<h2 id="hc-g-vi-python">Học gì với Python?</h2>
+<p>Trong phần này, chúng tôi chỉ giới những kiến thức thật sự cơ bản về Python. Bên cạnh đó, chúng tôi cũng bổ sung thêm 1 số kiến thức để phục vụ cho các tác vụ xử lý dữ liệu trong Khoa học dữ liệu mà chúng tôi sẽ giới thiệu sau này. Nội dung bao gồm:</p>
+<ul>
+<li><a href="./installation">Cài đặt Python</a></li>
+<li><a href="./variable">Kiểu dữ liệu trong Python</a></li>
+<li><a href="./if-else">Cú pháp cơ bản</a></li>
+<li><a href="./function">Hàm</a></li>
+<li>[Đóng gói package, module]</li>
+<li>[Lập trình hướng đối tượng]</li>
+<li>[Lập trình web service]</li>
+<li>Các thư viện cơ bản thường dùng trong Khoa học dữ liệu:
+<ul>
+<li>[Numpy]</li>
+<li>[Pandas]</li>
+<li>[SciPy]</li>
+<li>[Scikit-Learn]</li>
+<li>[Matplotlib]</li>
+<li>[Seaborn]</li>
+</ul>
+</li>
+</ul>
+<h2 id="cch-hc">Cách học</h2>
+<p>Có nhiều cách tiếp cận tài liệu này, ở đây chúng tôi nêu một số cách như sau:</p>
+<ul>
+<li>Bạn chưa biết gì về lập trình hoặc Python: nên đọc từ đầu, từng bài và sau đó làm bài tập.</li>
+<li>Bạn đã biết sơ Python: nên đọc phần đề mục bên tay phải từng bài sau đó xem tóm tắt từng bài trước, nếu bạn đã nắm thì không cần đọc chi tiết các mục mà vào thẳng phần làm bài tập. Phần nào không làm được hãy quay lại đọc về phần đó.</li>
+<li>Bạn đã có kinh nghiệm Python: nên xem mục lục bên trái và chọn bài mà bạn thấy hứng thú hoặc nhảy đến phần các thủ thuật Python để tìm hiểu thêm.</li>
+<li>Khi các bạn gặp vấn đề cài đặt, làm bài tập không được, hoặc cần trao đổi vấn đề nào đó liên quan Python, đừng ngần ngại gửi <a href="mailto:hung@phamkhac.com">mail</a> cho tôi hoặc tham gia kênh trao đổi về python tại <a href="https://t.me/joinchat/AAAAAFhdOFc_Bc_5Q15vgg">telegram</a>.
+<h2 id="tm-tt">Tóm tắt</h2>
+</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Ưu điểm của Python: miễn phí, cú pháp đơn giản, lập trình nhanh, phù hợp các công ty khởi nghiệp và là xu hướng trong lập trình.</li>
+<li>Nhược điểm: chậm, không bảo mật mã nguồn, không hỗ trợ lập trình đa luồng và tiềm ẩn lỗi.</li>
+<li>Python phù hợp nhất cho nhóm làm quen lập trình, lập trình devops và lập trình AI.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 01/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập trình Python cơ bản | Hứng</title>
+    <link>/courses/python/</link>
+      <atom:link href="/courses/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lập trình Python cơ bản</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Wed, 01 Apr 2020 12:00:00 +0700</lastBuildDate>
+    <image>
+      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <title>Lập trình Python cơ bản</title>
+      <link>/courses/python/</link>
+    </image>
+    
+    <item>
+      <title>Giới thiệu Python</title>
+      <link>/courses/python/introduction/</link>
+      <pubDate>Sat, 04 Apr 2020 21:00:00 +0700</pubDate>
+      <guid>/courses/python/introduction/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt; là ngôn ngữ lập trình thông dịch cao cấp và đa nền tảng được phát triển bởi Guido van Rossum vào năm 1991. Nó được sử dụng trong nhiều lĩnh vực từ phát triển web, ứng dụng văn phòng, IOT cho đến các ứng dụng khoa học. Đặc trưng của Python như đơn giản, dễ học, cú pháp thân thiện với ngôn ngữ con người và dễ dàng mở rộng sang các ngôn ngữ khác. Ngoài các thư viện tích hợp sẵn hoặc tiêu chuẩn tạo thành thư viện chuẩn Python, Python cũng cung cấp hỗ trợ rất nhiều thư viện của bên thứ ba. Nó hỗ trợ nhiều kiểu lập trình như Hướng đối tượng, Thủ tục và Chức năng.&lt;/p&gt;
+&lt;p&gt;Phiên bản đầu tiên của Python là phiên bản 0.9 ra đời tháng 2 năm 1991. Tên Python được lấy cảm hứng từ nhóm hài của Anh là Monty Python. Năm 2008 đánh dấu bước phát triển song song giữa 2 phiên bản 2.x và 3.x. Xuất phát điểm việc tách ra là phiên bản 3.0 ra đời tháng 12 năm 2008 hỗ trợ Unicode mặc định. Mặc dù mã được phát triển ở hai phiên bản khá tương thích với nhau trừ một số thay đổi nhưng nó cũng khiến nhiều người dùng Python bối rối do không biết theo nhánh nào và đôi lúc gặp phải sự cố không tương thích. Phiên bản mới nhất của Python 2.x là Python 2.7 còn 3.x là 3.8. Sau năm 2020 thì Python 2.x sẽ không còn được tiếp tục phát triển nữa.&lt;/p&gt;
+&lt;p&gt;Trong chuỗi bài này, chúng tôi sẽ chỉ sử dụng Python 3.x nên khi chỉ nói Python, chúng tôi đang đề cập đến Python 3.x.&lt;/p&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Python là ngôn ngữ thông dịch.&lt;/li&gt;
+&lt;li&gt;Python có 2 nhánh phiên bản chạy song song là 2.x và 3.x. Từ 2020, nhánh 2.x ngừng phát triển.&lt;/li&gt;
+&lt;li&gt;Phiên bản mặc định trong các bài tiếp theo là 3.x&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cài đặt Python</title>
+      <link>/courses/python/installation/</link>
+      <pubDate>Sun, 05 Apr 2020 05:00:00 +0700</pubDate>
+      <guid>/courses/python/installation/</guid>
+      <description>&lt;p&gt;Để lập trình được Python, đầu tiên chúng ta phải cài đặt bộ công cụ phát triển (software development kit - SDK) chứa file thực thi dịch mã nguồn chúng ta viết ra mã mãy để chạy và các thư viện viết sẵn giúp chúng ta sử dụng để tiết kiệm thời gian lập trình. Sau SDK, chúng ta cần môi trường phát triển tích hợp (integrated development environment - IDE) cung cấp công cụ soạn thảo, kiểm lỗi, v.v&amp;hellip; trong quá trình lập trình. Có nhiều bộ cài đặt SDK và IDE cho Python khác nhau nhưng trong bài này chúng ta sẽ tìm hiểu bộ Anacoda và Google Colab.&lt;/p&gt;
+&lt;h2 id=&#34;ci-t-anaconda&#34;&gt;Cài đặt Anaconda&lt;/h2&gt;
+&lt;p&gt;Công cụ Anaconda là cách dễ nhất để cài đặt Python và các thư viện. Với hơn 19 triệu người dùng trên toàn thế giới, Anaconda cung cấp cài đặt Python, quản lý hàng ngàn thư viện phục vụ cho nhiều nhu cầu lập trình khác nhau.&lt;/p&gt;
+&lt;p&gt;Anaconda hỗ trợ gói cài đặt cho 3 hệ điều hành Windows, Linux và macOS &lt;a href=&#34;https://www.anaconda.com/distribution/&#34;&gt;tại đây&lt;/a&gt;. Vui lòng chọn đúng gói cài đặt phù hợp với hệ điều hành trên máy của bạn. Với các máy Windows, các bạn chỉ đơn giản thực thi file download và làm theo hướng dẫn. Với các hệ điều hành macOS và Linux bạn có thể thực hiện lệnh &lt;em&gt;bash &amp;lt;file download .sh&amp;gt;&lt;/em&gt; ở Terminal và làm theo hướng dẫn:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; bash &amp;lt;file download .sh&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;s-dng-jupyter-notebook&#34;&gt;Sử dụng Jupyter Notebook&lt;/h2&gt;
+&lt;p&gt;Jupyter Notebook là một ứng dụng web mã nguồn mở cho phép bạn tạo hoặc chia sẻ những văn bản chứa mã nguồn, tài liệu hoặc mô phỏng. Jupyter Notebook là một công cụ tuyệt vời để trải nghiệm khoa học dữ liệu bởi nó có thể giúp chúng ta:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Học và thử nghiệm với Python&lt;/li&gt;
+&lt;li&gt;Xử lý, biến đổi dữ liệu&lt;/li&gt;
+&lt;li&gt;Trình diễn, mô phỏng dữ liệu dưới dạng biểu đồ&lt;/li&gt;
+&lt;li&gt;Thực hiện mô hình hóa dữ liệu với các thuật toán học máy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jupyter Notebook được tích hợp sẵn trong Anaconda nên sau khi cài đặt xong Anaconda, chúng ta có thể thực thi Jupyter Notebook bằng cách chọn từ Start Menu trong Windows hay chạy dòng lệnh sau trong Terminal/Command Prompt trên các hệ điều hành:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; jupyter notebook&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Nếu việc cài đặt thành công, Jupyter Notebook sẽ thực thi và mở 1 trang web cục bộ ở trình duyệt như hình bên dưới:
+&lt;img src=&#34;../img/installation1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Chọn New ở góc trên bên phải và chọn Python 3, tab mới được tạo như bên dưới cho chúng ta biết chúng ta đã có một môi trường để viết code và thử nghiệm Python 3 cũng như các dự án Khoa học dữ liệu sau này:
+&lt;img src=&#34;../img/installation2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Một notebook bao gồm nhiều ô (cell). Khi tạo mới một notebook, bạn luôn được tạo sẵn một ô rỗng đầu tiên:
+&lt;img src=&#34;../img/installation3.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Ô trên có kiểu là “Code” như trong hình, điều đó có nghĩa là bạn có thể gõ code Python và thực thi ngay lập tức. Để thực thi code, bạn có thể nhấn nút Run cell hoặc nhấn Ctrl + Enter hoặc Shift + Enter để thực thi và mở ô mới.
+&lt;img src=&#34;../img/installation4.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Bạn có thể chuyển loại ô từ Code thành Markdown để viết những đoạn văn bản giải thích code của bạn chẳng hạn. Để chuyển đổi bạn click vào ComboBox Code và chọn Markdown như hình:
+&lt;img src=&#34;../img/installation5.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Để tiện việc sử dụng notebook, bạn nên tham khảo danh sách các phím tắt bằng việc vào &lt;strong&gt;Help-&amp;gt; Keyboard Shortcuts&lt;/strong&gt; để tham khảo:
+&lt;img src=&#34;../img/installation6.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Đổi tên notebook bằng cách chọn vào tên file để đổi, như trong hình đầu tiên là &lt;strong&gt;Untitled5&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Một trong những chức năng cực hay của Jupyter Notebook là Checkpoints. Bằng cách tạo các Checkpoints lưu trạng thái hiện tại của notebook, Jupyter Notebook cho phép bạn có thể quay lại thời điểm tạo Checkpoints để kiểm tra hoặc hoàn tác trước đó. Để tạo Checkpoint, chọn &lt;strong&gt;File -&amp;gt; Save and Checkpoint&lt;/strong&gt;. Nếu bạn muốn xem lại các Checkpoints trước đó thì chọn &lt;strong&gt;File -&amp;gt; Revert to Checkpoint&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Jupyter Noteboook cho phép bạn export notebook của bạn ra một vài loại file như: PDF, HTML, . . . Để làm được điều đó, bạn chọn &lt;strong&gt;File-&amp;gt;Download as&lt;/strong&gt;
+&lt;img src=&#34;../img/installation7.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;s-dng-google-colab&#34;&gt;Sử dụng Google Colab&lt;/h2&gt;
+&lt;p&gt;Google colab khá giống với Jupyter Notebook nên bạn sẽ không bỡ ngỡ khi sử dụng Colab. Google Colab là dự án miễn phí của Google cung cấp cung cụ giúp chúng ta thực hiện các dự án Khoa học dữ liệu với nguồn tài nguyên của Google. Với những máy tính cá nhân thì việc cần GPU để huấn luyện là chuyện không dễ dàng nên Google Colab giúp chúng ta giải tỏa nỗi lo này.&lt;/p&gt;
+&lt;p&gt;Google Colab được tích hợp trong Google Drive. Nếu lần đầu bạn sử dụng Colab ở Drive của mình thì bạn cần phải cài đặt nó bằng cách thực hiện các bước sau ở Google Drive của bạn:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chọn Mới (New) -&amp;gt; Ứng dụng khác (More) -&amp;gt; Kết nối ứng dụng khác (Connect more apps).&lt;/li&gt;
+&lt;li&gt;Tìm kiếm Google Colab và chọn Kết nối (Connect) với ứng dụng Colaboratory tại cửa sổ popup
+&lt;img src=&#34;../img/installation8.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bây giờ bạn hãy đến thư mục mà bạn dự định lưu các file được tạo bởi Colab, thực hiện thao tác như ở trên nhưng thay vì kết nối ứng dụng khác thì chúng ta chọn Google Colaboratory có sẵn trong danh sách.
+&lt;img src=&#34;../img/installation9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Các chức năng trên Google Colab tương tự như Jupyter Notebook nên tôi để bạn tự khám phá nhé.&lt;/p&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Anaconda là bộ công cụ hỗ cài đặt Python và rất nhiều thư viện.&lt;/li&gt;
+&lt;li&gt;Jupyter Notebook là trang web chạy local hỗ trợ soạn thảo và thực thi mã Python và có thể lưu thành một báo cáo hoàn chỉnh. Jupyter Notebook đi kèm trong bộ Anacoda.&lt;/li&gt;
+&lt;li&gt;Google Colab là công cụ tương tự Jupyter Notebook nhưng được tích hợp sẵn trong Google Drive.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Khái niệm cơ bản trong Python</title>
+      <link>/courses/python/basic/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/python/basic/</guid>
+      <description>&lt;p&gt;Trước khi tìm hiểu các khái niệm biến, kiểu dữ liệu hay cú pháp, hàm, chúng ta sẽ tìm hiểu và thống nhất một số khái niệm cơ bản trong Python.&lt;/p&gt;
+&lt;h2 id=&#34;t-kha&#34;&gt;Từ khóa&lt;/h2&gt;
+&lt;p&gt;Từ khóa (keyword) là những từ dành riêng trong Python. Chúng ta không thể sử dụng từ khóa làm tên biến, tên hàm hoặc bất kỳ định danh nào khác. Chúng được sử dụng để xác định cú pháp và cấu trúc của ngôn ngữ Python. Trong Python, từ khóa phân biệt chữ hoa chữ thường. Sau đây là danh sách 33 từ khóa trong Python 3.7. Con số này có thể thay đổi một chút theo thời gian:
+&lt;img src=&#34;../img/basics1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;nh-danh&#34;&gt;Định danh&lt;/h2&gt;
+&lt;p&gt;Định danh (identifier) là tên được đặt cho các thực thể như biến, hàm, lớp, v.v &amp;hellip; Nó giúp phân biệt một thực thể này với thực thể khác. Quy tắc khai báo định danh như sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Định danh có thể là sự kết hợp của các chữ cái viết thường (a đến z) hoặc chữ hoa (A đến Z) hoặc chữ số (0 đến 9) hoặc dấu gạch dưới _. Các ký tự đặc biệt khác đều không thể dùng để tạo định danh. Các tên như myClass, var_1 và print_this_to_screen, tất cả đều là định danh hợp lệ.&lt;/li&gt;
+&lt;li&gt;Một định danh không thể bắt đầu bằng một chữ số. 1var không hợp lệ, nhưng var1 là tên hợp lệ.&lt;/li&gt;
+&lt;li&gt;Từ khóa không thể được sử dụng để khai báo định danh.&lt;/li&gt;
+&lt;li&gt;Chiều dài định danh không giới hạn nhưng tốt nhất nên đặt tên có ý nghĩa liên quan đến mục đích sử dụng.&lt;/li&gt;
+&lt;li&gt;Python phân biệt định danh viết hoa và thường nên my_class và My_class là 2 định danh khác nhau.&lt;/li&gt;
+&lt;li&gt;Với định danh gồm nhiều từ ghép lại thì dùng dấu gạch dưới &lt;strong&gt;(_)&lt;/strong&gt; để nối các từ (theo phong cách &lt;a href=&#34;https://vi.wikipedia.org/wiki/Quy_t%E1%BA%AFc_con_r%E1%BA%AFn&#34;&gt;snake&lt;/a&gt;). Ví dụ: my_name.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cu-lnh&#34;&gt;Câu lệnh&lt;/h2&gt;
+&lt;p&gt;Một câu lệnh (statement) trong Python là một chuỗi ký tự kết thúc bằng ký tự xuống dòng theo đúng cú pháp sao cho Python có thể thông dịch ra ngôn ngữ máy và thực thi được. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    x = 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;là một câu lệnh gán giá trị 1 cho biến x trong Python. Như vậy khác với đa số ngôn ngữ khác dùng dấu chấm phẩy &lt;strong&gt;(;)&lt;/strong&gt; để kết thúc câu lệnh, Python không quy định ký tự kết thúc câu lệnh.&lt;/p&gt;
+&lt;p&gt;Trường hợp muốn tạo câu lệnh nhiều dòng, chúng ta dùng ký tự &lt;strong&gt;\&lt;/strong&gt; kết thúc mỗi dòng hoặc có thể sử dụng các cặp dấu gom nhóm như cặp &lt;strong&gt;()&lt;/strong&gt;, &lt;strong&gt;[]&lt;/strong&gt;, &lt;strong&gt;{}&lt;/strong&gt;. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    x = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9
+    y = (1 + 2 + 3 + 
+    4 + 5 + 6 + 
+    7 + 8 + 9)
+    colors = [&#39;red&#39;,
+            &#39;blue&#39;,
+            &#39;green&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Liệu chúng ta có thể tạo nhiều câu lệnh trên một dòng không? Câu trả lời là được. Lúc đó mỗi câu lệnh cách nhau bằng dấu &lt;strong&gt;(;)&lt;/strong&gt; như thường thấy ở các ngôn ngữ khác.&lt;/p&gt;
+&lt;h2 id=&#34;khi-lnh&#34;&gt;Khối lệnh&lt;/h2&gt;
+&lt;p&gt;Khối lệnh (code block) là để chỉ các câu lệnh có cùng 1 phạm vi ảnh hưởng như khối lệnh trong hàm hay câu điều kiện if (sẽ tìm hiểu sau). Thường các ngôn ngữ sử dụng cặp &lt;strong&gt;begin end&lt;/strong&gt; hay &lt;strong&gt;{}&lt;/strong&gt; để mở và đóng khối lệnh. Tuy nhiên Python không dùng đến chúng mà quy định dấu hai chấm &lt;strong&gt;(:)&lt;/strong&gt; và &lt;strong&gt;thụt đầu dòng (indentation)&lt;/strong&gt;. Các câu lệnh cùng có một mức thụt đầu dòng như nhau sẽ cùng một khối lệnh.
+&lt;img src=&#34;../img/basics2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Một số lập trình viên dùng tab để thụt đầu dòng nhưng tab có thể quy định tương ứng số khoảng trắng khác nhau nên tốt nhất dùng 4 khoảng trắng để thực hiện một cấp thụt đầu dòng. Trong các phần sau chúng ta sẽ thấy rõ ví dụ về khối lệnh và thụt đầu dòng.&lt;/p&gt;
+&lt;h2 id=&#34;ghi-ch&#34;&gt;Ghi chú&lt;/h2&gt;
+&lt;p&gt;Ghi chú (comment) là rất quan trọng trong lập trình. Nó giúp chúng ta mô tả những gì đang diễn ra bên trong một chương trình, để một người nhìn vào mã nguồn có thể hiểu logic nhờ những mô tả này. Chúng ta có thể quên các chi tiết chính của chương trình vừa viết sau một vài tháng nên tốt nhất chúng ta nên dành thời gian để giải thích các đoạn mã thông qua ghi chú.&lt;/p&gt;
+&lt;p&gt;Python sử dụng dấu thăng &lt;strong&gt;(#)&lt;/strong&gt; để bắt đầu viết ghi chú. Nếu ghi chú nhiều dòng, mỗi dòng sẽ bắt đầu bằng một dấu thăng. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    # Đây là ghi chú
+    # xuất ra màn hình chuỗi Hello
+    print(&#39;Hello&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Python sử dụng cặp &amp;ldquo;&amp;quot;&amp;quot;&amp;hellip;&amp;rdquo;&amp;rdquo;&amp;rdquo; để tạo chuỗi tài liệu. Nó nằm ngay dưới khai báo hàm, phương thức, lớp hay module để sinh tài liệu mã nguồn một cách tự động khi cần. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def double(num):
+        &amp;quot;&amp;quot;&amp;quot;Hàm thực hiện nhân đôi giá trị&amp;quot;&amp;quot;&amp;quot;
+        return 2*num
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Từ khóa được Python dành riêng để quy định khai báo và cú pháp, chúng ta không thể dùng để đặt tên trong chương trình.&lt;/li&gt;
+&lt;li&gt;Định danh là tên khai báo trong Python gồm chữ cái, số và ký tự gạch dưới, trong đó số không được phép dùng để bắt đầu tên. Python phân biệt định danh hoa và thường.&lt;/li&gt;
+&lt;li&gt;Câu lệnh Python không cần ký tự kết thúc lệnh.&lt;/li&gt;
+&lt;li&gt;Khối lệnh là nhóm câu lệnh liên tiếp có cùng mức thụt đầu dòng.&lt;/li&gt;
+&lt;li&gt;Ghi chú dùng để bổ sung thông tin trong chương trình mà Python sẽ không biên dịch. Ghi chú bắt đầu bằng dấu #.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Biến số và hằng số</title>
+      <link>/courses/python/variable/</link>
+      <pubDate>Tue, 07 Apr 2020 20:00:00 +0700</pubDate>
+      <guid>/courses/python/variable/</guid>
+      <description>&lt;h2 id=&#34;chui-gi-tr&#34;&gt;Chuỗi giá trị&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Chuỗi giá trị (literal)&lt;/strong&gt; là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ chương trình khi chạy. Các loại chuỗi giá trị cơ bản trong Python như sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi số (numeric literal)&lt;/strong&gt;: là số nguyên, số thực hay số phức. Ví dụ: 1, -3.5, 3 + 4j&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi ký tự (string literal)&lt;/strong&gt;: là nhóm ký tự Unicode được bọc trong cặp nháy đơn &lt;strong&gt;(&#39;)&lt;/strong&gt; hoặc nháy kép &lt;strong&gt;(&amp;quot;)&lt;/strong&gt;. Chuỗi nhiều dòng có thể được biểu thị bằng cách sử dụng ba dấu nháy đơn &lt;strong&gt;(&#39;&#39;&#39;)&lt;/strong&gt; hoặc ba nháy kép &lt;strong&gt;(&amp;quot;&amp;quot;&amp;quot;)&lt;/strong&gt;. Ví dụ: &amp;lsquo;Hello&amp;rsquo;, &amp;ldquo;Python&amp;rdquo;, &amp;ldquo;&amp;ldquo;&amp;ldquo;Hello Python&amp;rdquo;&amp;rdquo;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi luận lý (boolean literal)&lt;/strong&gt;: gồm True (đại diện cho đúng) và False (đại diện cho sai). Trong Python thì True tương đương 1 và False tương đương 0 nên True + 4 sẽ cho kết quả là 5 còn 10 - False thì vẫn là 10.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi None&lt;/strong&gt;: Python dùng None thay vì dùng void, nil hay null như các ngôn ngữ khác để thể hiện giá trị rỗng.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chuỗi giá trị được dùng để khai báo giá trị cho các biến số và hằng số như bên dưới.&lt;/p&gt;
+&lt;h2 id=&#34;bin-s&#34;&gt;Biến số&lt;/h2&gt;
+&lt;p&gt;Biến số là định danh gắn với một đối tượng chứa dữ liệu (là chuỗi giá trị hay tập hợp chuỗi giá trị) tương ứng. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    x = 5
+    x = 7.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Dòng lệnh trên đồng nghĩa tạo một biến có tên là x và được gán (biểu thị qua dấu bằng &lt;strong&gt;(=)&lt;/strong&gt;) đối tượng chứa giá trị 5.&lt;/li&gt;
+&lt;li&gt;Dòng lệnh dưới cho biết biến x lúc này sẽ được gắn với đối tượng có giá trị là 7.5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python là ngôn ngữ &lt;a href=&#34;https://vi.wikipedia.org/wiki/Ng%C3%B4n_ng%E1%BB%AF_th%C3%B4ng_d%E1%BB%8Bch&#34;&gt;thông dịch&lt;/a&gt; nên mang một số đặc điểm khác với các ngôn ngữ &lt;a href=&#34;https://vi.wikipedia.org/wiki/Ng%C3%B4n_ng%E1%BB%AF_bi%C3%AAn_d%E1%BB%8Bch&#34;&gt;biên dịch&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Không cần khai báo biến trước, biến sẽ được tạo ở lần đầu tiên chúng được gán giá trị.&lt;/li&gt;
+&lt;li&gt;Biến không thật sự gắn với giá trị chúng được gán mà là gắn với đối tượng quản lý giá trị đó. Tuy vậy để cho đơn giản ta vẫn gọi là biến x có giá trị 5 như trong ví dụ trên. Chi tiết sẽ nói rõ hơn ở bài sau.&lt;/li&gt;
+&lt;li&gt;Do không gắn trực tiếp giá trị nó được gán nên biến x dễ dàng thay đổi từ số nguyên (5) sang số thực (7.5) như trên.&lt;/li&gt;
+&lt;li&gt;Mỗi lần gán giá trị biến sẽ được gắn với đối tượng mới, đối tượng cũ sẽ được bộ dọn rác (garbage collector) dọn tự động nên chúng ta cũng không cần quan tâm đến giải phóng bộ nhớ.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Có thể gán nhiều biến cùng lúc với một hoặc nhiều chuỗi giá trị:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    x, y, z = 1, 5.6, &amp;quot;abc&amp;quot;
+    a = b = c = True
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Dòng lệnh trên biến x, y, z lần lượt có giá trị là 1, 5.6, &amp;ldquo;abc&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Dòng lệnh dưới cả 3 biến a, b, c đều có giá trị là True.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hng-s&#34;&gt;Hằng số&lt;/h2&gt;
+&lt;p&gt;Khác với biến số có thể gán thay đổi giá trị nhiều lần, hằng số (constant) một khi đã gán giá trị là không thay đổi được nữa. Python thật sự không có khái niệm hằng số. Thông thường để khai báo các biến giá trị không thay đổi thì chúng ta khai báo tên toàn chữ in hoa. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    PI = 3.14
+    GRAVITY = 9.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;hm-v-phng-thc&#34;&gt;Hàm và phương thức&lt;/h2&gt;
+&lt;p&gt;Trong các bài tới chúng ta sẽ gặp nhiều hàm và phương thức hệ thống tạo sẵn phục vụ nhu cầu xử lý các loại kiểu dữ liệu khác nhau. Để tiện theo dõi, phần này chúng tôi giới thiệu sơ về hàm và phương thức để các bạn dễ hình dung.&lt;/p&gt;
+&lt;p&gt;Hàm là một nhóm các câu lệnh mà chỉ được thực thi khi hàm được gọi. Hàm gồm có tên và các tham số truyền thông tin vào hàm và dữ liệu trả về là kết quả xử lý hàm. Như vậy để sử dụng hàm cần thực hiện 2 bước là khai báo hàm và gọi hàm ở nơi cần thực thi.&lt;/p&gt;
+&lt;p&gt;Có 3 nhóm hàm khác nhau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hàm hệ thống: làm hàm được cung cấp sẵn trong các phiên bản Python. Chúng ta có thể sử dụng mà chẳng cần khai báo thông tin gì về nó cả.&lt;/li&gt;
+&lt;li&gt;Hàm tự tạo: là hàm do chúng ta viết trong chương trình của mình.&lt;/li&gt;
+&lt;li&gt;Hàm bên thứ 3 tạo: là hàm do người khác viết và cung cấp sẵn trên các kho chứa mã nguồn như github mà chúng ta có thể sử dụng thay vì tự viết lại. Chúng ta phải khai báo về nó trước khi sử dụng.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chi tiết về hàm chúng ta sẽ tìm hiểu kỹ hơn ở &lt;a href=&#34;../function&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Phương thức là khái niệm trong lập trình hướng đối tượng. Nó mô tả hành động của đối tượng mà cách khai báo và gọi thực thi khá giống với hàm. Nói cách khác phương thức là hàm trong thế giới hướng đối tượng. Do phục vụ cho đối tượng nên khai báo phương thức phải mô tả nó thuộc lớp nào và để gọi nó thực thi phải gọi từ đối tượng thuộc lớp đó. Chi tiết về phương thức chúng ta sẽ tìm hiểu kỹ hơn ở &lt;a href=&#34;../oop&#34;&gt;đây&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;hm-print&#34;&gt;Hàm print&lt;/h2&gt;
+&lt;p&gt;Python cung cấp hàm &lt;strong&gt;print()&lt;/strong&gt; để in giá trị của biến hoặc chuỗi giá trị ra màn hình. Hàm print rất tùy biến giúp chúng ta in ra nhiều thông tin khá linh hoạt:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    ver = 3.8
+    print(&amp;quot;Hello Python!&amp;quot;)                          # Hello Python!
+    print(&amp;quot;Hello Python&amp;quot;, &amp;quot;for&amp;quot;, &amp;quot;Data science!&amp;quot;)   # Hello Python for Data science!
+    print(&amp;quot;Hello Python&amp;quot;, ver)                      # Hello Python 3.8
+    print(f&amp;quot;Hello Python {ver}&amp;quot;)                     # Hello Python 3.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Chuỗi giá trị (literal) là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ khi thực thi chương trình. Có 4 loại chuỗi giá trị: số, chuỗi, luận lý và None.&lt;/li&gt;
+&lt;li&gt;Biến số là định danh gắn với 1 đối tượng chứa giá trị. Biến trong Python không cần khai báo trước, có thể gán lại giá trị nhiều loại dữ liệu khác nhau.&lt;/li&gt;
+&lt;li&gt;Python có bộ dọn rác tự động.&lt;/li&gt;
+&lt;li&gt;Python không có khái niệm hằng số riêng mà dùng định danh toàn chữ hoa để khai báo hằng số, là biến số có giá trị cố định.&lt;/li&gt;
+&lt;li&gt;Hàm là khối lệnh được khai báo sẵn nhưng chỉ được thực thi khi gọi nó. Hàm có tên, các tham số và các giá trị trả về.&lt;/li&gt;
+&lt;li&gt;Hàm print() dùng để in giá trị ra màn hình với nhiều định dạng khác nhau.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kiểu dữ liệu số và luận lý</title>
+      <link>/courses/python/number/</link>
+      <pubDate>Wed, 08 Apr 2020 05:00:00 +0700</pubDate>
+      <guid>/courses/python/number/</guid>
+      <description>&lt;p&gt;Trong lập trình máy tính, một kiểu dữ liệu (data type) là một cách phân loại dữ liệu cho trình biên dịch hoặc thông dịch hiểu các lập trình viên muốn sử dụng loại dữ liệu gì. Trong bài trước chúng ta đã tìm hiểu về các loại chuỗi giá trị và từng loại chuỗi giá trị cũng như kết hợp các chuỗi giá trị như vậy hình thành các kiểu dữ liệu khác nhau trong Python.&lt;/p&gt;
+&lt;h2 id=&#34;kiu-d-liu-s&#34;&gt;Kiểu dữ liệu số&lt;/h2&gt;
+&lt;p&gt;Có ba loại kiểu dữ liệu thuộc nhóm dữ liệu số là:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;int&lt;/strong&gt;: số nguyên. Ví dụ: -4, 0, 100, v.v&amp;hellip; Độ lớn của số nguyên trong Python không giới hạn theo số bit như các ngôn ngữ khác mà theo bộ nhớ hiện có.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;float&lt;/strong&gt;: số thực. Ví dụ: -4.0, 3.14156, v.v&amp;hellip; Độ chính xác của số thực đến 15 số sau dấu thập phân.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;complex&lt;/strong&gt;: số phức. Ví dụ: -3 + 4j, 3.4 - 5.0j, v.v&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python cung cấp các toán tử số học phục vụ nhu cầu tính toán cho kiểu dữ liệu số như sau:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Toán tử&lt;/th&gt;
+&lt;th&gt;Ý nghĩa&lt;/th&gt;
+&lt;th&gt;Ví dụ (x = 7, y = 5)&lt;/th&gt;
+&lt;th&gt;Kết quả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;+&lt;/td&gt;
+&lt;td&gt;Phép cộng&lt;/td&gt;
+&lt;td&gt;x + y&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;Phép trừ&lt;/td&gt;
+&lt;td&gt;x - y&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*&lt;/td&gt;
+&lt;td&gt;Phép nhân&lt;/td&gt;
+&lt;td&gt;x * y&lt;/td&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;td&gt;Phép chia&lt;/td&gt;
+&lt;td&gt;x / y&lt;/td&gt;
+&lt;td&gt;1.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;Phép chia lấy dư&lt;/td&gt;
+&lt;td&gt;x % y&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;**&lt;/td&gt;
+&lt;td&gt;Phép lũy thừa&lt;/td&gt;
+&lt;td&gt;x ** y&lt;/td&gt;
+&lt;td&gt;16807&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;//&lt;/td&gt;
+&lt;td&gt;Phép chia lấy phần nguyên&lt;/td&gt;
+&lt;td&gt;x // y&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;Phép nhân logic bit&lt;/td&gt;
+&lt;td&gt;x &amp;amp; y&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|&lt;/td&gt;
+&lt;td&gt;Phép cộng logic bit&lt;/td&gt;
+&lt;td&gt;x | y&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;^&lt;/td&gt;
+&lt;td&gt;Phép cộng loại trừ logic&lt;/td&gt;
+&lt;td&gt;x ^ y&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;~&lt;/td&gt;
+&lt;td&gt;Phép đảo bit&lt;/td&gt;
+&lt;td&gt;~x&lt;/td&gt;
+&lt;td&gt;-8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;laquo;&lt;/td&gt;
+&lt;td&gt;Phép dịch bit qua trái&lt;/td&gt;
+&lt;td&gt;x &amp;laquo; 2&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;raquo;&lt;/td&gt;
+&lt;td&gt;Phép dịch bit qua phải&lt;/td&gt;
+&lt;td&gt;x &amp;raquo; 2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;và các toán tử gán:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Toán tử&lt;/th&gt;
+&lt;th&gt;Ý nghĩa&lt;/th&gt;
+&lt;th&gt;Ví dụ (x = 7, y = 5)&lt;/th&gt;
+&lt;th&gt;Tương ứng&lt;/th&gt;
+&lt;th&gt;Kết quả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;=&lt;/td&gt;
+&lt;td&gt;Phép gán bằng&lt;/td&gt;
+&lt;td&gt;x = y&lt;/td&gt;
+&lt;td&gt;x = y&lt;/td&gt;
+&lt;td&gt;x = 5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;+=&lt;/td&gt;
+&lt;td&gt;Phép cộng rồi gán lại&lt;/td&gt;
+&lt;td&gt;x += y&lt;/td&gt;
+&lt;td&gt;x = x + y&lt;/td&gt;
+&lt;td&gt;x = 12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-=&lt;/td&gt;
+&lt;td&gt;Phép trừ rồi gán lại&lt;/td&gt;
+&lt;td&gt;x -= y&lt;/td&gt;
+&lt;td&gt;x = x - y&lt;/td&gt;
+&lt;td&gt;x = 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;*=&lt;/td&gt;
+&lt;td&gt;Phép nhân rồi gán lại&lt;/td&gt;
+&lt;td&gt;x *= y&lt;/td&gt;
+&lt;td&gt;x = x * y&lt;/td&gt;
+&lt;td&gt;x = 35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/=&lt;/td&gt;
+&lt;td&gt;Phép chia rồi gán lại&lt;/td&gt;
+&lt;td&gt;x /= y&lt;/td&gt;
+&lt;td&gt;x = x / y&lt;/td&gt;
+&lt;td&gt;x = 1.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%=&lt;/td&gt;
+&lt;td&gt;Phép chia lấy dư rồi gán lại&lt;/td&gt;
+&lt;td&gt;x %= y&lt;/td&gt;
+&lt;td&gt;x = x % y&lt;/td&gt;
+&lt;td&gt;x = 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;**=&lt;/td&gt;
+&lt;td&gt;Phép lũy thừa rồi gán lại&lt;/td&gt;
+&lt;td&gt;x **= y&lt;/td&gt;
+&lt;td&gt;x = x ** y&lt;/td&gt;
+&lt;td&gt;x = 16807&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;//=&lt;/td&gt;
+&lt;td&gt;Phép chia lấy phần nguyên rồi gán lại&lt;/td&gt;
+&lt;td&gt;x //= y&lt;/td&gt;
+&lt;td&gt;x = x // y&lt;/td&gt;
+&lt;td&gt;x = 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;amp;=&lt;/td&gt;
+&lt;td&gt;Phép nhân logic bit rồi gán lại&lt;/td&gt;
+&lt;td&gt;x &amp;amp;= y&lt;/td&gt;
+&lt;td&gt;x = x &amp;amp; y&lt;/td&gt;
+&lt;td&gt;x = 5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;|=&lt;/td&gt;
+&lt;td&gt;Phép cộng logic bit rồi gán lại&lt;/td&gt;
+&lt;td&gt;x |= y&lt;/td&gt;
+&lt;td&gt;x = x | y&lt;/td&gt;
+&lt;td&gt;x = 7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;^=&lt;/td&gt;
+&lt;td&gt;Phép cộng loại trừ logic bit rồi gán lại&lt;/td&gt;
+&lt;td&gt;x ^= y&lt;/td&gt;
+&lt;td&gt;x = x ^ y&lt;/td&gt;
+&lt;td&gt;x = 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;laquo;=&lt;/td&gt;
+&lt;td&gt;Phép dịch bit trái rồi gán lại&lt;/td&gt;
+&lt;td&gt;x &amp;laquo;= 2&lt;/td&gt;
+&lt;td&gt;x = x &amp;laquo; 2&lt;/td&gt;
+&lt;td&gt;x = 28&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;raquo;=&lt;/td&gt;
+&lt;td&gt;Phép dịch bit phải rồi gán lại&lt;/td&gt;
+&lt;td&gt;x &amp;raquo;= 2&lt;/td&gt;
+&lt;td&gt;x = x &amp;raquo; 2&lt;/td&gt;
+&lt;td&gt;x = 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;kiu-d-liu-lun-l&#34;&gt;Kiểu dữ liệu luận lý&lt;/h2&gt;
+&lt;p&gt;Kiểu dữ liệu luận lý (bool) cung cấp 2 giá trị là &lt;strong&gt;True&lt;/strong&gt; và &lt;strong&gt;False&lt;/strong&gt; ứng với đúng và sai. Lưu ý những cách viết khác như true, TRUE hay &amp;ldquo;true&amp;rdquo; không thể hiện giá trị kiểu dữ liệu này.
+Thường kết quả các phép toán so sánh là giá trị kiểu bool:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;x = 5&lt;/th&gt;
+&lt;th&gt;Kết quả&lt;/th&gt;
+&lt;th&gt;So sánh&lt;/th&gt;
+&lt;th&gt;Kết quả&lt;/th&gt;
+&lt;th&gt;So sánh&lt;/th&gt;
+&lt;th&gt;Kết quả&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;x == 5&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;x &amp;lt; 5&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;x &amp;gt; 5&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x != 5&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;x &amp;lt;= 5&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;x &amp;gt;= 5&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Một số phép toán với bool:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;not&lt;/strong&gt;: đảo giá trị, True thành False và False thành True.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;and&lt;/strong&gt;: phép logic và: True khi cả 2 vế cùng True, còn lại đều cho giá trị False. Một cách suy kết quả khác là nếu vế đầu là False thì kết quả là False, còn nếu vế đầu là True thì lấy giá trị vế sau làm kết quả cho phép and.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;or&lt;/strong&gt;: phép logic hoặc: True khi có ít nhất 1 vế là True. Một cách suy kết quả khác là nếu vế đầu là True thì kết quả là True, còn nếu vế đầu là False thì lấy giá trị vế sau làm kết quả cho phép or.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;x = 5 (A)&lt;/th&gt;
+&lt;th&gt;y = 7 (B)&lt;/th&gt;
+&lt;th&gt;not(A)&lt;/th&gt;
+&lt;th&gt;A and B&lt;/th&gt;
+&lt;th&gt;A or B&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;x &amp;lt; 5&lt;/td&gt;
+&lt;td&gt;y &amp;lt; 5&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x &amp;gt; 5&lt;/td&gt;
+&lt;td&gt;y &amp;gt; 5&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x &amp;lt; 7&lt;/td&gt;
+&lt;td&gt;y &amp;lt; 7&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;x &amp;lt;= 5&lt;/td&gt;
+&lt;td&gt;y &amp;gt;= 7&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Python cung cấp 3 kiểu dữ liệu số là int cho số nguyên, float cho số thực và complex cho số phức.&lt;/li&gt;
+&lt;li&gt;Python cung cấp đầy đủ các toán tử số học, toán tử bit.&lt;/li&gt;
+&lt;li&gt;Python cung cấp kiểu dữ liệu luận lý là bool có 2 giá trị True và False. Kết quả các phép so sánh sẽ cho giá trị luận lý&lt;/li&gt;
+&lt;li&gt;Python cung cấp các phép toán luận lý not, and và or.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;bi-tp&#34;&gt;Bài tập&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = 5
+  a + 2.7
+  a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 7  b. 7.7  c. Không phải 2 giá trị trên  d. Lỗi&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = 5
+  b = 2
+  a/b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 2  b. 2.5  c. 3  d. Không phải các giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a, b = 2, 5
+  a, b = b, a
+  (a, b)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. (2, 5)  b. (5, 2)  c. (5, 5)  d. Không phải các giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a, b = 2, 5
+  a = a + b
+  b = a - b
+  a = a - b
+  a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 5  b. 2  c. Lỗi  d. Không phải các giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a, b = 2, 5
+  a = a &amp;gt; 1 or b != 5
+  b = a and b &amp;lt;= 5
+  a, b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 2, 5  b. True, True  c. False, False  d. Không phải các giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Viết đoạn chương trình đảo giá trị 2 biến a và b có dùng biến trung gian. Ví dụ cho a = 5, b = 2 thì kết quả xuất ra là 2, 5.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kiểu dữ liệu chuỗi</title>
+      <link>/courses/python/string/</link>
+      <pubDate>Wed, 08 Apr 2020 21:00:00 +0700</pubDate>
+      <guid>/courses/python/string/</guid>
+      <description>&lt;p&gt;Như có đề cập, Python không để các biến gắn trực tiếp với giá trị mà biến gắn với đối tượng chứa giá trị nên thực chất các kiểu dữ liệu ở Python đều là lớp (class)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; và các biến gắn với các đối tượng (object) của lớp này. Đó là lý do các bạn sẽ thấy kiểu dữ liệu có phương thức đi kèm như trong bài này.&lt;/p&gt;
+&lt;h2 id=&#34;kiu-d-liu-chui&#34;&gt;Kiểu dữ liệu chuỗi&lt;/h2&gt;
+&lt;p&gt;Kiểu dữ liệu gắn với chuỗi ký tự (string literal) trong Python là kiểu dữ liệu chuỗi và được khai báo là &lt;strong&gt;str&lt;/strong&gt;.
+Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  x = &#39;Hello&#39;
+  y = &amp;quot;Python&amp;quot;
+  z = &#39;&#39;&#39;Hello
+        Python
+        3.8!&#39;&#39;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bản chất chuỗi ký tự dẫn đến giá trị biến kiểu chuỗi trong Python là &lt;strong&gt;không thay đổi được một khi đã tạo&lt;/strong&gt;. Nếu muốn biến nhận chuỗi giá trị khác, chúng ta chỉ việc gán lại chuỗi mới cho biến. Chuỗi cũ sẽ được Python dọn rác sau đó.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Một số toán tử, hàm và phương thức phổ biến cho kiểu str trong Python:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;+&lt;/strong&gt;: phép cộng chuỗi. Hai chuỗi có thể  ghép thành chuỗi mới bằng toán tử +.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;*&lt;/strong&gt;: phép nhân chuỗi. Một chuỗi mới gồm n chuỗi hiện tại được tạo với phép *.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  x = &#39;Hello&#39;
+  y = &amp;quot; Python&amp;quot;
+  print(x + y)     # &#39;Hello Python&#39;
+  print(x + 3 * y) # &#39;Hello Python Python Python&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[ ]&lt;/strong&gt;: Toán tử trích xuất chuỗi con: Python hỗ trợ 1 số kiểu trích xuất chuỗi như sau:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi con 1 ký tự&lt;/strong&gt;: dạng &lt;strong&gt;x[n]&lt;/strong&gt; với x là biến str và n là chỉ số bắt đầu từ 0 đến chiều dài chuỗi - 1. Nếu n &amp;lt; 0 Python sẽ lấy ngược từ cuối lên. Nếu n &amp;gt;= chiều dài chuỗi, Python sẽ báo lỗi &lt;em&gt;string index out of range&lt;/em&gt;. Lưu ý là Python không có kiểu dữ liệu ký tự (character), tất cả đều là chuỗi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chuỗi con nhiều ký tự&lt;/strong&gt;: dạng &lt;strong&gt;x[i:j]&lt;/strong&gt; với i &amp;lt;= j sẽ tạo chuỗi bắt đầu từ vị trí i đến vị trí j-1. Trường hợp thiếu i, Python tự hiểu chúng ta muốn lấy từ vị trí đầu tiên và thiếu j, Python sẽ lấy tới vị trí cuối cùng.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  x = &#39;Hello Python&#39;
+  x[0]    # &#39;H&#39;
+  x[-2]   # &#39;o&#39; (x[-1] cho chuỗi chứa ký tự cuối cùng là &#39;n&#39; nên x[-2] là &#39;o&#39;)
+  x[0:5]  # &#39;Hello&#39;
+  x[:5]   # &#39;Hello&#39;
+  x[6:]   # &#39;Python&#39;
+  x[6:-2] # &#39;Pyth&#39; (-2 là vị trí của &#39;0&#39; và theo nguyên tắc lấy đến trước nó)
+  x[:]    # &#39;Hello Python&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hàm len()&lt;/strong&gt;: lấy chiều dài chuỗi. Ví dụ: len(x)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phương thức&lt;/strong&gt;: Như có nói ở đầu bài, thực chất str là 1 class nên nó có 1 số phương thức xử lý chuỗi như sau:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;capitalize()&lt;/strong&gt;: Trả về chuỗi mới có ký tự đầu tiên từng từ viết hoa.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;upper()&lt;/strong&gt;: Trả về chuỗi mới là chuỗi in hoa của chuỗi cũ.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;lower()&lt;/strong&gt;: Trả về chuỗi mới là chuỗi in thường của chuỗi cũ.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;strip()&lt;/strong&gt;: Trả về chuỗi mới là chuỗi cũ đã bỏ các khoảng trắng ở đầu và cuối chuỗi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;isalpha()&lt;/strong&gt;: Trả về True nếu chuỗi chỉ gồm chữ cái a-z, A-Z và các ký tự Unicode.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;isdigit()&lt;/strong&gt;: Trả về True nếu chuỗi chỉ gồm chữ số: 0-9.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;startswith(sub)&lt;/strong&gt;: Trả về True nếu chuỗi bắt đầu bằng chuỗi sub.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;endswith(sub)&lt;/strong&gt;: Trả về True nếu chuỗi kết thúc bằng chuỗi sub.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;find(sub, start, end)&lt;/strong&gt;: Trả về vị trí đầu tiên của chuỗi con được tạo bởi [start, end] mà chứa chuỗi sub. Nếu không tìm thấy, trả về -1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;replace(old, new)&lt;/strong&gt;: Trả về chuỗi mới bằng cách thay thế hết các chuỗi con old ở chuỗi cũ bằng chuỗi con new.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;split(deli)&lt;/strong&gt;: Trả 1 nhóm các chuỗi con được cắt ra tại các vị trí chứa deli. Nhóm này gọi là list mà ta sẽ tìm hiểu sau.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;index(char)&lt;/strong&gt;: Trả về vị trí xuất hiện đầu tiên của chuỗi char trong chuỗi. Nếu không có Python báo lỗi luôn: &lt;em&gt;substring not found&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;count(char)&lt;/strong&gt;: Trả về số lần xuất hiện của chuỗi char trong chuỗi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  x = &#39;hello Python&#39;
+  len(x)                # 12
+  x.capitalize()        # &#39;Hello Python&#39;
+  x.upper()             # &#39;HELLO PYTHON&#39;
+  x.lower()             # &#39;hello python&#39;
+  &amp;quot; Python &amp;quot;.strip()    # &#39;Python&#39;
+  &amp;quot; Python &amp;quot;.isalpha()  # False (do chứa khoảng trắng)
+  &amp;quot;Python&amp;quot;.isalpha()    # True
+  &amp;quot;-123&amp;quot;.isdigit()      # False (do có chứa dấu -, dấu thập phân cũng không được)
+  &amp;quot;123&amp;quot;.isdigit()       # True
+  x.startwith(&amp;quot;He&amp;quot;)     # False (x bắt đầu bằng &#39;h&#39;, không phải &#39;H&#39;)
+  x.startwith(&amp;quot;he&amp;quot;)     # True
+  x.endwith(&amp;quot;on&amp;quot;)       # True
+  x.find(&amp;quot;o&amp;quot;, 0, 5)     # 4 (chữ o vị trí thứ 4 trong chuỗi con &#39;hello&#39;)
+  x.replace(&#39;h&#39;, &amp;quot;H&amp;quot;)   # Hello PytHon&amp;quot; (Có 2 chuỗi &#39;h&#39; đều bị thay thành &#39;H&#39;)
+  x.split(&#39; &#39;)          # [&#39;hello&#39;, &#39;Python&#39;]
+  x.count(&#39;o&#39;)          # 2
+  x.index(&#39;o&#39;)          # 4
+  x.index(&#39;O&#39;)          # Lỗi: substring not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chuyn-kiu-d-liu&#34;&gt;Chuyển kiểu dữ liệu&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python cung cấp hàm &lt;strong&gt;type()&lt;/strong&gt; để kiểm tra kiểu dữ liệu của một biến hoặc chuỗi giá trị. Dễ dàng thấy chúng đều là các class. Ví dụ:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  type(1)                # int
+  print(type(1))         # &amp;lt;class &#39;int&#39;&amp;gt;
+  type(-1.5)             # float
+  print(type(-1.5))      # &amp;lt;class &#39;float&#39;&amp;gt;
+  print(type(True))      # &amp;lt;class &#39;bool&#39;&amp;gt;
+  print(type(&amp;quot;Hello&amp;quot;))   # &amp;lt;class &#39;str&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Python hỗ trợ kiểu chuyển kiểu dữ liệu ngầm trong 1 số tình huống kiểu hiện tại không phù hợp. Ví dụ:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  type(7/5)     # float (để đảm bảo phép chia chính xác, kết quả chuyển thành float)
+  type(7 + 8.0) # float (để đảm bảo độ chính xác cần chuyển lên float)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Trong trường hợp muốn chuyển kiểu tường minh (ép kiểu), Python hỗ trợ như sau:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  type(float(6))      # float (float(6) cho giá trị 6.0)
+  type(str(123))      # str (str(123) cho kết quả chuỗi &#39;123&#39;)
+  type(int(True))     # int (int(True) cho giá trị 1)
+  type(int(&#39;4.0&#39;))    # (Lỗi: invalid literal for int() with base 10: &#39;4.0&#39;)
+  type(float(&#39;4.0&#39;))  # float (float(&#39;4.0&#39;) cho giá trị 4.0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Kiểu dữ liệu chuỗi trong Python là str, được khai báo bằng chuỗi ký tự (string literal).&lt;/li&gt;
+&lt;li&gt;Chuỗi trong Python là không thay đổi nên cần đổi nội dung chuỗi của biến ta phải gán chuỗi mới.&lt;/li&gt;
+&lt;li&gt;Python cung cấp các toán tử, hàm và phương thức để xử lý chuỗi.&lt;/li&gt;
+&lt;li&gt;type() là hàm Python cung cấp để kiểm tra kiểu dữ liệu của 1 biến.&lt;/li&gt;
+&lt;li&gt;Python hỗ trợ chuyển kiểu dữ liệu ngầm để đảm bảo độ chính xác của dữ liệu. Muốn chuyển kiểu tường minh chúng ta có thể dùng cách ép kiểu: &amp;lt;kiểu dữ liệu mới&amp;gt;(&amp;lt;biến kiểu dữ liệu cũ&amp;gt;).&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;bi-tp&#34;&gt;Bài tập&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = &#39;Python&#39;
+  b = a[1: len(a)]
+  b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. ython  b. Pytho  c. Python  d. Không phải 2 giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = &#39;Python&#39;
+  b = [-3, len (a)]
+  b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. Pyt  b. hon  c. Python  d. Không phải 2 giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = &#39;Python&#39;
+  b = 3.8
+  print(2*(a+b))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. Python3.8  b. Python3.8Python3.8  c. 2Python3.8  d. Không phải 3 giá trị trên&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Kết quả đoạn chương trình bên dưới là gì?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  a = &#39;Python&#39;
+  print(2*(a.upper()))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a. 2Python  b. PythonPython  
+c. 2PYTHON  d. PYTHONPYTHON&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Viết chương trình mã hóa chuỗi theo nguyên tắc như sau:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Chuyển toàn bộ chuỗi thành chữ thường&lt;/li&gt;
+&lt;li&gt;Thay thế tất cả ký tự n trong chuỗi thành m.&lt;/li&gt;
+&lt;li&gt;Nếu chiều dài quá 5 ký tự thì chỉ lấy 5 ký tự đầu tiên.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Lớp và đối tượng là khái niệm trong hướng đối tượng. Nếu bạn chưa biết qua khái niệm hướng đối tượng có thể tham khảo thêm ở &lt;a href=&#34;../oop&#34;&gt;đây&lt;/a&gt;.&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kiểu dữ liệu list và tuple</title>
+      <link>/courses/python/list-tuple/</link>
+      <pubDate>Thu, 09 Apr 2020 05:00:00 +0700</pubDate>
+      <guid>/courses/python/list-tuple/</guid>
+      <description>&lt;p&gt;Trong hai bài trước chúng ta đã tìm hiểu về các kiểu dữ liệu cơ bản. Bây giờ chúng ta sẽ tìm hiểu về các kiểu dữ liệu tập hợp, chứa nhiều phần tử, mỗi phần tử có kiểu dữ liệu cơ bản như số hay chuỗi. Trước tiên là kiểu dữ liệu list và tuple.&lt;/p&gt;
+&lt;h2 id=&#34;kiu-list&#34;&gt;Kiểu list&lt;/h2&gt;
+&lt;p&gt;List là kiểu dữ liệu tập hợp gồm các phần tử có thứ tự nhất định khi được tạo. Các phần tử của list có thể khác kiểu dữ liệu. List là một trong những kiểu dữ liệu được sử dụng nhiều nhất trong Python vì rất linh hoạt. Khai báo list là một danh sách các phần tử cách nhau dấu phẩy, đặt trong cặp ngoặc vuông [].&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = []
+    print(a)        # []
+    a = [1, 2, 3, &#39;Python&#39;]
+    print(a)        # [1, 2, 3, &#39;Python&#39;]
+    print(type(a))  # &amp;lt;class &#39;list&#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Một số toán tử , hàm và phương thức phổ biến cho kiểu list trong Python:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[ ]&lt;/strong&gt;: tương tự như với kiểu str, chúng ta có thể dùng [] để truy xuất phần tử hay list con trong kiểu list. Chúng ta cũng có thể dùng phép gán từng phần tử để thay đổi giá trị của phần tử.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hàm len()&lt;/strong&gt;: lấy số phần tử list.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;append(element)&lt;/strong&gt;: phương thức thêm một phần tử vào list. Mỗi lần gọi sẽ thêm phần tử element vào cuối list.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;extend(list1)&lt;/strong&gt;: phương thức thêm nhiều phần tử vào list. Các phần tử của list1 sẽ được thêm vào cuối list theo đúng thứ tự trước đó trong list1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;insert(index, element)&lt;/strong&gt;: phương thức chèn phần tử element tại vị trí index. index = 0 sẽ chèn vào vị trí đầu tiên còn nếu index &amp;gt; số phần tử của list thì sẽ thêm vào cuối cùng như phương thức append.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;remove(element)&lt;/strong&gt;: phương thức xóa phần tử đầu tiên có giá trị bằng giá trị của element. Nếu tìm không ra phần tử như vậy, Python sẽ báo lỗi: &lt;em&gt;list.remove(x): x not in list&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pop(index)&lt;/strong&gt;: phương thức trả về phần tử thứ index của list và xóa nó khỏi list. Nếu không cung cấp index, phần tử cuối cùng của list sẽ được chọn.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;index(element)&lt;/strong&gt;: phương thức trả về vị trí phần tử đầu tiên có giá trị bằng element. Nếu không có phần tử giống, Python báo lỗi: &lt;em&gt;is not in list&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;count(element)&lt;/strong&gt;: phương thức trả về số lần xuất hiện phần tử có giá trị như element trong list.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sort()&lt;/strong&gt;: phương thức sắp xếp list theo thứ tự tăng dần. Trong trường hợp các phần tử thuộc loại không so sánh được với nhau, như kiểu int và str, thì Python sẽ báo lỗi: &lt;em&gt;&amp;lsquo;&amp;lt;&amp;rsquo; not supported between instances of &amp;lsquo;str&amp;rsquo; and &amp;lsquo;int&amp;rsquo;&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;reverse()&lt;/strong&gt;: Ngược với sort(), phương thức reverse sẽ sắp xếp list theo thứ tự giảm dần. Python cũng sẽ báo lỗi nếu việc sắp xếp thất bại do không so sánh được.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = [1, 2, 3, &#39;python&#39;]
+    print(a[0])                 # 1
+    print(a[-1])                # &#39;python&#39;
+    print(a[4])                 # (Lỗi: list index out of range)
+    print(a[:3])                # [1, 2, 3]
+    a[3] = &#39;Python&#39;             # (Gán chuỗi &#39;Python&#39; cho phần tử cuối)
+    print(a[3])                 # &#39;Python&#39;
+    print(len(a))               # 4
+    a.append(&#39;Go&#39;)              # (Thêm &#39;Go&#39; vào cuối list)
+    print(a)                    # [1, 2, 3, &#39;Python&#39;, &#39;Go&#39;]
+    a.extend([&#39;R&#39;, &#39;Julia&#39;])    # (Thêm list [&#39;R&#39;, &#39;Julia&#39;] vào)
+    print(a)                    # [1, 2, 3, &#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;]
+    a.insert(0, 0)              # (Chèn 0 vào vị trí đầu tiên)
+    print(a)                    # [0, 1, 2, 3, &#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;]
+    a.remove(0)                 # (Xóa phần tử đầu tiên)
+    print(a)                    # [1, 2, 3, &#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;]
+    print(a.pop(0))             # 1 (đồng thời xóa phần tử đầu tiên)
+    print(a.pop())              # &#39;Julia&#39; (đồng thời xóa phần tử cuối cùng)
+    print(a)                    # [2, 3, &#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;]
+    print(a.index(2))           # 0
+    print(a.index(1))           # (Lỗi: 1 is not in list)
+    print(a.count(2))           # 1
+    a.sort()                    # (Lỗi &#39;&amp;lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;)
+    b = a[2:]                   # (b = [&#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;])
+    b.sort()                    # (Sắp xếp list tăng dần)
+    print(b)                    # [&#39;Go&#39;, &#39;Python&#39;, &#39;R&#39;]
+    b.reverse()                 # (Sắp xếp list giảm dần)
+    print(b)                    # [&#39;R&#39;, &#39;Python&#39;, &#39;Go&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kiểu list hỗ trợ các khai báo nhiều biến bằng cách gán phần tử của list như sau. Lưu ý số biến phải đúng bằng số phần tử của list&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = [1, 2, 3]
+    x, y, z = a
+    print(x, y, z)  # 1 2 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;kiu-tuple&#34;&gt;Kiểu tuple&lt;/h2&gt;
+&lt;p&gt;Kiểu tuple gần giống kiểu list, chỉ khác nhau ở điểm là một khi đã tạo thì ta không thể thay đổi số phần tử và giá trị từng phần tử nó được nữa. Khái báo tuple là một danh sách phần tử cách nhau dấu phẩy được bọc trong cặp ngoặc đơn &lt;strong&gt;()&lt;/strong&gt; nhưng cũng có thể bỏ qua cặp () khi khai báo.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = ()
+    print(a)        # ()
+    a = (1, 2, 3, &#39;Python&#39;)
+    print(a)        # (1, 2, 3, &#39;Python&#39;)
+    print(type(a))  # &amp;lt;class &#39;tuple&#39;&amp;gt;
+    b = 1, 2, 3     # (Cách tạo tuple không cần ())
+    print(b)        # (1, 2, 3)
+    c = (1,) * 5    # (Tạo 5 phần tử 1 giống nhau cho tuple c)
+    print(c)       # (1, 1, 1, 1, 1)    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Do đặc thù không thể thay đổi số phần tử và giá trị các phần tử nên toán tử và phương thức của tuple ít hơn hẳn của list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[ ]&lt;/strong&gt;: tương tự như với kiểu list, chúng ta có thể dùng [] để truy xuất phần tử hay tuple con trong kiểu tuple. Tuy nhiên chúng ta không thể dùng phép gán từng phần tử để thay đổi giá trị của phần tử tuple.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;+&lt;/strong&gt;: chúng ta có thể dùng toán tử + để ghép 2 tuple thành một tuple mới như phương thức extend() của list nhưng kết quả trả về tuple mới, không phải trên tuple cũ. Có thể dùng toán tử gán += để gán lại vào biến tuple cũ. Lúc này kết quả giống extend() của list.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;*&lt;/strong&gt;: chúng ta có thể nhân số phần tử của tuple lên n lần với phép nhân.  Có thể dùng toán tử gán *=.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hàm len()&lt;/strong&gt;: lấy số phần tử tuple.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;index(element)&lt;/strong&gt;: phương thức trả về vị trí phần tử đầu tiên có giá trị bằng element. Nếu không có phần tử giống, Python báo lỗi: &lt;em&gt;is not in tuple&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;count(element)&lt;/strong&gt;: phương thức trả về số lần xuất hiện phần tử có giá trị như element trong list.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = (1, 2, 3, &#39;python&#39;)
+    print(a[0])                 # 1
+    print(a[-1])                # &#39;python&#39;
+    print(a[4])                 # (Lỗi: tuple index out of range)
+    print(a[:3])                # (1, 2, 3)
+    a[3] = &#39;Python&#39;             # (Lỗi: &#39;tuple&#39; object does not support item assignment)
+    print(len(a))               # 4
+    a += (&#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;)   # Gán tuple mới cho a bằng cách gộp a cũ và tuple (&#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;)
+    print(a)                    # (1, 2, 3, &#39;Python&#39;, &#39;Go&#39;, &#39;R&#39;, &#39;Julia&#39;)
+    print(a[0:3] * 3)           # (1, 2, 3, 1, 2, 3, 1, 2, 3)
+    print(a.index(2))           # 1
+    print(a.index(0))           # (Lỗi: 0 is not in tuple)
+    print(a.count(2))           # 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tương tự kiểu list, tuple cũng hỗ trợ các khai báo nhiều biến bằng cách gán phần tử của tuple như sau. Lưu ý số biến phải đúng bằng số phần tử của tuple.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    a = (1, 2, 3)
+    x, y, z = a
+    print(x, y, z)  # 1 2 3
+    x, y = a        # Lỗi: too many values to unpack
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Kiểu dữ liệu list gồm nhiều phần tử, có thể khác nhau kiểu dữ liệu, khai báo bằng cách nhóm trong cặp [], các phần tử cách nhau dấu phẩy.&lt;/li&gt;
+&lt;li&gt;Python cung cấp các toán tử, hàm và phương thức để xử lý list.&lt;/li&gt;
+&lt;li&gt;Kiểu dữ liệu tuple gồm nhiều phần tử, có thể khác nhau kiểu dữ liệu, khai báo bằng cách nhóm trong cặp (), các phần tử cách nhau dấu phẩy.&lt;/li&gt;
+&lt;li&gt;Khác với list, chúng ta không thể cập nhật giá trị phần tử của tuple cũng như thêm hay xóa bớt số phần tử.&lt;/li&gt;
+&lt;li&gt;Có thể khai báo nhanh nhiều biến bằng cách gán chúng với 1 list hay tuple, điều kiện là số biến phải khớp với số phần tử của list hay tuple.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kiểu dữ liệu set và dict</title>
+      <link>/courses/python/set-dict/</link>
+      <pubDate>Thu, 09 Apr 2020 20:00:00 +0700</pubDate>
+      <guid>/courses/python/set-dict/</guid>
+      <description>&lt;p&gt;Trong bài này chúng ta sẽ tiếp tục tìm hiểu về 2 kiểu dữ liệu tập hợp còn lại là set và dict.&lt;/p&gt;
+&lt;h2 id=&#34;kiu-d-liu-set&#34;&gt;Kiểu dữ liệu set&lt;/h2&gt;
+&lt;p&gt;Set là tập hợp các phần tử không giống nhau. Set được tạo từ danh sách các phần tử cách nhau dấu phẩy được bọc bởi cặp ngoặc nhọn {}.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    s = {1, 2, 3, &#39;Python&#39;}
+    print(s)                # {1, 2, 3, &#39;Python&#39;}
+    print(type(s))      # &amp;lt;class &#39;set&#39;&amp;gt;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Do cách tổ chức các phần tử của set mà chúng ta không thể dùng toán tử [] để truy xuất phần tử của set. Chúng ta cũng không thể thay đổi giá trị một phần tử của set.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Một số hàm và phương thức phổ biến cho kiểu set trong Python:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hàm len()&lt;/strong&gt;: lấy số phần tử của set.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;add(element)&lt;/strong&gt;: phương thức thêm phần tử element vào set. Nếu đã tồn tại phần tử có giá trị như element, Python sẽ bỏ qua mà không thêm vào set.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;update(list)&lt;/strong&gt;: phương thức thêm nhiều phần tử vào set từ 1 list. Giá trị đã tồn tại sẽ không được thêm vào.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;remove(element)&lt;/strong&gt; và &lt;strong&gt;discard(element)&lt;/strong&gt;: 2 phương thức đều xóa phần tử element ra khỏi set. Điểm khác biệt là nếu xóa phần tử không tồn tại trong set với remove, Python sẽ báo lỗi còn với discard thì không báo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;clear()&lt;/strong&gt;: phương thức xóa rỗng set.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;union(set1)&lt;/strong&gt;: phương thức này trả về một set mới có phần tử là hợp của set gọi và set1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;intersection(set1)&lt;/strong&gt;: phương thức trả về một set chứa các phần tử chung giữa set gọi và set1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;difference(set1)&lt;/strong&gt;: phương thức trả về một set chứa những phần tử chỉ có trong set gọi mà không có trong set1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;issubset(set1)&lt;/strong&gt;: phương thức này trả về True nếu tất cả phần tử của set gọi nằm trong set1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;isdisjoint(set1)&lt;/strong&gt;: phương thức này trả về True nếu không có phần tử chung giữa set gọi và set1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;issuperset(set1)&lt;/strong&gt;: phương thức này trả về True nếu set gọi chứa tất cả các phần tử của set1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    s = {1, 2, 3, &#39;Python&#39;}     # (Tạo set)
+    print(len(s))               # 4
+    s.add(0)                    # (Thêm phần tử 0)
+    print(s)                    # {0, 1, 2, 3, &#39;Python&#39;}
+    s.update([4,5,6])           # (Thêm list [4,5,6])
+    print(s)                    # {0, 1, 2, 3, 4, 5, 6, &#39;Python&#39;}
+    s.remove(6)                 # (Xóa phần tử 6)
+    print(s)                    # {0, 1, 2, 3, 4, 5, &#39;Python&#39;}
+    s.remove(6)                 # (Lỗi: KeyError: 6)
+    s.discard(6)                # (Xóa phần tử 6, không báo lỗi)
+    s.discard(&#39;Python&#39;)         # (Xóa phần tử &#39;Python&#39;)       
+    print(s)                    # {0, 1, 2, 3, 4, 5}
+    s1 = s.union({4, 5, 6, 7})  # (Tạo s1 là hợp s và set {4, 5, 6, 7})
+    print(s1)                   # {0, 1, 2, 3, 4, 5, 6, 7}
+    print(s.intersection(s1))   # {0, 1, 2, 3, 4, 5}
+    print(s.difference(s1))     # set()
+    print(s1.difference(s))     # {6, 7}
+    print(s.issubset(s1))       # True
+    print(s1.issubset(s))       # False
+    print(s.isdisjoint(s1))     # False
+    print(s.issuperset(s1))     # False
+    print(s1.issuperset(s))     # True
+    s1.clear()                  # (Xóa rỗng s1) 
+    print(s1)                   # set()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;kiu-d-liu-dict&#34;&gt;Kiểu dữ liệu dict&lt;/h2&gt;
+&lt;p&gt;Kiểu dữ liệu &lt;strong&gt;dict&lt;/strong&gt; là một tập hợp các cặp khóa (key) - giá trị (value). Nó thường được sử dụng khi chúng ta có một lượng dữ liệu lớn cần truy xuất nhanh. dict được tối ưu hóa để lấy dữ liệu thông qua key. Trong Python, dict được định nghĩa trong dấu ngoặc nhọn &lt;strong&gt;{}&lt;/strong&gt; với mỗi phần tử là một cặp &lt;strong&gt;khóa:giá trị&lt;/strong&gt;. Khóa đòi hỏi là các kiểu dữ liệu không thay đổi giá trị như số, chuỗi hay tuple và đòi hỏi các khoá phải khác nhau còn giá trị có thể là bất kỳ loại dữ liệu nào, ngay cả dict cũng được.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    d = {}              # dict rỗng
+    print(d)            # {}
+    print(type(d))      # &amp;lt;class &#39;dict&#39;&amp;gt;
+    d = {&#39;.py&#39;: &#39;Python file&#39;, &#39;.go&#39;: &#39;Go file&#39;, &#39;.r&#39;: [&#39;R file&#39;, &#39;Right Audio Channel File&#39;]}
+    print(d)            # {&#39;.py&#39;: &#39;Python file&#39;, &#39;.go&#39;: &#39;Go file&#39;, &#39;.r&#39;: [&#39;R file&#39;, &#39;Right Audio Channel File&#39;]}    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Một số toán tử , hàm và phương thức phổ biến cho kiểu dict trong Python:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[key]&lt;/strong&gt;: chúng ta có thể dùng d[key] để truy xuất giá trị ứng với khóa key của dict d. Chúng ta cũng có thể dùng phép gán để thay đổi giá trị của key tương ứng.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hàm len()&lt;/strong&gt;: lấy số phần tử của dict.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;items()&lt;/strong&gt;: phương thức trả về list cặp khóa, giá trị của dict. list này cập nhật tự động nếu dict có thay đổi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;keys()&lt;/strong&gt;: phương thức trả về list khóa của dict. list này cập nhật tự động nếu dict có thay đổi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;values()&lt;/strong&gt;: phương thức trả về list giá trị của dict. list này cập nhật tự động nếu dict có thay đổi.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pop(key)&lt;/strong&gt;: phương thức trả về giá trị ứng với khóa key của dict đồng thời xóa luôn cặp khóa, giá trị này ra khỏi dict.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;copy()&lt;/strong&gt;: phương thức chép toàn bộ dict gọi vô 1 dict mới rồi trả về.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;clear()&lt;/strong&gt;: phương thức xóa rỗng dict.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;update(dict1)&lt;/strong&gt;: phương thức bổ sung các cặp khóa, giá trị của dict1 vào dict gọi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    d = {&#39;.py&#39;: &#39;Python file&#39;, &#39;.go&#39;: &#39;Go file&#39;, &#39;.r&#39;: [&#39;R file&#39;, &#39;Right Audio Channel File&#39;]}
+    print(d[&#39;.go&#39;])             # &#39;Go file&#39;
+    print(d[&#39;.java&#39;])           # (Lỗi: KeyError: &#39;.java&#39;)
+    d[&#39;.r&#39;] = &#39;R file&#39;          # (Gán lại giá trị ứng với khóa &#39;.r&#39;)
+    print(d)                    # {&#39;.go&#39;: &#39;Go file&#39;, &#39;.py&#39;: &#39;Python file&#39;, &#39;.r&#39;: &#39;R file&#39;}
+    print(len(d))               # 3
+    print(d.items())            # dict_items([(&#39;.py&#39;, &#39;Python file&#39;), (&#39;.go&#39;, &#39;Go file&#39;), (&#39;.r&#39;, &#39;R file&#39;)])
+    print(d.keys())             # dict_keys([&#39;.py&#39;, &#39;.go&#39;, &#39;.r&#39;])
+    print(d.values())           # dict_values([&#39;Python file&#39;, &#39;Go file&#39;, &#39;R file&#39;])
+    print(d.pop(&#39;.r&#39;))          # &#39;R file&#39;
+    print(d)                    # {&#39;.py&#39;: &#39;Python file&#39;, &#39;.go&#39;: &#39;Go file&#39;}
+    d1 = d.copy()               # (Sao chép toàn bộ d gán vô d1)
+    print(d1)                   # {&#39;.go&#39;: &#39;Go file&#39;, &#39;.py&#39;: &#39;Python file&#39;}
+    d.clear()                   # (Xóa rỗng d)
+    print(d)                    # {}
+    d.update(d1)                # (Thêm phần tử d1 vô d)
+    print(d)                    # {&#39;.go&#39;: &#39;Go file&#39;, &#39;.py&#39;: &#39;Python file&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Kiểu dữ liệu set gồm nhiều phần tử nhưng chúng hoàn toàn khác nhau, khai báo bằng cách nhóm trong cặp {}, các phần tử cách nhau dấu phẩy.&lt;/li&gt;
+&lt;li&gt;Python cung cấp các toán tử, hàm và phương thức để xử lý set.&lt;/li&gt;
+&lt;li&gt;Kiểu dữ liệu dict gồm nhiều phần tử, mỗi phần tử là cặp &lt;strong&gt;khóa:giá trị&lt;/strong&gt;, khai báo bằng cách nhóm trong cặp {}, các phần tử cách nhau dấu phẩy.&lt;/li&gt;
+&lt;li&gt;Khóa kiểu dict đòi hỏi là các kiểu dữ liệu không thay đổi như số, chuỗi hay tuple. Giá trị thì kiểu dữ liệu nào cũng được.&lt;/li&gt;
+&lt;li&gt;dict phù hợp khi có khối lượng dữ liệu lớn cần truy xuất qua 1 thuộc tính riêng được chọn làm khóa.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lệnh điều khiển if else</title>
+      <link>/courses/python/if-else/</link>
+      <pubDate>Fri, 10 Apr 2020 05:00:00 +0700</pubDate>
+      <guid>/courses/python/if-else/</guid>
+      <description>&lt;p&gt;Mã lệnh chúng ta viết được thực thi theo thứ tự từng câu lệnh từ trái sang phải, từ trên xuống dưới tạo thành một luồng thực thi chương trình. Cũng như các ngôn ngữ khác, Python cung cấp các cấu trúc điều khiển giúp cho chúng ta có thể thay đổi thứ tự thực thi theo ý muốn thay vì một luồng duy nhất tuần tự. Các cấu trúc điều khiển bao gồm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Câu lệnh if else&lt;/li&gt;
+&lt;li&gt;Vòng lặp for&lt;/li&gt;
+&lt;li&gt;Vòng lặp while&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cu-lnh-if-else&#34;&gt;Câu lệnh if else&lt;/h2&gt;
+&lt;p&gt;Đúng như ý nghĩa tên, câu lệnh if else sẽ tạo ra các nhánh thực thi, mỗi nhánh là một khối lệnh được thực thi dựa trên điều kiện nêu ở if hay else cho giá trị True. Cú pháp đầy đủ câu lệnh if else như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    if &amp;lt;biểu thức so sánh 1&amp;gt;:
+        &amp;lt;khối lệnh 1&amp;gt;
+    elif &amp;lt;biểu thức so sánh 2&amp;gt;:
+        &amp;lt;khối lệnh 2&amp;gt;
+    ...
+    elif &amp;lt;biểu thức so sánh n-1&amp;gt;:
+        &amp;lt;khối lệnh n-1&amp;gt;
+    else:
+        &amp;lt;khối lệnh n&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Biểu thức so sánh có thể là 1 biểu thức đơn giản hoặc phép &lt;strong&gt;and&lt;/strong&gt; hay &lt;strong&gt;or&lt;/strong&gt; của nhiều biểu thức so sánh nhưng kết quả sau cùng phải cho giá trị True hoặc False.&lt;/li&gt;
+&lt;li&gt;Khi 1 biểu thức so sánh cho giá trị True, khối lệnh bên dưới nó sẽ được thực thi và lệnh if kết thúc.&lt;/li&gt;
+&lt;li&gt;Khi biểu thức so sánh cho giá trị False, biểu thức so sánh ở câu lệnh elif tiếp theo sẽ được xem xét.&lt;/li&gt;
+&lt;li&gt;Khi biểu thức so sánh ở câu lệnh if và elif đều False thì khối lệnh ở else sẽ được thực thi.&lt;/li&gt;
+&lt;li&gt;Không nhất thiết lệnh if else phải có đủ các câu lệnh như trên mà có thể không có lệnh elif, không có else hay không có cả hai. Riêng câu lệnh if bắt buộc luôn phải có.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Xét ví dụ xếp loại học lực học sinh phổ thông dựa trên điểm trung bình, chúng ta có ví dụ như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    point = 8.5
+    if point &amp;lt; 3.5:
+        result = &#39;Kém&#39;
+    elif (3.5 &amp;lt;= point) and (point &amp;lt; 5):
+        result = &#39;Yếu&#39;
+    elif (5 &amp;lt;= point) and (point &amp;lt; 6.5):
+        result = &#39;Trung bình&#39;
+    elif (6.5 &amp;lt;= point) and (point &amp;lt; 8):
+        result = &#39;Khá&#39;
+    elif (8 &amp;lt;= point) and (point &amp;lt; 9):
+        result = &#39;Giỏi&#39;
+    else:
+        result = &#39;Xuất sắc&#39;
+    print(result)                       # &#39;Giỏi&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Khi cần kiểm tra biểu thức điều kiện để thực thi tương ứng chúng ta dùng câu lệnh if với cú pháp đầy đủ là if &amp;hellip; elif &amp;hellip; else &amp;hellip; Phần elif và else có thể bỏ nếu không cần thiết.&lt;/li&gt;
+&lt;li&gt;Biểu thức điều kiện là biểu thức so sánh cho kết quả là giá trị luận lý True hoặc False.&lt;/li&gt;
+&lt;li&gt;Python không cung cấp lệnh switch case như các ngôn ngữ khác.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vòng lặp</title>
+      <link>/courses/python/for-while/</link>
+      <pubDate>Fri, 10 Apr 2020 20:00:00 +0700</pubDate>
+      <guid>/courses/python/for-while/</guid>
+      <description>&lt;p&gt;Trong các bài về kiểu dữ liệu tập hợp, chúng ta thấy mỗi kiểu gồm nhiều phần tử khác nhau. Vậy làm thế nào để lấy phần tử của một biến tập hợp có n phần tử? Chúng ta có thể dùng toán tử [] n lần? Cũng như các ngôn ngữ khác, Python cung cấp câu lệnh lặp for để giải quyết vấn đề này. Python cũng cung cấp lệnh while để giải 1 số vấn đề lặp khác.&lt;/p&gt;
+&lt;h2 id=&#34;lp-while&#34;&gt;Lặp while&lt;/h2&gt;
+&lt;p&gt;Câu lệnh while trong Python được sử dụng để lặp lại việc thực thi mã hoặc khối mã được điều khiển bởi một biểu thức điều kiện. Cú pháp cho một vòng lặp while như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    while &amp;lt;biểu thức điều kiện&amp;gt;:
+        &amp;lt;Khối lệnh while&amp;gt;
+    else:
+        &amp;lt;Khối lệnh else&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Một câu lệnh while cho phép chúng ta lặp lại việc thực thi khối lệnh bên dưới cho đến khi một biểu thức điều kiện trở thành sai, cho giá trị False. Lúc đó khối lệnh else sẽ được thực thi. Nhánh else có thể lượt bỏ tùy theo nhu cầu.
+Hãy xem xét vòng lặp while sau đây:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    i = 1               
+    n = 100                  
+    count = 0
+    while i &amp;lt;= n:
+        count += i
+        i += 2
+    else:
+        print(count)        # 2500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Đây là đoạn mã thể hiện yêu cầu tính tổng các số lẻ từ 1 đến 100&lt;/li&gt;
+&lt;li&gt;Biến đếm i được tạo gán giá trị 1&lt;/li&gt;
+&lt;li&gt;Biến n được tạo gán giá trị 100&lt;/li&gt;
+&lt;li&gt;Biến count được tạo gán giá trị 0&lt;/li&gt;
+&lt;li&gt;Điều kiện lặp ở while là i &amp;lt;= n nghĩa là nếu i vẫn chưa lớn hơn n thì khối lệnh while tiếp tục thực thi mãi. Vì như vậy nên chú ý là nếu khối lệnh của while không làm thay đổi giá trị của i hoặc n thì khối lệnh này sẽ thực thi mãi mãi và gây treo chương trình.&lt;/li&gt;
+&lt;li&gt;Khối lệnh while gồm 2 bước là cộng dồn i vào count và tăng giá trị i thêm 2. Nhờ việc tăng i này là sẽ có lúc i lớn hơn n để vòng lặp while kết thúc.&lt;/li&gt;
+&lt;li&gt;Khi i = 101, tức lớn hơn n = 100, biểu thức điều kiện ở while không còn đúng nữa nên vòng lặp while kết thúc. Do có else nên khối lệnh ở else sẽ được thực thi.&lt;/li&gt;
+&lt;li&gt;Kết quả chúng ta nhận là 2500, đó là kết quả cộng dồn i vào count từ 1 đến 100 hay count = 1 + 3 + 5 + &amp;hellip; + 97 + 99&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lnh-for&#34;&gt;Lệnh for&lt;/h2&gt;
+&lt;p&gt;Câu lệnh for trong Python là một dạng vòng lặp khác với while. Nó lặp lại qua một chuỗi các đối tượng. Đó là, nó sẽ duyệt qua từng phần tử của một dãy các phần tử liên tiếp như như giá trị các kiểu list, tuple, set, dict hay str mà chúng ta đã tìm hiểu ở các bài trước. Cú pháp của một lệnh for như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    for &amp;lt;phần tử&amp;gt; in &amp;lt;dãy&amp;gt;:
+        &amp;lt;Khối lệnh for&amp;gt;
+    else:
+        &amp;lt;Khối lệnh else&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Câu lệnh for còn được gọi là vòng lặp for..in trong Python. &amp;lt;Phần tử&amp;gt; trong cú pháp trên là biến sẽ lưu giá trị từng phần tử của dãy mỗi lần lặp cho đến hết phần tử thuộc dãy. Khi vòng lặp for kết thúc, nhánh else được thực thi. Nhánh else là tùy chọn, không có cũng được.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Lưu ý là nếu dãy có số phần tử biến động hoặc khối lệnh for làm thay đổi số phần tử của dãy thì có khả năng vòng lặp bị lặp vô tận.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Ví dụ lặp trong str:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    for char in &#39;Python&#39;:
+        print(char)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kết quả chúng ta sẽ có 6 dòng, mỗi dòng là từng chữ cái trong chuỗi &amp;lsquo;Python&amp;rsquo;: &amp;lsquo;P&amp;rsquo;, &amp;lsquo;y&amp;rsquo;, &amp;lsquo;t&amp;rsquo;, &amp;lsquo;h&amp;rsquo;, &amp;lsquo;o&amp;rsquo;, &amp;lsquo;n&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Ví dụ lặp trong list:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    for item in [&#39;Python&#39;, &#39;Go&#39;, &#39;Java&#39;]:
+        print(item)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kết quả chúng ta sẽ có 3 dòng, mỗi dòng là từng ngôn ngữ: &amp;lsquo;Python&amp;rsquo;, &amp;lsquo;Go&amp;rsquo;, &amp;lsquo;Java&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Ví dụ lặp trong dict:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    d = {&#39;.py&#39;: &#39;Python file&#39;, &#39;.go&#39;: &#39;Go file&#39;, &#39;.java&#39;: &#39;Java File&#39;}
+    for item in d.keys():
+        print(item)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kết quả chúng ta sẽ có 3 dòng, mỗi dòng là khóa của dict: &amp;lsquo;.py&amp;rsquo;, &amp;lsquo;.go&amp;rsquo;, &amp;lsquo;.java&amp;rsquo;.&lt;/p&gt;
+&lt;h3 id=&#34;hm-range&#34;&gt;Hàm range()&lt;/h3&gt;
+&lt;p&gt;So với các ngôn ngữ khác thì trông có vẻ vòng lặp for hơi kém linh hoạt nhưng thực ra Python cung cấp hàm range() để tạo một chuỗi số, bắt đầu từ 0 (mặc định) và tăng thêm 1 (mặc định) và kết thúc tại một số được chỉ định như cú pháp for &amp;lt;Tạo giá trị bắt đầu&amp;gt;; &amp;lt;Biểu thức điều kiện&amp;gt;; &amp;lt;Bước lặp&amp;gt; ở các ngôn ngữ khác. Cú pháp của range() như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    range([&amp;lt;bắt đầu&amp;gt;,] &amp;lt;kết thúc&amp;gt; [, &amp;lt;bước nhảy&amp;gt;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Chỉ số bắt đầu nếu không cung cấp, Python sẽ cho bắt đầu từ 0.&lt;/li&gt;
+&lt;li&gt;Chỉ số kết thúc là bắt buộc phải có. Khi gặp chỉ số này, vòng for sẽ kết thúc nên tại giá trị này, khối lệnh vòng for không có thực thi.&lt;/li&gt;
+&lt;li&gt;Chỉ số bước nhảy nếu không cung cấp, Python lấy mặc định là 1.
+Ví dụ với bài toán tính tổng số lẻ từ 1 đến 100 mà chúng ta đã xem qua ở vòng lặp while thì kết hợp for và range chúng ta viết như sau:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    count = 0
+    for i in range(1, 101, 2):
+        count += i
+    else:
+        print(count)        # 2500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Chỉ số bắt đầu là 1 và bước nhảy là 2 để chúng ta luôn lấy giá trị tiếp theo của i là số lẻ.&lt;/li&gt;
+&lt;li&gt;Chỉ số kết thúc phải để 101 để i có thể nhận giá trị 100 nhưng do chỉ quan tâm số lẻ nên để 100 cũng cho kết quả đúng dù về mặt logic có chút không ổn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vng-lp-lng-nhau&#34;&gt;Vòng lặp lồng nhau&lt;/h3&gt;
+&lt;p&gt;Thỉnh thoảng chúng ta cần lặp lại nhiều chuỗi liên tục. Python cho phép sử dụng một vòng lặp bên trong một vòng lặp khác. Hãy xem xét một kịch bản trong đó chúng ta cần tạo các bảng cửu chương từ 1 đến 9. Chúng ta có thể làm như vậy bằng cách sử dụng các vòng lặp lồng nhau như được đưa ra dưới đây:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    for i in range(1, 11):
+        print(f&#39;Bảng nhân {i}:&#39;)
+        for j in range(1, 11):
+            print(f&#39;{i} * {j} = {i*j}&#39;)
+        print(&#39;\n&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Kết quả chúng ta sẽ có 10 bản nhân từ 1 đến 10.&lt;/p&gt;
+&lt;h2 id=&#34;t-kha-break&#34;&gt;Từ khóa break&lt;/h2&gt;
+&lt;p&gt;Như vòng lặp ở ngôn ngữ khác, Python cung cấp từ khóa break để ngưng các vòng lặp. Khi thực thi đến break, lập tức vòng lặp sẽ ngưng và tiếp tục thực thi lệnh ngang cấp lệnh lặp while hay for. Lưu ý là nhánh else của while cũng sẽ không được thực thi nếu break được thực thi. Ví dụ ở phần while có thể viết lại khi dùng với break như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    i = 1               
+    n = 100                  
+    count = 0
+    while True:
+        count += i
+        i += 2
+        if i &amp;gt; n:
+            break
+    print(count)        # 2500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Biểu thức điều kiện là True, nghĩa là nó luôn đúng và sẽ luôn được thực thi. Vậy thoát khỏi lặp while như thế nào? Chính là nhờ lệnh break bên dưới. Để ý sẽ thấy cách tạo lệnh while này giống như cú pháp do while ở 1 số ngôn ngữ khác.&lt;/li&gt;
+&lt;li&gt;Câu lệnh if bổ sung sẽ kiểm tra nếu i quá n thì ngưng lại. Do ngưng như vậy nhánh else không có được thực thi nên chúng ta bỏ hẳn nhánh else luôn.&lt;/li&gt;
+&lt;li&gt;Kết quả chúng ta chỉ nhận giá trị 2500 như cách ở while.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;t-kha-continue&#34;&gt;Từ khóa continue&lt;/h2&gt;
+&lt;p&gt;Python cũng cung cấp từ khóa continue để yêu cầu tiếp tục vòng lặp mới mà bỏ qua các lệnh bên dưới trong khối lệnh vòng lặp. Ví dụ, giờ chúng ta muốn tính tổng số lẻ từ 1 đến 100 nhưng dùng for và sử dụng continue:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    count = 0
+    for i in range(1, 101):
+        if i % 2 == 0:
+            continue
+        count += i
+    else:
+        print(count)        # 2500
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Chỉ số bước nhảy bỏ qua, tức là dùng bước nhảy mặc định là 1. Điều đó có nghĩa i sẽ nhận các giá trị liên tiếp gồm cả chẵn và lẻ.&lt;/li&gt;
+&lt;li&gt;Để đảm bảo count cho kết quả đúng thì chúng ta phải loại các giá trị chẵn ra và đó là cách lệnh if được đưa vào.&lt;/li&gt;
+&lt;li&gt;Lệnh if kiểm tra nếu i chia hết cho 2, tức i chẵn thì gọi lệnh continue, tức sẽ ngay lập tức lặp tiếp mà không quan tâm đến các dòng lệnh bên dưới trong khối lệnh for mà cụ thể ở đây là lệnh cộng dồn i vào count.&lt;/li&gt;
+&lt;li&gt;Kết quả chúng ta vẫn có giá trị tổng cần tìm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;t-kha-pass&#34;&gt;Từ khóa pass&lt;/h2&gt;
+&lt;p&gt;Đôi khi do nhu cầu, chúng ta tạo các vòng lặp while hay for mà không có nhu cầu đưa khối lệnh vào. Lúc này từ khóa pass cần đến để Python biết ta tạm thời không cần đặt gì trong khối lệnh lặp cả. Ví dụ như sau:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    for item in [&#39;Python&#39;, &#39;Go&#39;, &#39;Java&#39;]:
+        pass
+    else
+        print(&#39;Đã duyệt xong list&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Lặp while thực thi lặp lại khối lệnh của nó cho đến khi biểu thức điều kiện ở while cho giá trị False. Lúc này khối lệnh ở else (nếu có) sẽ được thực thi.&lt;/li&gt;
+&lt;li&gt;Lặp for sẽ thực hiện lặp lại khối lệnh của nó cho đến khi duyệt hết các phần tử của 1 dãy khai báo ở lệnh for. Lúc này khối lệnh else sẽ được thực thi nếu có.&lt;/li&gt;
+&lt;li&gt;Hàm range giúp tạo ra dãy các phần tử để cung cấp cho lệnh for thực thi phục vụ các nhu cầu khác nhau.&lt;/li&gt;
+&lt;li&gt;Lệnh for hỗ trợ khai báo nhiều lệnh for liên tiếp giúp thực thi các vòng lặp lồng vào nhau.&lt;/li&gt;
+&lt;li&gt;Từ khóa break được dùng để cắt ngang việc thực thi khối lệnh vòng lặp và thoát ra ngoài, bỏ qua khối lệnh else luôn.&lt;/li&gt;
+&lt;li&gt;Từ khóa continue ngay lập tức quay lên thực hiện chu lỳ lặp mới.&lt;/li&gt;
+&lt;li&gt;Từ khóa pass được sử dụng khi cần khối lệnh vòng lặp rỗng.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cơ bản về hàm</title>
+      <link>/courses/python/function/</link>
+      <pubDate>Sun, 12 Apr 2020 20:00:00 +0700</pubDate>
+      <guid>/courses/python/function/</guid>
+      <description>&lt;p&gt;Trong &lt;a href=&#34;../basic&#34;&gt;bài&lt;/a&gt; các khái niệm cơ bản chúng tôi đã có giới thiệu sơ qua về hàm. Bây giờ chúng ta sẽ tìm hiểu kỹ hơn về hàm và các đặc điểm của hàm trong Python.&lt;/p&gt;
+&lt;h2 id=&#34;hm&#34;&gt;Hàm&lt;/h2&gt;
+&lt;p&gt;Chương trình chúng ta viết là một khối lệnh thực thi từ trên xuống dưới dù đôi lúc có rẽ nhánh hay lặp lại bởi những cấu trúc điều khiển mà chúng ta đã tìm hiểu ở những bài trước. Nếu chương trình là một bài toán lớn, phức tạp thì khối lệnh này sẽ ngày càng lớn và rất khó kiểm soát. Nhu cầu tách nhỏ khối lệnh này thành các khối lệnh nhỏ hơn chuyên thực thi một hoặc một vài tác vụ nào đó là nhu cầu cần thiết. Dựa trên nhu cầu này, hàm ra đời. Vậy hàm là gì?&lt;/p&gt;
+&lt;p&gt;Hàm là khối lệnh được khai báo sẵn và chỉ được thực thi khi gọi nó. Hàm được khai báo bằng từ khóa def theo sau là tên hàm và các tham số (parameter). Khối lệnh hàm có thể trả về 1 vài giá trị bằng cách gọi từ khóa return.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def &amp;lt;tên hàm&amp;gt;(&amp;lt;danh sách tham số&amp;gt;):
+        &amp;quot;&amp;quot;&amp;quot; Khai báo hàm &amp;quot;&amp;quot;&amp;quot;
+        &amp;lt;Khối lệnh hàm&amp;gt;
+        return &amp;lt;các giá trị trả về&amp;gt;
+
+    &amp;lt;tên hàm&amp;gt;(&amp;lt;danh sách đối số&amp;gt;)    # Gọi thực thi hàm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Tên hàm theo quy tắc như tên biến, gồm chữ cái, số và ký tự gạch dưới và không được bắt đầu bằng số. Hàm Python phân biệt chữ hoa chữ thường và theo kiểu snake, tức dùng dấu gạch dưới (_) để tách các từ trong tên hàm. Ví dụ: tinh_tong, tim_Max2, v.v&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Hàm có thể không có tham số (parameter), một tham số hoặc nhiều tham số. Các tham số cách nhau dấu phẩy.&lt;/li&gt;
+&lt;li&gt;Hàm có thể không trả về, trả về một hoặc nhiều giá trị.&lt;/li&gt;
+&lt;li&gt;Gọi hàm thực thi đơn giản tạo câu lệnh với tên hàm và danh sách đối số (argument) tương ứng. Đối số có thể là biến hoặc chuỗi giá trị nhưng số lượng chúng phải khớp với số tham số khi khai báo hàm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def calculator():
+        &amp;quot;&amp;quot;&amp;quot;Tính bình phương và tích của 2 số&amp;quot;&amp;quot;&amp;quot;
+        a, b = 7, 5
+        print (f&#39;Bình phương của {a} là: &#39;, square(a))
+        print (f&#39;Tổng của {a} và {b} là: &#39;, add(a,b))
+        print (f&#39;Tích và thương của {a} và {b} là: &#39;, multi_div(a,b))
+
+    def square(a):
+        &amp;quot;&amp;quot;&amp;quot;Tính bình phương 1 số&amp;quot;&amp;quot;&amp;quot;
+        return a*a
+
+    def add(a, b):
+        &amp;quot;&amp;quot;&amp;quot;Tính tổng của 2 số&amp;quot;&amp;quot;&amp;quot;
+        return a+b
+
+    def multi_div(a, b):
+        &amp;quot;&amp;quot;&amp;quot;Tính tích và thương của 2 số&amp;quot;&amp;quot;&amp;quot;
+        return a*b, a/b
+
+    calculator()    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Hàm được khai báo đầu tiên có tên là calculator và không có tham số. Phần bên dưới khai báo hàm trong cặp &amp;ldquo;&amp;quot;&amp;quot;&amp;hellip;&amp;rdquo;&amp;rdquo;&amp;rdquo; mô tả thông tin về hàm mà Python sẽ bỏ qua khi thông dịch nhưng sẽ được sử dụng khi tạo tài liệu mã nguồn. Hàm khai báo 2 biến a,b và in kết quả tính bình phương và tích của a và b. Hàm này gọi thực thi 2 hàm được khai báo bên dưới.&lt;/li&gt;
+&lt;li&gt;Hàm thứ 2 được khai báo là hàm có tên square, theo như mô tả chúng ta biết nó sẽ trả về bình phương của tham số duy nhất đưa vào.&lt;/li&gt;
+&lt;li&gt;Hàm thứ 3 tên là add, nhận 2 tham số và trả về 1 giá trị là tổng của 2 tham số.&lt;/li&gt;
+&lt;li&gt;Hàm thứ 4 tên là multi_div, thực nhiên 2 nhiệm vụ là tính tích và thương của 2 tham số rồi trả về cả 2 giá trị này.&lt;/li&gt;
+&lt;li&gt;Hàm calculator được gọi sẽ cho kết quả như bên dưới:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bình phương của 7 là:  49&lt;br&gt;
+Tổng của 7 và 5 là:  12&lt;br&gt;
+Tích và thương của 7 và 5 là:  (35, 1.4)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;chui-ti-liu&#34;&gt;Chuỗi tài liệu&lt;/h2&gt;
+&lt;p&gt;Python có một tính năng tiện lợi được gọi là chuỗi tài liệu, thường được gọi tắt là docstrings. Đây là một công cụ không bắt buộc nhưng nên được sử dụng mỗi khi chúng ta viết chương trình vì nó giúp  chương trình tốt hơn và dễ hiểu hơn. Tài liệu được viết trong ba dấu nháy đơn/kép ngay sau khai báo hàm.&lt;/p&gt;
+&lt;p&gt;Quy ước viết docstring là một chuỗi nhiều dòng trong đó dòng đầu tiên bắt đầu bằng chữ in hoa và kết thúc bằng dấu chấm. Dòng thứ hai là trống và lời giải thích chi tiết nếu có bắt đầu từ dòng thứ ba. Chúng tôi khuyên bạn nên tuân theo quy ước này cho tất cả các tài liệu. Hãy xem ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tm-tt&#34;&gt;Tóm tắt&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Đặc điểm hàm Python</title>
+      <link>/courses/python/function-feature/</link>
+      <pubDate>Mon, 13 Apr 2020 05:00:00 +0700</pubDate>
+      <guid>/courses/python/function-feature/</guid>
+      <description>&lt;p&gt;Python cung cấp 1 số đặc điểm, tính năng cho hàm để phục vụ nhu cầu sử dụng khác nhau của chúng ta.&lt;/p&gt;
+&lt;h2 id=&#34;i-s-mc-nh&#34;&gt;Đối số mặc định&lt;/h2&gt;
+&lt;p&gt;Với những hàm nhiều tham số, nhiều lúc một đối số sẽ nhận một giá trị như nhau, tỉ lệ nhận giá trị khác là không thường xuyên. Lúc này nhu cầu gán sẵn giá trị này cho đối số là nhu cầu cần thiết. Như một số ngôn ngữ khác, Python cung cấp cách khai báo hàm để tạo sẵn các giá trị mặc định cho đối số. Để tạo giá trị mặc định cho đối số, ta khai báo gián giá trị đó cho tham số tương ứng. Ví dụ:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def power(x, y=2):
+        &amp;quot;&amp;quot;&amp;quot;Tính x^y&amp;quot;&amp;quot;&amp;quot;
+        return x**y
+
+    power(5)        # 25
+    power(5, 3)     # 125
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Hàm power với chức năng tính x^y khai báo với tham số thứ 2 là y được gán giá trị mặc định y=2.&lt;/li&gt;
+&lt;li&gt;Trường hợp gọi power(5) thì lúc này không có đối số y nên Python sẽ cho y nhận giá trị 2.&lt;/li&gt;
+&lt;li&gt;Để tránh nhập nhằng, Python quy định các đối số mặc định phải nằm sau các đối số không mặc định và khi gọi hàm số đối số mặc định sử dụng phải liên tiếp nhau tính từ phải sang. Ví dụ:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    def abc(a,b,c=1,d=2):
+        return a+b+c+d
+    
+    abc(1,2)        # 6 (c và d lấy gía trị mặc định)
+    abc(1,2,3)      # 8 (d lấy giá trị mặc định)
+    abc(1,2,3,4)    # 10
+    abc(1,2,,4)     # (Lỗi cú pháp)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

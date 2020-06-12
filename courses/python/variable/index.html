@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Chuỗi giá trị Chuỗi giá trị (literal) là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ chương trình khi chạy. Các loại chuỗi giá trị cơ bản trong Python như sau:">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/variable/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/variable/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/variable/">
+  <meta property="og:title" content="Biến số và hằng số | Hứng">
+  <meta property="og:description" content="Chuỗi giá trị Chuỗi giá trị (literal) là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ chương trình khi chạy. Các loại chuỗi giá trị cơ bản trong Python như sau:"><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-07T20:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-07T20:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Biến số và hằng số | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chui-gi-tr">Chuỗi giá trị</a></li>
+    <li><a href="#bin-s">Biến số</a></li>
+    <li><a href="#hng-s">Hằng số</a></li>
+    <li><a href="#hm-v-phng-thc">Hàm và phương thức</a></li>
+    <li><a href="#hm-print">Hàm print</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Biến số và hằng số</h1>
+
+          <div class="article-style">
+            <h2 id="chui-gi-tr">Chuỗi giá trị</h2>
+<p><strong>Chuỗi giá trị (literal)</strong> là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ chương trình khi chạy. Các loại chuỗi giá trị cơ bản trong Python như sau:</p>
+<ul>
+<li><strong>Chuỗi số (numeric literal)</strong>: là số nguyên, số thực hay số phức. Ví dụ: 1, -3.5, 3 + 4j</li>
+<li><strong>Chuỗi ký tự (string literal)</strong>: là nhóm ký tự Unicode được bọc trong cặp nháy đơn <strong>(')</strong> hoặc nháy kép <strong>(&quot;)</strong>. Chuỗi nhiều dòng có thể được biểu thị bằng cách sử dụng ba dấu nháy đơn <strong>(''')</strong> hoặc ba nháy kép <strong>(&quot;&quot;&quot;)</strong>. Ví dụ: &lsquo;Hello&rsquo;, &ldquo;Python&rdquo;, &ldquo;&ldquo;&ldquo;Hello Python&rdquo;&rdquo;&rdquo;</li>
+<li><strong>Chuỗi luận lý (boolean literal)</strong>: gồm True (đại diện cho đúng) và False (đại diện cho sai). Trong Python thì True tương đương 1 và False tương đương 0 nên True + 4 sẽ cho kết quả là 5 còn 10 - False thì vẫn là 10.</li>
+<li><strong>Chuỗi None</strong>: Python dùng None thay vì dùng void, nil hay null như các ngôn ngữ khác để thể hiện giá trị rỗng.</li>
+</ul>
+<p>Chuỗi giá trị được dùng để khai báo giá trị cho các biến số và hằng số như bên dưới.</p>
+<h2 id="bin-s">Biến số</h2>
+<p>Biến số là định danh gắn với một đối tượng chứa dữ liệu (là chuỗi giá trị hay tập hợp chuỗi giá trị) tương ứng. Ví dụ:</p>
+<pre><code class="language-python">    x = 5
+    x = 7.5
+</code></pre>
+<ul>
+<li>Dòng lệnh trên đồng nghĩa tạo một biến có tên là x và được gán (biểu thị qua dấu bằng <strong>(=)</strong>) đối tượng chứa giá trị 5.</li>
+<li>Dòng lệnh dưới cho biết biến x lúc này sẽ được gắn với đối tượng có giá trị là 7.5.</li>
+</ul>
+<p>Python là ngôn ngữ <a href="https://vi.wikipedia.org/wiki/Ng%C3%B4n_ng%E1%BB%AF_th%C3%B4ng_d%E1%BB%8Bch">thông dịch</a> nên mang một số đặc điểm khác với các ngôn ngữ <a href="https://vi.wikipedia.org/wiki/Ng%C3%B4n_ng%E1%BB%AF_bi%C3%AAn_d%E1%BB%8Bch">biên dịch</a>:</p>
+<ul>
+<li>Không cần khai báo biến trước, biến sẽ được tạo ở lần đầu tiên chúng được gán giá trị.</li>
+<li>Biến không thật sự gắn với giá trị chúng được gán mà là gắn với đối tượng quản lý giá trị đó. Tuy vậy để cho đơn giản ta vẫn gọi là biến x có giá trị 5 như trong ví dụ trên. Chi tiết sẽ nói rõ hơn ở bài sau.</li>
+<li>Do không gắn trực tiếp giá trị nó được gán nên biến x dễ dàng thay đổi từ số nguyên (5) sang số thực (7.5) như trên.</li>
+<li>Mỗi lần gán giá trị biến sẽ được gắn với đối tượng mới, đối tượng cũ sẽ được bộ dọn rác (garbage collector) dọn tự động nên chúng ta cũng không cần quan tâm đến giải phóng bộ nhớ.</li>
+</ul>
+<p>Có thể gán nhiều biến cùng lúc với một hoặc nhiều chuỗi giá trị:</p>
+<pre><code class="language-python">    x, y, z = 1, 5.6, &quot;abc&quot;
+    a = b = c = True
+</code></pre>
+<ul>
+<li>Dòng lệnh trên biến x, y, z lần lượt có giá trị là 1, 5.6, &ldquo;abc&rdquo;.</li>
+<li>Dòng lệnh dưới cả 3 biến a, b, c đều có giá trị là True.</li>
+</ul>
+<h2 id="hng-s">Hằng số</h2>
+<p>Khác với biến số có thể gán thay đổi giá trị nhiều lần, hằng số (constant) một khi đã gán giá trị là không thay đổi được nữa. Python thật sự không có khái niệm hằng số. Thông thường để khai báo các biến giá trị không thay đổi thì chúng ta khai báo tên toàn chữ in hoa. Ví dụ:</p>
+<pre><code class="language-python">    PI = 3.14
+    GRAVITY = 9.8
+</code></pre>
+<h2 id="hm-v-phng-thc">Hàm và phương thức</h2>
+<p>Trong các bài tới chúng ta sẽ gặp nhiều hàm và phương thức hệ thống tạo sẵn phục vụ nhu cầu xử lý các loại kiểu dữ liệu khác nhau. Để tiện theo dõi, phần này chúng tôi giới thiệu sơ về hàm và phương thức để các bạn dễ hình dung.</p>
+<p>Hàm là một nhóm các câu lệnh mà chỉ được thực thi khi hàm được gọi. Hàm gồm có tên và các tham số truyền thông tin vào hàm và dữ liệu trả về là kết quả xử lý hàm. Như vậy để sử dụng hàm cần thực hiện 2 bước là khai báo hàm và gọi hàm ở nơi cần thực thi.</p>
+<p>Có 3 nhóm hàm khác nhau:</p>
+<ul>
+<li>Hàm hệ thống: làm hàm được cung cấp sẵn trong các phiên bản Python. Chúng ta có thể sử dụng mà chẳng cần khai báo thông tin gì về nó cả.</li>
+<li>Hàm tự tạo: là hàm do chúng ta viết trong chương trình của mình.</li>
+<li>Hàm bên thứ 3 tạo: là hàm do người khác viết và cung cấp sẵn trên các kho chứa mã nguồn như github mà chúng ta có thể sử dụng thay vì tự viết lại. Chúng ta phải khai báo về nó trước khi sử dụng.</li>
+</ul>
+<p>Chi tiết về hàm chúng ta sẽ tìm hiểu kỹ hơn ở <a href="../function">đây</a>.</p>
+<p>Phương thức là khái niệm trong lập trình hướng đối tượng. Nó mô tả hành động của đối tượng mà cách khai báo và gọi thực thi khá giống với hàm. Nói cách khác phương thức là hàm trong thế giới hướng đối tượng. Do phục vụ cho đối tượng nên khai báo phương thức phải mô tả nó thuộc lớp nào và để gọi nó thực thi phải gọi từ đối tượng thuộc lớp đó. Chi tiết về phương thức chúng ta sẽ tìm hiểu kỹ hơn ở <a href="../oop">đây</a>.</p>
+<h2 id="hm-print">Hàm print</h2>
+<p>Python cung cấp hàm <strong>print()</strong> để in giá trị của biến hoặc chuỗi giá trị ra màn hình. Hàm print rất tùy biến giúp chúng ta in ra nhiều thông tin khá linh hoạt:</p>
+<pre><code class="language-python">    ver = 3.8
+    print(&quot;Hello Python!&quot;)                          # Hello Python!
+    print(&quot;Hello Python&quot;, &quot;for&quot;, &quot;Data science!&quot;)   # Hello Python for Data science!
+    print(&quot;Hello Python&quot;, ver)                      # Hello Python 3.8
+    print(f&quot;Hello Python {ver}&quot;)                     # Hello Python 3.8
+</code></pre>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Chuỗi giá trị (literal) là một chuỗi số hay chuỗi ký tự lưu trong vùng nhớ khi thực thi chương trình. Có 4 loại chuỗi giá trị: số, chuỗi, luận lý và None.</li>
+<li>Biến số là định danh gắn với 1 đối tượng chứa giá trị. Biến trong Python không cần khai báo trước, có thể gán lại giá trị nhiều loại dữ liệu khác nhau.</li>
+<li>Python có bộ dọn rác tự động.</li>
+<li>Python không có khái niệm hằng số riêng mà dùng định danh toàn chữ hoa để khai báo hằng số, là biến số có giá trị cố định.</li>
+<li>Hàm là khối lệnh được khai báo sẵn nhưng chỉ được thực thi khi gọi nó. Hàm có tên, các tham số và các giá trị trả về.</li>
+<li>Hàm print() dùng để in giá trị ra màn hình với nhiều định dạng khác nhau.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/basic/" rel="next">Khái niệm cơ bản trong Python</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/number/" rel="prev">Kiểu dữ liệu số và luận lý</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 07/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

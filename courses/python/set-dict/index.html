@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Trong bài này chúng ta sẽ tiếp tục tìm hiểu về 2 kiểu dữ liệu tập hợp còn lại là set và dict.
+Kiểu dữ liệu set Set là tập hợp các phần tử không giống nhau.">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/set-dict/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/set-dict/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hứng">
+  <meta property="og:url" content="/courses/python/set-dict/">
+  <meta property="og:title" content="Kiểu dữ liệu set và dict | Hứng">
+  <meta property="og:description" content="Trong bài này chúng ta sẽ tiếp tục tìm hiểu về 2 kiểu dữ liệu tập hợp còn lại là set và dict.
+Kiểu dữ liệu set Set là tập hợp các phần tử không giống nhau."><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    
+      <meta property="article:published_time" content="2020-04-09T20:00:00&#43;07:00">
+    
+    <meta property="article:modified_time" content="2020-04-09T20:00:00&#43;07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Kiểu dữ liệu set và dict | Hứng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hứng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/introduction/">1. Giới thiệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/introduction/">Giới thiệu Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/installation/">Cài đặt Python</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/basic/">Khái niệm cơ bản</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/variable/">2. Kiểu dữ liệu</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/variable/">Biến số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/number/">Kiểu số</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/string/">Kiểu chuỗi</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/list-tuple/">Kiểu list và tuple</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/python/set-dict/">Kiểu set và dict</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/if-else/">3. Cấu trúc điều khiển</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/if-else/">Lệnh if else</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/for-while/">Lặp for while</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/function/">4. Hàm</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/python/function/">Giới thiệu</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/function-feature/">Đặc điểm hàm</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kiu-d-liu-set">Kiểu dữ liệu set</a></li>
+    <li><a href="#kiu-d-liu-dict">Kiểu dữ liệu dict</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Kiểu dữ liệu set và dict</h1>
+
+          <div class="article-style">
+            <p>Trong bài này chúng ta sẽ tiếp tục tìm hiểu về 2 kiểu dữ liệu tập hợp còn lại là set và dict.</p>
+<h2 id="kiu-d-liu-set">Kiểu dữ liệu set</h2>
+<p>Set là tập hợp các phần tử không giống nhau. Set được tạo từ danh sách các phần tử cách nhau dấu phẩy được bọc bởi cặp ngoặc nhọn {}.</p>
+<pre><code class="language-python">    s = {1, 2, 3, 'Python'}
+    print(s)                # {1, 2, 3, 'Python'}
+    print(type(s))      # &lt;class 'set'&gt;   
+</code></pre>
+<p>Do cách tổ chức các phần tử của set mà chúng ta không thể dùng toán tử [] để truy xuất phần tử của set. Chúng ta cũng không thể thay đổi giá trị một phần tử của set.</p>
+<p><strong>Một số hàm và phương thức phổ biến cho kiểu set trong Python:</strong></p>
+<ul>
+<li><strong>Hàm len()</strong>: lấy số phần tử của set.</li>
+<li><strong>add(element)</strong>: phương thức thêm phần tử element vào set. Nếu đã tồn tại phần tử có giá trị như element, Python sẽ bỏ qua mà không thêm vào set.</li>
+<li><strong>update(list)</strong>: phương thức thêm nhiều phần tử vào set từ 1 list. Giá trị đã tồn tại sẽ không được thêm vào.</li>
+<li><strong>remove(element)</strong> và <strong>discard(element)</strong>: 2 phương thức đều xóa phần tử element ra khỏi set. Điểm khác biệt là nếu xóa phần tử không tồn tại trong set với remove, Python sẽ báo lỗi còn với discard thì không báo.</li>
+<li><strong>clear()</strong>: phương thức xóa rỗng set.</li>
+<li><strong>union(set1)</strong>: phương thức này trả về một set mới có phần tử là hợp của set gọi và set1.</li>
+<li><strong>intersection(set1)</strong>: phương thức trả về một set chứa các phần tử chung giữa set gọi và set1.</li>
+<li><strong>difference(set1)</strong>: phương thức trả về một set chứa những phần tử chỉ có trong set gọi mà không có trong set1.</li>
+<li><strong>issubset(set1)</strong>: phương thức này trả về True nếu tất cả phần tử của set gọi nằm trong set1.</li>
+<li><strong>isdisjoint(set1)</strong>: phương thức này trả về True nếu không có phần tử chung giữa set gọi và set1.</li>
+<li><strong>issuperset(set1)</strong>: phương thức này trả về True nếu set gọi chứa tất cả các phần tử của set1.</li>
+</ul>
+<pre><code class="language-python">    s = {1, 2, 3, 'Python'}     # (Tạo set)
+    print(len(s))               # 4
+    s.add(0)                    # (Thêm phần tử 0)
+    print(s)                    # {0, 1, 2, 3, 'Python'}
+    s.update([4,5,6])           # (Thêm list [4,5,6])
+    print(s)                    # {0, 1, 2, 3, 4, 5, 6, 'Python'}
+    s.remove(6)                 # (Xóa phần tử 6)
+    print(s)                    # {0, 1, 2, 3, 4, 5, 'Python'}
+    s.remove(6)                 # (Lỗi: KeyError: 6)
+    s.discard(6)                # (Xóa phần tử 6, không báo lỗi)
+    s.discard('Python')         # (Xóa phần tử 'Python')       
+    print(s)                    # {0, 1, 2, 3, 4, 5}
+    s1 = s.union({4, 5, 6, 7})  # (Tạo s1 là hợp s và set {4, 5, 6, 7})
+    print(s1)                   # {0, 1, 2, 3, 4, 5, 6, 7}
+    print(s.intersection(s1))   # {0, 1, 2, 3, 4, 5}
+    print(s.difference(s1))     # set()
+    print(s1.difference(s))     # {6, 7}
+    print(s.issubset(s1))       # True
+    print(s1.issubset(s))       # False
+    print(s.isdisjoint(s1))     # False
+    print(s.issuperset(s1))     # False
+    print(s1.issuperset(s))     # True
+    s1.clear()                  # (Xóa rỗng s1) 
+    print(s1)                   # set()
+</code></pre>
+<h2 id="kiu-d-liu-dict">Kiểu dữ liệu dict</h2>
+<p>Kiểu dữ liệu <strong>dict</strong> là một tập hợp các cặp khóa (key) - giá trị (value). Nó thường được sử dụng khi chúng ta có một lượng dữ liệu lớn cần truy xuất nhanh. dict được tối ưu hóa để lấy dữ liệu thông qua key. Trong Python, dict được định nghĩa trong dấu ngoặc nhọn <strong>{}</strong> với mỗi phần tử là một cặp <strong>khóa:giá trị</strong>. Khóa đòi hỏi là các kiểu dữ liệu không thay đổi giá trị như số, chuỗi hay tuple và đòi hỏi các khoá phải khác nhau còn giá trị có thể là bất kỳ loại dữ liệu nào, ngay cả dict cũng được.</p>
+<pre><code class="language-python">    d = {}              # dict rỗng
+    print(d)            # {}
+    print(type(d))      # &lt;class 'dict'&gt;
+    d = {'.py': 'Python file', '.go': 'Go file', '.r': ['R file', 'Right Audio Channel File']}
+    print(d)            # {'.py': 'Python file', '.go': 'Go file', '.r': ['R file', 'Right Audio Channel File']}    
+</code></pre>
+<p><strong>Một số toán tử , hàm và phương thức phổ biến cho kiểu dict trong Python:</strong></p>
+<ul>
+<li><strong>[key]</strong>: chúng ta có thể dùng d[key] để truy xuất giá trị ứng với khóa key của dict d. Chúng ta cũng có thể dùng phép gán để thay đổi giá trị của key tương ứng.</li>
+<li><strong>Hàm len()</strong>: lấy số phần tử của dict.</li>
+<li><strong>items()</strong>: phương thức trả về list cặp khóa, giá trị của dict. list này cập nhật tự động nếu dict có thay đổi.</li>
+<li><strong>keys()</strong>: phương thức trả về list khóa của dict. list này cập nhật tự động nếu dict có thay đổi.</li>
+<li><strong>values()</strong>: phương thức trả về list giá trị của dict. list này cập nhật tự động nếu dict có thay đổi.</li>
+<li><strong>pop(key)</strong>: phương thức trả về giá trị ứng với khóa key của dict đồng thời xóa luôn cặp khóa, giá trị này ra khỏi dict.</li>
+<li><strong>copy()</strong>: phương thức chép toàn bộ dict gọi vô 1 dict mới rồi trả về.</li>
+<li><strong>clear()</strong>: phương thức xóa rỗng dict.</li>
+<li><strong>update(dict1)</strong>: phương thức bổ sung các cặp khóa, giá trị của dict1 vào dict gọi.</li>
+</ul>
+<pre><code class="language-python">    d = {'.py': 'Python file', '.go': 'Go file', '.r': ['R file', 'Right Audio Channel File']}
+    print(d['.go'])             # 'Go file'
+    print(d['.java'])           # (Lỗi: KeyError: '.java')
+    d['.r'] = 'R file'          # (Gán lại giá trị ứng với khóa '.r')
+    print(d)                    # {'.go': 'Go file', '.py': 'Python file', '.r': 'R file'}
+    print(len(d))               # 3
+    print(d.items())            # dict_items([('.py', 'Python file'), ('.go', 'Go file'), ('.r', 'R file')])
+    print(d.keys())             # dict_keys(['.py', '.go', '.r'])
+    print(d.values())           # dict_values(['Python file', 'Go file', 'R file'])
+    print(d.pop('.r'))          # 'R file'
+    print(d)                    # {'.py': 'Python file', '.go': 'Go file'}
+    d1 = d.copy()               # (Sao chép toàn bộ d gán vô d1)
+    print(d1)                   # {'.go': 'Go file', '.py': 'Python file'}
+    d.clear()                   # (Xóa rỗng d)
+    print(d)                    # {}
+    d.update(d1)                # (Thêm phần tử d1 vô d)
+    print(d)                    # {'.go': 'Go file', '.py': 'Python file'}
+</code></pre>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Kiểu dữ liệu set gồm nhiều phần tử nhưng chúng hoàn toàn khác nhau, khai báo bằng cách nhóm trong cặp {}, các phần tử cách nhau dấu phẩy.</li>
+<li>Python cung cấp các toán tử, hàm và phương thức để xử lý set.</li>
+<li>Kiểu dữ liệu dict gồm nhiều phần tử, mỗi phần tử là cặp <strong>khóa:giá trị</strong>, khai báo bằng cách nhóm trong cặp {}, các phần tử cách nhau dấu phẩy.</li>
+<li>Khóa kiểu dict đòi hỏi là các kiểu dữ liệu không thay đổi như số, chuỗi hay tuple. Giá trị thì kiểu dữ liệu nào cũng được.</li>
+<li>dict phù hợp khi có khối lượng dữ liệu lớn cần truy xuất qua 1 thuộc tính riêng được chọn làm khóa.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài trước</div>
+    <a href="/courses/python/list-tuple/" rel="next">Kiểu dữ liệu list và tuple</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Bài sau</div>
+    <a href="/courses/python/if-else/" rel="prev">Lệnh điều khiển if else</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 09/04/20</p>
+
+          
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
