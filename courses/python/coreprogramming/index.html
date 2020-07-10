@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="vi" href="/courses/python/coreprogramming/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/courses/python/coreprogramming/index.xml" type="application/rss+xml" title="Hưng">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu81cc276ab928b9f01c35e44af214d513_4263_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/python/coreprogramming/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Hưng">
+  <meta property="og:url" content="/courses/python/coreprogramming/">
+  <meta property="og:title" content="Máy tính và lập trình | Hưng">
+  <meta property="og:description" content=""><meta property="og:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png"><meta property="og:locale" content="vi">
+  
+    <meta property="og:updated_time" content="2020-05-01T04:00:00&#43;07:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Máy tính và lập trình | Hưng</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Tìm kiếm</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Tìm kiếm..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hưng"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Chuyển điều Hướng">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_0x70_resize_lanczos_2.png" alt="Hưng"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#home"><span>Trang chủ</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/posts/"><span>Bài viết</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Kiến thức</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ebooks/"><span>Thư viện</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Liên hệ</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Tìm kiếm..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/">Lập trình cơ bản với Python</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python/coreprogramming/">1.Cơ sở lập trình</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/courses/python/coreprogramming/">Máy tính &amp; lập trình</a>
+      </li>
+      
+      <li >
+        <a href="/courses/python/coreprogramming/data/">Dữ liệu máy tính</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Nội dung</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-tnh-v-cc-thit-b-in-t-lp-trnh-c">Máy tính và các thiết bị điện tử lập trình được</a></li>
+    <li><a href="#lp-trnh-v-ngn-ng-lp-trnh">Lập trình và ngôn ngữ lập trình</a></li>
+    <li><a href="#tm-tt">Tóm tắt</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Máy tính và lập trình</h1>
+
+          <div class="article-style">
+            <p>Máy tính ban đầu được tạo ra để giúp con người giải các bài toán nhưng càng ngày nó càng làm được nhiều việc hơn là giải toán. Vậy nhờ gì mà máy tính có thể giải quyết hầu hết các vấn đề hiện tại trong cuộc sống? Nhờ lập trình.</p>
+<h2 id="my-tnh-v-cc-thit-b-in-t-lp-trnh-c">Máy tính và các thiết bị điện tử lập trình được</h2>
+<p>Máy tính (computer) là một thiết bị có khả năng thực hiện hai việc và chỉ hai việc là tính toán và lưu trữ dữ liệu (thông tin). Nhưng nó làm rất tốt hai việc này. Ngày nay, máy tính có thể tính toán hàng triệu phép toán trong một giây và lưu trữ cả một thư viện sách khổng lồ trên một thẻ nhớ nhỏ xíu. Trước khi phát minh ra máy tính, thuật ngữ computer thường được dùng để chỉ một người chuyên làm nhiệm vụ tính toán.</p>
+<p>Tuy vậy, máy tính không tự thực hiện tính toán được mà đều nhờ con người. Chính con người đã đưa ra các mệnh lệnh cho máy tính thực hiện. Đó là các chỉ thị lệnh dựa trên tập lệnh có sẵn trong bộ vi xử lý (CPU) của máy tính và việc tạo ra chuỗi các câu lệnh này chính là việc lập trình.</p>
+<p>Hiện nay, chúng ta có thể đưa chương trình chúng ta viết vào thực thi không chỉ máy tính mà rất nhiều thiết bị điện tử khác như điện thoại, máy tính bảng, các thiết bị cầm tay hay ti vi, tủ lạnh, v.v&hellip; Đây đều là những thiết bị lập trình được.</p>
+<h2 id="lp-trnh-v-ngn-ng-lp-trnh">Lập trình và ngôn ngữ lập trình</h2>
+<p>Như ở trên đã đề cập, lập trình là việc tạo ra một tập các chỉ thị lệnh để cho máy tính nói riêng và các thiết bị điện tử lập trình được nói chung thực thi nhằm giải quyết một vấn đề nào đó thông qua các bước tính toán. Người trực tiếp thực hiện việc lập trình gọi là lập trình viên (trước đây gọi là thảo chương viên).</p>
+<p>Ngôn ngữ mà lập trình viên sử dụng để tạo ra các chỉ thị lệnh này gọi là ngôn ngữ lập trình. Mỗi chỉ thị lệnh là một chuỗi nhị phân gồm có 2 phần là mã phép toán và giá trị hoặc địa chỉ giá trị cần cho việc tính toán. Tập hợp các chỉ thị lệnh chúng ta viết để thực hiện một nhiệm vụ nào đó gọi là chương trình máy tính. Trước đây, lập trình viên phải tạo những chỉ thị lệnh này trên các bảng đục lỗ để máy tính thực thi bằng ngôn ngữ mà máy tính hiểu gọi là ngôn ngữ máy. Về sau, việc lập trình nhẹ nhàng hơn khi lập trình viên viết những câu lệnh gần với ngôn ngữ con người hơn. Bắt đầu từ hợp ngữ (Assembly) chỉ thay mã phép toán từ những con số nhị phân thành các tên gợi nhớ như ADD cho phép cộng hay SUB cho phép trừ. Dần dần các ngôn ngữ lập trình ra đời với những câu lệnh, cú pháp phức tạp tạo nên hàng trăm ngôn ngữ cấp cao như C/C++, Java hay Python, Go, v.v&hellip; Tùy theo mục đích của ngôn ngữ lập trình mà chúng được thiết kế để tạo điều kiện giải quyết những vấn đề mà ngôn ngữ đó hướng tới. Những đặc điểm này làm cho một ngôn ngữ có thể tiện lợi để dùng phát triển loại phần mềm này nhưng có thể khó để phát triển loại phần mềm khác.</p>
+<p>Khi được viết bởi các ngôn ngữ lập trình không phải là ngôn ngữ máy, những câu lệnh này máy tính không thể hiểu được nên cần được dịch sang ngôn ngữ máy. Việc chuyển mã nguồn thành mã máy có thể diễn ra trước hoặc ngay khi máy tính thực thi. Nếu việc chuyển mã diễn ra trên toàn bộ mã nguồn trước rồi mới thực thi trên máy tính thì quá trình này gọi là biên dịch (compiler). Còn nếu việc chuyển mã diễn ra từng phần, chuyển đến đâu thực thi đến đó thì quá trình này gọi là thông dịch (interpreter).</p>
+<p><img src="./programminglanguage.png" alt=""></p>
+<p>Dựa trên các đặc điểm khác nhau, người ta chia ngôn ngữ lập trình thành các nhóm. Ví dụ:</p>
+<ul>
+<li>Dựa trên độ phức tạp ngôn ngữ: Ngôn ngữ lập trình cấp thấp (hợp ngữ), ngôn ngữ lập trình cấp cao (C, Java, v.v&hellip;).</li>
+<li>Dựa trên đặc điểm thực thi: Ngôn ngữ dòng lệnh (shell script), ngôn ngữ biên dịch (Pascal, C, Go, v.v&hellip; ), ngôn ngữ thông dịch (PHP, Python, Javascript, v.v&hellip;). Java hay C# thì vừa có quá trình biên dịch ra bytecode, vừa có quá trình thông dịch.</li>
+<li>Dựa trên mức độ phục vụ: ngôn ngữ lập trình đa năng (general purpose language) như C/C++, Java, Go, Python, v.v&hellip; và ngôn ngữ lập trình chuyên biệt (domain specific language) như Javascript, R, Julia, v.v&hellip;</li>
+<li>Dựa trên mô hình ngôn ngữ: ngôn ngữ mệnh lệnh (imperative language), ngôn ngữ khai báo (declarative language), ngôn ngữ thủ tục (procedural language), ngôn ngữ chức năng (functional language), ngôn ngữ hướng đối tượng (object oriented language), ngôn ngữ hướng sự kiện (event driven language), v.v&hellip;</li>
+</ul>
+<p>Máy tính không thông minh như chúng ta tưởng, chúng chỉ có thể làm những gì chúng ta yêu cầu. Chương trình chúng ta viết tốt, chi tiết và đầy đủ thì máy tính sẽ xử lý được nhiều tình huống khác nhau nên trông chúng có vẻ thông minh. Ngược lại, những tình huống chúng ta không nghĩ đến và thiếu mô tả cách giải quyết qua những câu lệnh thì khi trúng tình huống đó, máy tính sẽ không xử lý được gì và đứng ì ra. Thậm chí đôi khi do nhầm lẫn (mà chuyện này thường xuyên) chúng ta tạo ra các câu lệnh sai hoặc thiếu chuẩn xác trong một số tình huống, nếu rơi vào, máy tính sẽ bị lỗi và không thực thi tiếp được. Do đó lập trình viên phải lập trình cho mọi tình huống nhìn thấy được và đưa các tình huống có thể xảy ra nhưng chưa xác định rõ vào nhánh ngoại lệ để xử lý sau tránh việc bị lỗi như đề cập ở trên. Để có thể làm tốt việc này, lập trình viên thường cần sự trợ giúp của các bạn phân tích nghiệp vụ (Business Analyst - BA) phân tích các tình huống trước khi bắt tay lập trình và các bạn kiểm tra phát hiện những lỗi xảy ra khi thực thi (Kiểm thử viên - Tester).</p>
+<p>Lập trình là một công việc thú vị. Để xây dựng nên những phần mềm hữu ích, lập trình viên cần có cái nhìn bao quát để hiểu rõ nghiệp vụ của lĩnh vực mà phần mềm phục vụ nhưng cũng cần góc nhìn chi tiết, tính tỉ mỉ để đảm bảo phần mềm giải quyết chuẩn xác các yêu cầu nghiệp vụ này. Lập trình viên như một huấn luyện viên, bằng phần mềm của mình, có thể huấn luyện một thiết bị điện tử vô tri vô giác thành một thiết bị thông minh giúp ích cho cuộc sống.</p>
+<h2 id="tm-tt">Tóm tắt</h2>
+<div class="alert alert-note">
+  <div>
+    <ul>
+<li>Máy tính xuất phát điểm là thiết bị tính toán. Ngày nay máy tính trở thành thiết bị thiết yếu trong mọi lĩnh vực.</li>
+<li>Máy tính chỉ có thể hoạt động được là nhờ các chương trình máy tính được tạo ra bởi các lập trình viên.</li>
+<li>Việc lập trình tạo ra các chương trình máy tính dựa trên các ngôn ngữ lập trình gồm ngôn ngữ máy, hợp ngữ và ngôn ngữ cấp cao.</li>
+<li>Các chỉ thị lệnh viết bằng hợp ngữ hay ngôn ngữ cấp cao phải được dịch thành ngôn ngữ máy để máy tính có thể hiểu và thực thi. Dịch toàn bộ trước khi thực thi là quá trình biên dịch do trình biên dịch đảm nhiệm. Dịch từng phần và thực thi phần vừa dịch là quá trình thông dịch bởi các trình thông dịch.</li>
+<li>Có nhiều cách gom nhóm ngôn ngữ lập trình dựa trên các đặc điểm khác nhau và một ngôn ngữ có thể thuộc 1 hay nhiều nhóm.</li>
+<li>Lập trình là công việc đòi hỏi tính bao quát nhưng cũng cần tính chi tiết và cả khả năng trừu tượng. Tỉ mỉ, cẩn thận cũng là một tính cách cần có của lập trình viên.</li>
+</ul>
+  </div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Cập nhật lần cuối 01/05/20</p>
+
+          
+
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "phamkhachung" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 <a href="mailto:hung@phamkhac.com">hung@phamkhac.com</a> &middot; 
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"Không có kết quả","placeholder":"Tìm kiếm...","results":"Kết quả"};
+      const content_type = {
+        'post': "Bài đăng",
+        'project': "Dự án",
+        'publication' : "Công trình",
+        'talk' : "Thuyết trình"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://phamkhachung.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Trích dẫn</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Sao chép
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Tải về
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

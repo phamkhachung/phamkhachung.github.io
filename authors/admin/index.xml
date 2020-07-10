@@ -1,16 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>admin | Hứng</title>
+    <title>admin | Hưng</title>
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>admin</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 10 Apr 2020 05:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Mon, 20 Apr 2020 05:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>admin</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Làm chủ một trang web miễn phí (phần 2)</title>
+      <link>/posts/static-web-academic/</link>
+      <pubDate>Mon, 20 Apr 2020 05:00:00 +0000</pubDate>
+      <guid>/posts/static-web-academic/</guid>
+      <description>&lt;p&gt;Như đã giới thiệu ở &lt;a href=&#34;/posts/static-web&#34;&gt;bài trước&lt;/a&gt; trong bài này, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là Academic, là theme tôi dùng ở trang web này. Các phần trình bày bên dưới có một số phần khá đặc thù do tôi dùng theme academic, các bạn xem rồi tự rút ra cách thực hiện riêng cho mình.&lt;/p&gt;
+&lt;p&gt;Nội dung gồm có:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tạo bộ source website tĩnh với theme Academic&lt;/li&gt;
+&lt;li&gt;Chỉnh sửa cấu hình trang web&lt;/li&gt;
+&lt;li&gt;Cập nhật nội dung trang web&lt;/li&gt;
+&lt;li&gt;Công khai trang web với tên miền và server dựa trên github&lt;/li&gt;
+&lt;li&gt;Gắn tên miền mới vào cho trang web&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;m-ngun-website-vi-theme-academic&#34;&gt;Mã nguồn website với theme academic&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tạo github acc&lt;/li&gt;
+&lt;li&gt;Fork &lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34;&gt;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clone về máy: git clone &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt;&lt;Github ID&gt;/academic-kickstart.git My_Website&lt;/li&gt;
+&lt;li&gt;Lấy theme: git submodule update &amp;ndash;init &amp;ndash;recursive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cu-hnh-chung-trang-web&#34;&gt;Cấu hình chung trang web&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Theme chủ đạo: &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34;&gt;https://sourcethemes.com/academic/themes/&lt;/a&gt; : config/_default/param.toml : theme, font, font size&lt;/li&gt;
+&lt;li&gt;Cho phép chuyển chế độ nền sáng/tối: config/_default/param.toml: day_night&lt;/li&gt;
+&lt;li&gt;Hỗ trợ hight light ngôn ngữ : config/_default/param.toml : highlight_languages&lt;/li&gt;
+&lt;li&gt;Hỗ trợ viết công thức toán học, sơ đồ: config/_default/param.toml : math, diagram&lt;/li&gt;
+&lt;li&gt;Hỗ trợ hiển thị cảnh báo cookies: config/_default/param.toml : privacy_pack&lt;/li&gt;
+&lt;li&gt;Thông tin contact&lt;/li&gt;
+&lt;li&gt;Định dạng ngày giờ&lt;/li&gt;
+&lt;li&gt;Vị trí menu, hiển thị logo&lt;/li&gt;
+&lt;li&gt;Thời gian đọc bài viết&lt;/li&gt;
+&lt;li&gt;Phần bình luận: comments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Để lấy theme này chúng ta chọn nút &lt;strong&gt;Download&lt;/strong&gt; ở trang theme rồi khi trang &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34;&gt;github&lt;/a&gt; tương ứng mở ra, chúng ta chọn nút &lt;strong&gt;Clone or Download&lt;/strong&gt; màu xanh, rồi chọn &lt;strong&gt;Download ZIP&lt;/strong&gt;. Sau khi tải về xả nén chúng ta chép thư mục nhận được vào thư mục themes trong thư mục MySite mới tạo ở trên. Tạo thư mục themes nếu trong MySite chưa có. Đổi tên thư mục vừa chép từ hugo-academic-master thành academic.&lt;/p&gt;
+&lt;p&gt;Trong các thư mục con của academic có thư mục exampleSite, hãy chép toàn bộ nội dung thư mục này ra thư mục MySite, đồng ý ghi đè các file khi có thông báo.&lt;/p&gt;
+&lt;p&gt;Chuyển Terminal về thư mục MySite rồi gõ lệnh sau:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo server&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;chúng ta sẽ thấy thông báo như bên dưới báo hiệu việc tạo website đã xong, chúng ta hãy mở trình duyệt và gõ http://localhost:1313/ sẽ thấy điều kỳ diệu xuất hiện. Chúc mừng chúng ta đã có 1 website ngon lành.
+&lt;img src=&#34;./staticweb3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Trong các phần tới tôi sẽ giới thiệu cách tôi xây dựng trang web này. Các bạn có thể rút ra những phần hữu ích để tự mình tạo riêng website cho chính bạn.&lt;/p&gt;
+&lt;h2 id=&#34;cu-trc-website-vi-theme-academic&#34;&gt;Cấu trúc website với theme academic&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Bạn nên để hugo chạy để nó cập nhật trang web mỗi khi bạn sửa đổi. Nếu bạn quên cách chạy thì vào thư mục chứa website, như của tôi là Mysite, chạy lệnh sau ở Terminal: &lt;strong&gt;hugo server&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Trang web với theme academic sẽ gồm các phần sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trang chủ gồm các phần:
+&lt;ul&gt;
+&lt;li&gt;Hero: Phần hiển thị chính khi trang web được mở ra. Trên đó có thiết kế một nút ấn tượng khuyến khích người dùng nhấn vào. Đây là đặc điểm loại trang hero mà academic làm. Tôi hoàn toàn không cần đến nó nên tôi loại bỏ nó bằng cách vào thư mục &lt;strong&gt;MySite/content/home/&lt;/strong&gt; và sửa file &lt;strong&gt;hero.md&lt;/strong&gt; như sau: chuyển &lt;strong&gt;active = true&lt;/strong&gt; thành &lt;strong&gt;active = false&lt;/strong&gt;. Xem lại trang web sẽ thấy mất phần này.&lt;/li&gt;
+&lt;li&gt;Demo: Đây là phần chứa thông tin cơ bản được làm từ loại trang blank của academic. Tôi sẽ dùng nó để làm phần giới thiệu về website. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/demo.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;About: Phần này tự giới thiệu về chủ trang web. Do đây là theme học thuật nên có phần này nhưng tôi không có nhu cầu nên tôi bỏ. Tương tự tôi chuyển active từ true sang false tron file &lt;strong&gt;MySite/content/home/about.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Featurette: Đây là phần giới thiệu các kỹ năng. Tôi thấy có thể tận dụng nó để hiện các lĩnh vực tôi cung cấp nên tôi để lại. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/skills.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Experience: Phần này liệt kê các kinh nghiệm làm việc. Tôi không có nhu cầu xài nên tôi bỏ. Đơn giản chỉ là chuyển active sang false ở file &lt;strong&gt;MySite/content/home/experience.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Accomplishments: Phần này nêu các chứng chỉ, bằng cấp đã đạt được. Tôi bỏ nó do không có nhu cầu. File mô tả nó ở đây: &lt;strong&gt;MySite/content/home/accomplishments.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Posts: Phần này hiện các bài blog mới nhất. Có nhu cầu đó nên tôi giữ lại. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/posts.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Projects: Phần này liệt kê các dự án đã làm. Không có nhu cầu nên tôi chuyển active về false ở file &lt;strong&gt;MySite/content/home/projects.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Gallery: Phần này hiển thị các hình dự án, tôi không có nhu cầu nên bỏ nó ở &lt;strong&gt;MySite/content/home/gallery/index.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Talks: Phần này giới thiệu thông tin các buổi nói chuyện và tôi không có nhu cầu nên tạm thời bỏ nó ở file &lt;strong&gt;MySite/content/home/talks.md&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Tương tự tôi cũng bỏ phần Publications ở &lt;strong&gt;publications.md&lt;/strong&gt; và &lt;strong&gt;featured.md&lt;/strong&gt; ở cùng thư mục như mấy phần trên.&lt;/li&gt;
+&lt;li&gt;Contact: Phần này tôi giữ lại. Nội dung nó ở file contact.md&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Làm chủ một trang web miễn phí</title>
@@ -36,51 +108,17 @@
 &lt;li&gt;Trên Linux chúng ta chọn gói phù hợp với bản phân phối, như máy tôi dùng Ubuntu 64bit tôi chọn file hugo_x.xx.x_Linux-64bit.deb. Thực thi file này là xong.&lt;/li&gt;
 &lt;li&gt;Trên macOS các bạn có thể cài qua homebrew hoặc lấy file tương ứng về và tiến hành thực thi.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Để kiểm tra hugo hoạt động đúng sau khi cài đặt, chúng ta mở Terminal (do máy tôi dùng Linux nên tôi nói là mở Terminal. Các bạn dùng Windows phải hiểu là mở Command Prompt (CMD) nhé) rồi gõ &lt;strong&gt;hugo version&lt;/strong&gt;, kết quả hiện phiên bản tương tự như hình sau báo hiệu chúng ta đã cài đặt thành công. Nếu bị lỗi các bạn xem lại hoặc tham khảo thêm &lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;ở đây&lt;/a&gt;.
+&lt;p&gt;Để kiểm tra hugo hoạt động đúng sau khi cài đặt, chúng ta mở Terminal (do máy tôi dùng Linux nên tôi nói là mở Terminal, các bạn dùng Windows phải hiểu là mở Command Prompt (CMD) nhé) rồi gõ &lt;strong&gt;hugo version&lt;/strong&gt;, kết quả hiện phiên bản tương tự như hình sau báo hiệu chúng ta đã cài đặt thành công. Nếu bị lỗi các bạn xem lại hoặc tham khảo thêm &lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;ở đây&lt;/a&gt;.
 &lt;img src=&#34;./staticweb2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;to-website-tnh-vi-hugo&#34;&gt;Tạo website tĩnh với Hugo&lt;/h2&gt;
 &lt;p&gt;Mở Terminal, chuyển đến nơi chúng ta muốn đặt thư mục website. Giả sử thư mục website là MySite, chúng ta sẽ gõ lệnh sau trong Terminal để tạo website:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;hugo new site MySite
-&lt;img src=&#34;./staticweb3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;hugo new site MySite&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;chn-giao-din-theme&#34;&gt;Chọn giao diện (theme)&lt;/h2&gt;
 &lt;p&gt;Như hình trên chúng ta đã thấy là website đã được tạo. Nhưng hiện tại chỉ mới là phần khung. Chúng ta cần chọn một mẫu giao diện để hoàn thiện bộ khung website.&lt;/p&gt;
-&lt;p&gt;Hugo có hơn 300 theme gồm nhiều chủ đề &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;ở đây&lt;/a&gt;. Chúng ta có thể xem từng demo và chọn theme mình thích. Do có nhu cầu chia sẻ kiến thức nên tồi cần theme vừa có blog vừa có dạng tài liệu. Ban đầu tôi chọn &lt;a href=&#34;https://themes.gohugo.io/docsy/&#34;&gt;docsy&lt;/a&gt; nhưng một số bất tiện nên tôi quyết định chuyển sang &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;academic&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Để lấy theme này chúng ta chọn nút &lt;strong&gt;Download&lt;/strong&gt; ở trang theme rồi khi trang &lt;a href=&#34;https://github.com/gcushen/hugo-academic&#34;&gt;github&lt;/a&gt; tương ứng mở ra, chúng ta chọn nút &lt;strong&gt;Clone or Download&lt;/strong&gt; màu xanh, rồi chọn &lt;strong&gt;Download ZIP&lt;/strong&gt;. Sau khi tải về xả nén chúng ta chép thư mục nhận được vào thư mục themes trong thư mục MySite mới tạo ở trên. Tạo thư mục themes nếu trong MySite chưa có. Đổi tên thư mục vừa chép từ hugo-academic-master thành academic.&lt;/p&gt;
-&lt;p&gt;Trong các thư mục con của academic có thư mục exampleSite, hãy chép toàn bộ nội dung thư mục này ra thư mục MySite, đồng ý ghi đè các file khi có thông báo.&lt;/p&gt;
-&lt;p&gt;Chuyển Terminal về thư mục MySite rồi gõ lệnh sau:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;hugo server
-chúng ta sẽ thấy thông báo như bên dưới báo hiệu việc tạo website đã xong, chúng ta hãy mở trình duyệt và gõ http://localhost:1313/ sẽ thấy điều kỳ diệu xuất hiện. Chúc mừng chúng ta đã có 1 website ngon lành.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Trong các phần tới tôi sẽ giới thiệu cách tôi xây dựng trang web này. Các bạn có thể rút ra những phần hữu ích để tự mình tạo riêng website cho chính bạn.&lt;/p&gt;
-&lt;h2 id=&#34;cu-trc-website-vi-theme-academic&#34;&gt;Cấu trúc website với theme academic&lt;/h2&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Bạn nên để hugo chạy để nó cập nhật trang web mỗi khi bạn sửa đổi. Nếu bạn quên cách chạy thì vào thư mục chưa website, như của tôi là Mysite, chạy lệnh sau ở Terminal: &lt;strong&gt;hugo server&lt;/strong&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Trang web với theme academic sẽ gồm các phần sau:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Trang chủ gồm các phần:
-&lt;ul&gt;
-&lt;li&gt;Hero: Phần hiển thị chính khi trang web được mở ra. Trên đó có thiết kế một nút ấn tượng khuyến khích người dùng nhấn vào. Đây là đặc điểm loại trang hero mà academic làm. Tôi hoàn toàn không cần đến nó nên tôi loại bỏ nó bằng cách vào thư mục &lt;strong&gt;MySite/content/home/&lt;/strong&gt; và sửa file &lt;strong&gt;hero.md&lt;/strong&gt; như sau: chuyển &lt;strong&gt;active = true&lt;/strong&gt; thành &lt;strong&gt;active = false&lt;/strong&gt;. Xem lại trang web sẽ thấy mất phần này.&lt;/li&gt;
-&lt;li&gt;Demo: Đây là phần chứa thông tin cơ bản được làm từ loại trang blank của academic. Tôi sẽ dùng nó để làm phần giới thiệu về website. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/demo.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;About: Phần này tự giới thiệu về chủ trang web. Do đây là theme học thuật nên có phần này nhưng tôi không có nhu cầu nên tôi bỏ. Tương tự tôi chuyển active từ true sang false tron file &lt;strong&gt;MySite/content/home/about.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Featurette: Đây là phần giới thiệu các kỹ năng. Tôi thấy có thể tận dụng nó để hiện các lĩnh vực tôi cung cấp nên tôi để lại. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/skills.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Experience: Phần này liệt kê các kinh nghiệm làm việc. Tôi không có nhu cầu xài nên tôi bỏ. Đơn giản chỉ là chuyển active sang false ở file &lt;strong&gt;MySite/content/home/experience.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Accomplishments: Phần này nêu các chứng chỉ, bằng cấp đã đạt được. Tôi bỏ nó do không có nhu cầu. File mô tả nó ở đây: &lt;strong&gt;MySite/content/home/accomplishments.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Posts: Phần này hiện các bài blog mới nhất. Có nhu cầu đó nên tôi giữ lại. Nội dung phần này nằm trong file &lt;strong&gt;MySite/content/home/posts.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Projects: Phần này liệt kê các dự án đã làm. Không có nhu cầu nên tôi chuyển active về false ở file &lt;strong&gt;MySite/content/home/projects.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Gallery: Phần này hiển thị các hình dự án, tôi không có nhu cầu nên bỏ nó ở &lt;strong&gt;MySite/content/home/gallery/index.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Talks: Phần này giới thiệu thông tin các buổi nói chuyện và tôi không có nhu cầu nên tạm thời bỏ nó ở file &lt;strong&gt;MySite/content/home/talks.md&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Tương tự tôi cũng bỏ phần Publications ở &lt;strong&gt;publications.md&lt;/strong&gt; và &lt;strong&gt;featured.md&lt;/strong&gt; ở cùng thư mục như mấy phần trên.&lt;/li&gt;
-&lt;li&gt;Contact: Phần này tôi giữ lại. Nội dung nó ở file contact.md&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Hugo có hơn 300 theme gồm nhiều chủ đề &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;ở đây&lt;/a&gt;. Chúng ta có thể xem từng demo và chọn theme mình thích. Tùy theo từng theme sẽ có cách cấu hình và tổ chức bài viết khác nhau nhưng cũng không khác nhiều lắm.&lt;/p&gt;
+&lt;p&gt;Trong bài tới, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là &lt;a href=&#34;https://themes.gohugo.io/academic/&#34;&gt;academic&lt;/a&gt;, là theme tôi dùng ở trang web này.&lt;/p&gt;
 </description>
     </item>
     

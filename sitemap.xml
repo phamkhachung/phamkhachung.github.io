@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/python/introduction/</loc>
-    <lastmod>2020-04-04T21:00:00+07:00</lastmod>
+    <loc>/ebooks/education/</loc>
+    <lastmod>2020-06-05T04:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/python/coreprogramming/</loc>
+    <lastmod>2020-05-01T04:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -33,8 +38,13 @@
   </url>
   
   <url>
-    <loc>/courses/python/installation/</loc>
-    <lastmod>2020-04-05T05:00:00+07:00</lastmod>
+    <loc>/ebooks/education/documentation/</loc>
+    <lastmod>2020-06-05T04:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/python/coreprogramming/data/</loc>
+    <lastmod>2020-05-02T04:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -48,18 +58,18 @@
   </url>
   
   <url>
+    <loc>/ebooks/economy/</loc>
+    <lastmod>2020-06-05T04:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/go/intro/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/basic/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/python/variable/</loc>
-    <lastmod>2020-04-07T20:00:00+07:00</lastmod>
+    <loc>/ebooks/economy/law/</loc>
+    <lastmod>2020-06-05T04:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -68,8 +78,8 @@
   </url>
   
   <url>
-    <loc>/courses/python/number/</loc>
-    <lastmod>2020-04-08T05:00:00+07:00</lastmod>
+    <loc>/ebooks/history/</loc>
+    <lastmod>2020-06-06T04:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -78,8 +88,8 @@
   </url>
   
   <url>
-    <loc>/courses/python/string/</loc>
-    <lastmod>2020-04-08T21:00:00+07:00</lastmod>
+    <loc>/ebooks/history/worldhistory/</loc>
+    <lastmod>2020-06-07T04:00:00+07:00</lastmod>
   </url>
   
   <url>
@@ -88,63 +98,83 @@
   </url>
   
   <url>
-    <loc>/courses/python/list-tuple/</loc>
-    <lastmod>2020-04-09T05:00:00+07:00</lastmod>
+    <loc>/ebooks/history/reference/</loc>
+    <lastmod>2020-06-07T04:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/set-dict/</loc>
-    <lastmod>2020-04-09T20:00:00+07:00</lastmod>
+    <loc>/ebooks/history/geography/</loc>
+    <lastmod>2020-06-08T04:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/if-else/</loc>
-    <lastmod>2020-04-10T05:00:00+07:00</lastmod>
+    <loc>/ebooks/language/</loc>
+    <lastmod>2020-06-10T04:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/for-while/</loc>
-    <lastmod>2020-04-10T20:00:00+07:00</lastmod>
+    <loc>/ebooks/language/hannom/</loc>
+    <lastmod>2020-06-10T04:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/function/</loc>
-    <lastmod>2020-04-12T20:00:00+07:00</lastmod>
+    <loc>/ebooks/language/english/</loc>
+    <lastmod>2020-06-10T04:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/python/function-feature/</loc>
-    <lastmod>2020-04-13T05:00:00+07:00</lastmod>
+    <loc>/ebooks/language/dictionary/</loc>
+    <lastmod>2020-06-10T04:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-13T05:00:00+07:00</lastmod>
+    <lastmod>2020-06-10T04:00:00+07:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/blog/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/kien-thuc-it/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/static-web-academic/</loc>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web/</loc>
+    <lastmod>2020-04-20T05:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -153,18 +183,8 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/web/</loc>
-    <lastmod>2020-04-10T05:00:00+00:00</lastmod>
+    <loc>/posts/writing-technical-content/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>

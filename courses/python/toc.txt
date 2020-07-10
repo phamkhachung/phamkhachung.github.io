@@ -1,0 +1,31 @@
+Giới thiêu (mục đích, đối tượng, nội dung, cách tiếp cận)
+Cơ bản về lập trình
+    - Máy tính và thiết bị lập trình được
+    - Lập trình và ngôn ngữ lập trình
+    - Hệ đếm và phép toán
+    - Thuật toán và lưu đồ
+Cơ bản về python
+    - Giới thiệu ngôn ngữ Python (Python là gì, được sử dụng ở đâu, tại sao lại là Python, lịch sử)
+    - Thử lập trình với Python (Google Colab, Python calculator)
+    - Khái niệm cơ bản trong Python (Từ khóa, định danh, câu lệnh, khối lệnh, hàm, hàm Print, ghi chú)
+Kiểu dữ liệu
+    - Lưu trữ và mô tả dữ liệu (Chuỗi dữ liệu, hằng số, biến số)
+    - Kiểu dữ liệu là gì (kiểu dữ liệu, đối tượng, thuộc tính và phương thức)
+    - Kiểu dữ liệu số và luận lý (Kiểu số, kiểu luận lý)
+    - Kiểu dữ liệu chuỗi (Kiểu chuỗi, chuyển kiểu dữ liệu)
+    - Kiểu dữ liệu tập hợp (List, Tuple, Set, Dict)
+Cấu trúc điều khiển
+    - Lệnh if else
+    - Lệnh for while
+Hàm
+    - Cơ bản về hàm (Hàm là gì, tại sao cần hàm, các hàm hệ thống)
+    - Khai báo và sử dụng hàm (Khai báo hàm, hàm có đối số mặc định, hàm có đối số bất định, hàm lồng nhau, hàm vô danh)
+    - Không gian tên và phạm vi sử dụng
+    - Thư viện và module
+Lập trình hướng đối tượng
+    - Khái niệm lớp (Lớp là gì, thuộc tính, phương thức)
+    - Kế thừa
+    - Đa hình
+Kiểm lỗi
+    - Phát hiện lỗi (Lệnh print, dòng lệnh, module test code)
+    - Sử dụng Try & except

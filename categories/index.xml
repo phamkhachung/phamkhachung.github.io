@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories | Hứng</title>
+    <title>Categories | Hưng</title>
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 10 Apr 2020 05:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Mon, 20 Apr 2020 05:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Categories</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Kiến thức IT</title>
       <link>/categories/kien-thuc-it/</link>
-      <pubDate>Fri, 10 Apr 2020 05:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2020 05:00:00 +0000</pubDate>
       <guid>/categories/kien-thuc-it/</guid>
       <description></description>
     </item>

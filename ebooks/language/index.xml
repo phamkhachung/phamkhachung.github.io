@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tiếng Việt | Hưng</title>
+    <link>/ebooks/language/</link>
+      <atom:link href="/ebooks/language/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tiếng Việt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Wed, 10 Jun 2020 04:00:00 +0700</lastBuildDate>
+    <image>
+      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <title>Tiếng Việt</title>
+      <link>/ebooks/language/</link>
+    </image>
+    
+    <item>
+      <title>Hán Nôm</title>
+      <link>/ebooks/language/hannom/</link>
+      <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
+      <guid>/ebooks/language/hannom/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán học tứ tự thành ngữ&lt;/strong&gt;&lt;/a&gt;: tác giả: Hồ Đắc Đàm - xuất bản năm 1961.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Chữ Nôm - Nguồn gốc, cấu tạo, diễn biến&lt;/strong&gt;&lt;/a&gt;: tác giả: Đào Duy Anh - xuất bản năm 1975.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán văn tự học&lt;/strong&gt;&lt;/a&gt;: tác giả: Nguyễn Văn Ba - xuất bản năm 1992.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tiếng Anh</title>
+      <link>/ebooks/language/english/</link>
+      <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
+      <guid>/ebooks/language/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Từ điển</title>
+      <link>/ebooks/language/dictionary/</link>
+      <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
+      <guid>/ebooks/language/dictionary/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Tầm nguyên từ điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Lê Văn Hòe - xuất bản năm 1941.
+VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Việt ngữ tinh nghĩa từ điển&lt;/strong&gt;: tác giả: Nguyễn Văn Minh - xuất bản năm 1950 - 2 tập: &lt;a href=&#34;&#34;&gt;tập 1&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;tập 2&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Việt Nam tự điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Hội Khai trí Tiến Đức - xuất bản năm 1954.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Bách khoa danh ngôn từ điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Hoàng Xuân Việt - xuất bản năm 1991.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Từ điển trái nghĩa đồng nghĩa Tiếng Việt&lt;/strong&gt;&lt;/a&gt;: tác giả: Dương Kỳ Đức - xuất bản năm 1994.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;The Oxford Picture Dictionary English-Vietnamese&lt;/strong&gt;&lt;/a&gt;: tác giả: Norma Shapiro, Jayme Andelson-Goldstein - xuất bản năm 1998.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Từ điển từ ngữ Nam bộ&lt;/strong&gt;&lt;/a&gt;: tác giả: Huỳnh Công Tín - xuất bản năm 2007.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán Việt từ điển giản yếu&lt;/strong&gt;&lt;/a&gt;: tác giả: Đào Duy Anh - xuất bản năm 2009.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán Việt từ điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Thiềù Chửu - xuất bản năm 2009.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Từ điển cơ sở cuối từ tiếng Anh&lt;/strong&gt;&lt;/a&gt;: tác giả: Nguyễn Văn Bền - xuất bản năm 2015.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

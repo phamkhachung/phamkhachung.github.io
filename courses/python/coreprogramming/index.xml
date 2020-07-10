@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Máy tính và lập trình | Hưng</title>
+    <link>/courses/python/coreprogramming/</link>
+      <atom:link href="/courses/python/coreprogramming/index.xml" rel="self" type="application/rss+xml" />
+    <description>Máy tính và lập trình</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 01 May 2020 04:00:00 +0700</lastBuildDate>
+    <image>
+      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <title>Máy tính và lập trình</title>
+      <link>/courses/python/coreprogramming/</link>
+    </image>
+    
+    <item>
+      <title>Lưu trữ và biểu diễn dữ liệu máy tính</title>
+      <link>/courses/python/coreprogramming/data/</link>
+      <pubDate>Sat, 02 May 2020 04:00:00 +0700</pubDate>
+      <guid>/courses/python/coreprogramming/data/</guid>
+      <description>&lt;p&gt;Một chức năng quan trọng của máy tính bên cạnh chức năng tính toán là chức năng thu nhận và lưu trữ dữ liệu. Từ những dữ liệu này, thông qua các hình thức biểu diễn phù hợp, chúng ta sẽ có được những thông tin hữu ích phục vụ cho các nhu cầu khác nhau trong cuộc sống.&lt;/p&gt;
+&lt;h2 id=&#34;d-liu-v-d-liu-s&#34;&gt;Dữ liệu và dữ liệu số&lt;/h2&gt;
+&lt;p&gt;Trong lĩnh vực máy tính, dữ liệu (data) là kết quả quá trình đo đạc hay quan sát về một đại lượng biến đổi dưới dạng các số liệu, văn bản, âm thanh hay hình ảnh, v.v&amp;hellip; được biểu diễn trong máy tính dưới dạng quy ước nhằm tạo sự dễ dàng cho việc lưu trữ và xử lý.&lt;/p&gt;
+&lt;p&gt;Trong các máy tính và thiết bị điện tử ngày nay, dữ liệu được đưa vào (qua chuột, bàn phím, micro, camera, v.v&amp;hellip;), lưu trữ (ổ đĩa, thẻ nhớ, v.v&amp;hellip;), xuất ra (màn hình, máy in, v.v&amp;hellip;) đều thông qua tín hiệu số và dữ liệu này gọi là dữ liệu số. Đó là dữ liệu được biểu diễn bằng hệ số nhị phân dựa trên các số 0 và 1 ứng với các tín hiệu số được thể hiện ở hai trạng thái thấp và cao.&lt;/p&gt;
+&lt;p&gt;Một tín hiệu số với trạng thái thấp hoặc cao được biểu diễn dưới dạng 1 bit dữ liệu là 0 hoặc 1. Dữ liệu được tổ chức lưu trữ và trao đổi theo đơn vị cơ bản là byte gồm 8 bit. Các đơn vị trên byte có kilobyte (KB), megabyte (MB), gigabyte (GB), terabyte (TB), v.v&amp;hellip; Nhưng có sự nhập nhằng trong cách định lượng như 1 kilobyte = 1000 byte tức ${10^3}$ byte theo SI nhưng trong máy tính thì 1 kilobyte = 1024 tức ${2^{10}}$. Việc này dẫn đến hiểu nhầm như khi chúng ta mua ổ cứng 128 GB nhưng thực tế dung lượng luôn thấp hơn bởi nhà sản xuất tính theo công thức 1 GB = ${10^9}$ byte. Năm 1999, IEC đã đề nghị đổi tên để dễ phân biệt, cụ thể như bảng sau:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tên (hệ SI)&lt;/th&gt;
+&lt;th&gt;Ký hiệu&lt;/th&gt;
+&lt;th&gt;Bội số của byte&lt;/th&gt;
+&lt;th&gt;&amp;gt;&amp;lt;&lt;/th&gt;
+&lt;th&gt;Tên (hệ nhị phân)&lt;/th&gt;
+&lt;th&gt;Ký hiệu&lt;/th&gt;
+&lt;th&gt;Bội số của byte&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;kilobyte&lt;/td&gt;
+&lt;td&gt;KB&lt;/td&gt;
+&lt;td&gt;${10^3}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;kibibyte&lt;/td&gt;
+&lt;td&gt;KiB&lt;/td&gt;
+&lt;td&gt;${2^{10}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;megabyte&lt;/td&gt;
+&lt;td&gt;MB&lt;/td&gt;
+&lt;td&gt;${10^6}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;mebibyte&lt;/td&gt;
+&lt;td&gt;MiB&lt;/td&gt;
+&lt;td&gt;${2^{20}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gigabyte&lt;/td&gt;
+&lt;td&gt;GB&lt;/td&gt;
+&lt;td&gt;${10^9}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;gibibyte&lt;/td&gt;
+&lt;td&gt;GiB&lt;/td&gt;
+&lt;td&gt;${2^{30}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;terabyte&lt;/td&gt;
+&lt;td&gt;TB&lt;/td&gt;
+&lt;td&gt;${10^{12}}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;tebibyte&lt;/td&gt;
+&lt;td&gt;TiB&lt;/td&gt;
+&lt;td&gt;${2^{40}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;petabyte&lt;/td&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;td&gt;${10^{15}}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;pebibyte&lt;/td&gt;
+&lt;td&gt;PiB&lt;/td&gt;
+&lt;td&gt;${2^{50}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;exabyte&lt;/td&gt;
+&lt;td&gt;EB&lt;/td&gt;
+&lt;td&gt;${10^{18}}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;exbibyte&lt;/td&gt;
+&lt;td&gt;EiB&lt;/td&gt;
+&lt;td&gt;${2^{60}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;h-m&#34;&gt;Hệ đếm&lt;/h2&gt;
+&lt;p&gt;Hệ đếm là tập hợp các ký hiệu và qui tắc sử dụng tập ký hiệu đó để biểu diễn và xác định giá
+trị các số. Mỗi hệ đếm có một số ký số (digits) hữu hạn là các chữ số tối thiểu để biểu diễn mọi số trong hệ đếm ấy. Tổng số ký số của mỗi hệ đếm được gọi là cơ số (base hay radix), ký hiệu là b.Trong máy tính thì những hệ đếm sau phổ biến:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hệ thập phân (Decimal system, b=10)&lt;/strong&gt;: Hệ đếm thập phân hay hệ đếm cơ số 10 là một trong các phát minh của người Ả rập cổ, bao gồm 10 ký số theo ký hiệu sau: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Hệ thập phân là hệ đếm chúng ta dùng trong tính toán hằng ngày.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hệ nhị phân (Binary system, b=2)&lt;/strong&gt;: Hệ đếm nhị phân hay hệ đếm cơ số 2 là hệ đếm sử dụng chính cho việc lưu trữ và xử lý dữ liệu trong máy tính bao gồm 2 ký số  là 0, 1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hệ bát phân (Octal system, b=8)&lt;/strong&gt;: có 8 ký số cơ bản là 0, 1, 2, 3, 4, 5, 6, 7.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hệ thập lục phân (Hexa-decimal system, b=16)&lt;/strong&gt;: Khi thể hiện ở hệ đếm thập lục phân, ta có 16 ký tự gồm 10 chữ số từ 0 đến 9, và 6 chữ in A, B, C, D, E, F để biểu diễn các giá trị số tương ứng là 10, 11, 12, 13, 14, 15.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nếu một số có giá trị lớn hơn các ký số cơ bản thì nó sẽ được biểu diễn bằng cách tổ hợp các ký số cơ bản theo công thức sau :
+$$X_b = a_na_{n-1}&amp;hellip;a_1a_0.a_{-1}a_{-2}&amp;hellip;a_{-m}$$
+Với:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;b là cơ số hệ đếm.&lt;/li&gt;
+&lt;li&gt;${a_0, a_1, a_2, &amp;hellip;, a_n}$ là các ký số cơ bản cho phần nguyên còn ${a_{-1}, a_{-2}, &amp;hellip;, a_{-m}}$ là các ký số cho phần thập phân.&lt;/li&gt;
+&lt;li&gt;X là số ở hệ đếm cơ số b.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Và giá trị của X trong hệ thập phân là:
+$$X_b = a_nb^n + a_{n-1}b^{n-1} +&amp;hellip; + a_1b + a_0 + a_{-1}b^{-1} + a_{-2}b^{-2} + &amp;hellip; +  + a_{-m}b^{-m}$$&lt;/p&gt;
+&lt;p&gt;Ví dụ:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hệ thập phân: X = 123.75&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Số thập phân&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;th&gt;3&lt;/th&gt;
+&lt;th&gt;.&lt;/th&gt;
+&lt;th&gt;7&lt;/th&gt;
+&lt;th&gt;5&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Vị trí&lt;/td&gt;
+&lt;td&gt;Hàng trăm&lt;/td&gt;
+&lt;td&gt;Hàng chục&lt;/td&gt;
+&lt;td&gt;Hàng đơn vị&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Phần thập phân thứ 1&lt;/td&gt;
+&lt;td&gt;Phần thập phân thứ 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Trị vị trí&lt;/td&gt;
+&lt;td&gt;${10^2}$&lt;/td&gt;
+&lt;td&gt;${10^1}$&lt;/td&gt;
+&lt;td&gt;${10^0}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;${10^{-1}}$&lt;/td&gt;
+&lt;td&gt;${10^{-2}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;thì ${123.75_{10} = 1 * 10^2 + 2 * 10^1 + 3 * 10^0 + 7 * 10^{-1} + 5 * 10^{-2} = 100 + 20 + 3 + \frac{4}{10} + \frac{5}{100}}$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hệ nhị phân: X = 1111011.11&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Số nhị phân&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;.&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Vị trí&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;td&gt;-2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Trị vị trí&lt;/td&gt;
+&lt;td&gt;${2^6}$&lt;/td&gt;
+&lt;td&gt;${2^5}$&lt;/td&gt;
+&lt;td&gt;${2^4}$&lt;/td&gt;
+&lt;td&gt;${2^3}$&lt;/td&gt;
+&lt;td&gt;${2^2}$&lt;/td&gt;
+&lt;td&gt;${2^1}$&lt;/td&gt;
+&lt;td&gt;${2^0}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;${2^{-1}}$&lt;/td&gt;
+&lt;td&gt;${2^{-2}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hệ thập phân&lt;/td&gt;
+&lt;td&gt;64&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0.5&lt;/td&gt;
+&lt;td&gt;0.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;thì ${1111011.11_2 = 1 * 64 + 1 * 32 + 1 * 16 + 1 * 8 + 0 * 4 + 1 * 2 + 1 * 1 + 1 * 0.5 + 0 * 0.25 = 123.75}$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hệ thập lục phân: X = 7B.B2 thì ${7B.C_{16} = 7 * 16^1 + B + C * \frac{1}{16} = 112 + 11 + \frac{12}{16}= 123.75}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Trên máy tính, mọi dữ liệu đều được lưu trữ và xử lý dưới dạng số nhị phân nhưng do quá phổ biến trong cuộc sống nên hệ thập phân cũng đóng vai trò nhất định. Với hệ đếm thập lục phân là hệ cơ số b = 16 = ${2^4}$, nên một ký số thập lục phân tương đương với tập hợp 4 ký số nhị phân nên khi cần biểu diễn giá trị lớn trên máy tính, sử dụng số hệ thập lục phân sẽ ngắn gọn hơn số hệ nhị phân. Hơn nữa, đơn vị cơ bản trên máy tính là byte = 8 bit, nên giá trị 1 byte có thể biểu diễn bởi 8 ký số nhị phân hay 2 ký số thập lục phân. Ví dụ: giá trị 123 ở hệ nhị phân là: 0111 1011, chúng ta có thể biểu diễn nó ở hệ thập lục phân là 7B (${7_{10} = 0111_2}$ và ${B_{10} = 1011_2}$). Thường giá trị hệ màu, địa chỉ MAC, địa chỉ ô nhớ, v.v&amp;hellip; hay được thể hiện dưới số thập lục phân (số hex).&lt;/p&gt;
+&lt;h2 id=&#34;lu-tr-v-biu-din-d-liu&#34;&gt;Lưu trữ và biểu diễn dữ liệu&lt;/h2&gt;
+&lt;p&gt;Để đưa dữ liệu vào cho máy tính, cần phải mã hoá nó về dạng nhị phân. Với các loại dữ liệu khác nhau cần có cách mã hoá khác nhau.&lt;/p&gt;
+&lt;h3 id=&#34;s-nguyn&#34;&gt;Số nguyên&lt;/h3&gt;
+&lt;p&gt;Số nguyên hệ thập phân được chuyển thành hệ nhị phân theo quy tắc lấy như sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Số nguyên không dấu (số tự nhiên): với n bit sẽ biểu diễn được ${2^n}$ số bắt đầu từ 0 đến ${2^n-1}$. Ví dụ với 1 byte =  8 bit thì có ${2^8}$=256 số nên có thể lưu trữ, biểu diễn từ 0 (${00000000_2}$) đến 255 (${11111111_2}$).&lt;/li&gt;
+&lt;li&gt;Số nguyên có dấu: bit đầu tiên bên trái sẽ được dùng để làm bit dấu, giá trị bit đó là 1 thì là số âm, các bit còn lại lưu giá trị để đảm bảo tổng giá trị của số nguyên âm và số nguyên dương có cùng giá trị tuyệt đối bằng 0. Ví dụ:
+${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 số này theo hệ nhị phân là 1 0000 0000 tức là 0 nếu dùng 1 byte để lưu trữ. Nguyên nhân là nếu dùng 1 byte = 8 bit để lưu trữ thì bit thứ 9 không tính đến. Hiện tượng tổng vượt quá khả năng lưu trữ như này gọi là tràn số.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Giá trị&lt;/th&gt;
+&lt;th&gt;bit 9&lt;/th&gt;
+&lt;th&gt;bit 8&lt;/th&gt;
+&lt;th&gt;bit 7&lt;/th&gt;
+&lt;th&gt;bit 6&lt;/th&gt;
+&lt;th&gt;bit 5&lt;/th&gt;
+&lt;th&gt;bit 4&lt;/th&gt;
+&lt;th&gt;bit 3&lt;/th&gt;
+&lt;th&gt;bit 2&lt;/th&gt;
+&lt;th&gt;bit 1&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;123&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-123&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tổng&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;s-thc&#34;&gt;Số thực&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Các dữ liệu dạng số (số nguyên hay số thực) sẽ được chuyển đổi trực tiếp thành các chuỗi số nhị phân theo các chuẩn xác định.&lt;/li&gt;
+&lt;li&gt;Các ký tự được mã hoá theo một bộ mã cụ thể, trong đó mỗi ký tự sẽ tương ứng với một giá trị thập phân nên được lưu trữ chuỗi số nhị phân tương ứng.&lt;/li&gt;
+&lt;li&gt;Các dữ liệu phi số khác như âm thanh, hình ảnh và nhiều đại lượng vật lý khác muốn đưa vào máy phải số hoá (digitalizing). Có thể hiểu một cách đơn giản khái niệm số hoá như sau: các dữ liệu tự nhiên thường là quá trình biến đổi liên tục, vì vậy để đưa vào máy tính, nó cần được biến đổi sang một dãy hữu hạn các giá trị số (nguyên hay thực) và được biểu diễn dưới dạng nhị phân.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tuy rằng mọi dữ liệu trong máy tính đều ở dạng nhị phân, song do bản chất của dữ liệu, người ta thường phân dữ liệu thành 2 dạng:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dạng cơ bản: gồm dạng số (nguyên hay thực) và dạng ký tự. Số nguyên không dấu được biểu diễn theo dạng nhị phân thông thường, số nguyên có dấu theo mã bù hai, còn số thực theo dạng dấu phảy động. Để biểu diễn một dữ liệu cơ bản, người ta sử dụng 1 số bit. Các bit này ghép lại với nhau để tạo thành từ: từ 8 bít, từ 16 bít,…&lt;/li&gt;
+&lt;li&gt;Dạng có cấu trúc: Trên cơ sở dữ liệu cơ bản, trong máy tính, người ta xây dựng nên các dữ liệu có cấu trúc phục vụ cho các mục đích sử dụng khác nhau. Tuỳ theo cách “ghép” chúng ta có mảng, tập hợp,xâu, bản ghi,…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;biu-din-s-nguyn&#34;&gt;Biểu diễn số nguyên&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
