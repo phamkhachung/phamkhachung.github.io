@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kinh tế | Hưng</title>
-    <link>/ebooks/economy/</link>
-      <atom:link href="/ebooks/economy/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://phamkhachung.github.io/ebooks/economy/</link>
+      <atom:link href="https://phamkhachung.github.io/ebooks/economy/index.xml" rel="self" type="application/rss+xml" />
     <description>Kinh tế</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 05 Jun 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Kinh tế</title>
-      <link>/ebooks/economy/</link>
+      <link>https://phamkhachung.github.io/ebooks/economy/</link>
     </image>
     
     <item>
       <title>Luật</title>
-      <link>/ebooks/economy/law/</link>
+      <link>https://phamkhachung.github.io/ebooks/economy/law/</link>
       <pubDate>Fri, 05 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>/ebooks/economy/law/</guid>
+      <guid>https://phamkhachung.github.io/ebooks/economy/law/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1F38PlGQPEVq2nqHwYQiQ8orz-4dnWLU-/view?usp=sharing&#34;&gt;&lt;strong&gt;Nhân quyền&lt;/strong&gt;&lt;/a&gt;: tác giả: Phạm Huy Lục - xuất bản năm 1935.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1vbczuSHIEWgAOxWMaeVnNER2AMqoPF9Y/view?usp=sharing&#34;&gt;&lt;strong&gt;Hoàng Việt trung kỳ hộ luật&lt;/strong&gt;&lt;/a&gt;: tác giả: Bộ tư pháp - xuất bản năm 1944.&lt;/li&gt;

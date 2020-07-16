@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sách giáo khoa | Hưng</title>
-    <link>/ebooks/education/</link>
-      <atom:link href="/ebooks/education/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://phamkhachung.github.io/ebooks/education/</link>
+      <atom:link href="https://phamkhachung.github.io/ebooks/education/index.xml" rel="self" type="application/rss+xml" />
     <description>Sách giáo khoa</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 05 Jun 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Sách giáo khoa</title>
-      <link>/ebooks/education/</link>
+      <link>https://phamkhachung.github.io/ebooks/education/</link>
     </image>
     
     <item>
       <title>Tài liệu tham khảo</title>
-      <link>/ebooks/education/documentation/</link>
+      <link>https://phamkhachung.github.io/ebooks/education/documentation/</link>
       <pubDate>Fri, 05 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>/ebooks/education/documentation/</guid>
+      <guid>https://phamkhachung.github.io/ebooks/education/documentation/</guid>
       <description>&lt;p&gt;Bên dưới là danh sách các tài liệu tham khảo dùng trong nhà trường&lt;/p&gt;
 &lt;h1 id=&#34;chung&#34;&gt;Chung&lt;/h1&gt;
 &lt;ul&gt;
