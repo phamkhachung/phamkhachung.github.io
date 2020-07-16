@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>admin | Hưng</title>
-    <link>https://phamkhachung.github.io/authors/admin/</link>
-      <atom:link href="https://phamkhachung.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/authors/admin/</link>
+      <atom:link href="phamkhachung.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>admin</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Mon, 20 Apr 2020 05:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>admin</title>
-      <link>https://phamkhachung.github.io/authors/admin/</link>
+      <link>phamkhachung.github.io/authors/admin/</link>
     </image>
     
     <item>
       <title>Làm chủ một trang web miễn phí (phần 2)</title>
-      <link>https://phamkhachung.github.io/posts/static-web-academic/</link>
+      <link>phamkhachung.github.io/posts/static-web-academic/</link>
       <pubDate>Mon, 20 Apr 2020 05:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/posts/static-web-academic/</guid>
-      <description>&lt;p&gt;Như đã giới thiệu ở &lt;a href=&#34;https://phamkhachung.github.io/posts/static-web&#34;&gt;bài trước&lt;/a&gt; trong bài này, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là Academic, là theme tôi dùng ở trang web này. Các phần trình bày bên dưới có một số phần khá đặc thù do tôi dùng theme academic, các bạn xem rồi tự rút ra cách thực hiện riêng cho mình.&lt;/p&gt;
+      <guid>phamkhachung.github.io/posts/static-web-academic/</guid>
+      <description>&lt;p&gt;Như đã giới thiệu ở &lt;a href=&#34;phamkhachung.github.io/posts/static-web&#34;&gt;bài trước&lt;/a&gt; trong bài này, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là Academic, là theme tôi dùng ở trang web này. Các phần trình bày bên dưới có một số phần khá đặc thù do tôi dùng theme academic, các bạn xem rồi tự rút ra cách thực hiện riêng cho mình.&lt;/p&gt;
 &lt;p&gt;Nội dung gồm có:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Tạo bộ source website tĩnh với theme Academic&lt;/li&gt;
@@ -86,9 +86,9 @@
     
     <item>
       <title>Làm chủ một trang web miễn phí</title>
-      <link>https://phamkhachung.github.io/posts/static-web/</link>
+      <link>phamkhachung.github.io/posts/static-web/</link>
       <pubDate>Fri, 10 Apr 2020 05:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/posts/static-web/</guid>
+      <guid>phamkhachung.github.io/posts/static-web/</guid>
       <description>&lt;p&gt;Sở hữu một website là nhu cầu không chỉ của công ty, tổ chức mà còn của các cá nhân có nhu cầu chia sẻ thông tin. Thông thường họ sẽ chọn các blog miễn phí để đăng bài bởi các nhà cung cấp blog đã cung cấp nhiều công cụ viết và đăng bài, người dùng chỉ cần quan tâm nội dung thôi.&lt;/p&gt;
 &lt;p&gt;Hôm nay tôi sẽ giới thiệu một cách làm website đẹp, đa dụng và hoàn toàn miễn phí để các anh chị có nhiều hơn sự lựa chọn bên cạnh blog. Không những vậy, những doanh nghiệp cần trang web đơn giản giới thiệu thông tin công ty có thể sử dụng nó mà không mất chi phí nào.&lt;/p&gt;
 &lt;h2 id=&#34;gii-thiu-cng-c-to-web-tnh&#34;&gt;Giới thiệu công cụ tạo web tĩnh&lt;/h2&gt;

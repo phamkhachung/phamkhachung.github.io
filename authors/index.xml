@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Hưng</title>
-    <link>https://phamkhachung.github.io/authors/</link>
-      <atom:link href="https://phamkhachung.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/authors/</link>
+      <atom:link href="phamkhachung.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Mon, 20 Apr 2020 05:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Authors</title>
-      <link>https://phamkhachung.github.io/authors/</link>
+      <link>phamkhachung.github.io/authors/</link>
     </image>
     
     <item>
       <title>admin</title>
-      <link>https://phamkhachung.github.io/authors/admin/</link>
+      <link>phamkhachung.github.io/authors/admin/</link>
       <pubDate>Mon, 20 Apr 2020 05:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/authors/admin/</guid>
+      <guid>phamkhachung.github.io/authors/admin/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Máy tính và lập trình | Hưng</title>
-    <link>https://phamkhachung.github.io/courses/python/coreprogramming/</link>
-      <atom:link href="https://phamkhachung.github.io/courses/python/coreprogramming/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/courses/python/coreprogramming/</link>
+      <atom:link href="phamkhachung.github.io/courses/python/coreprogramming/index.xml" rel="self" type="application/rss+xml" />
     <description>Máy tính và lập trình</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Fri, 01 May 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Máy tính và lập trình</title>
-      <link>https://phamkhachung.github.io/courses/python/coreprogramming/</link>
+      <link>phamkhachung.github.io/courses/python/coreprogramming/</link>
     </image>
     
     <item>
       <title>Lưu trữ và biểu diễn dữ liệu máy tính</title>
-      <link>https://phamkhachung.github.io/courses/python/coreprogramming/data/</link>
+      <link>phamkhachung.github.io/courses/python/coreprogramming/data/</link>
       <pubDate>Sat, 02 May 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/courses/python/coreprogramming/data/</guid>
+      <guid>phamkhachung.github.io/courses/python/coreprogramming/data/</guid>
       <description>&lt;p&gt;Một chức năng quan trọng của máy tính bên cạnh chức năng tính toán là chức năng thu nhận và lưu trữ dữ liệu. Từ những dữ liệu này, thông qua các hình thức biểu diễn phù hợp, chúng ta sẽ có được những thông tin hữu ích phục vụ cho các nhu cầu khác nhau trong cuộc sống.&lt;/p&gt;
 &lt;h2 id=&#34;d-liu-v-d-liu-s&#34;&gt;Dữ liệu và dữ liệu số&lt;/h2&gt;
 &lt;p&gt;Trong lĩnh vực máy tính, dữ liệu (data) là kết quả quá trình đo đạc hay quan sát về một đại lượng biến đổi dưới dạng các số liệu, văn bản, âm thanh hay hình ảnh, v.v&amp;hellip; được biểu diễn trong máy tính dưới dạng quy ước nhằm tạo sự dễ dàng cho việc lưu trữ và xử lý.&lt;/p&gt;

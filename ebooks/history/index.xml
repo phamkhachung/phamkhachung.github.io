@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lịch sử Việt Nam | Hưng</title>
-    <link>https://phamkhachung.github.io/ebooks/history/</link>
-      <atom:link href="https://phamkhachung.github.io/ebooks/history/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/ebooks/history/</link>
+      <atom:link href="phamkhachung.github.io/ebooks/history/index.xml" rel="self" type="application/rss+xml" />
     <description>Lịch sử Việt Nam</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Sat, 06 Jun 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Lịch sử Việt Nam</title>
-      <link>https://phamkhachung.github.io/ebooks/history/</link>
+      <link>phamkhachung.github.io/ebooks/history/</link>
     </image>
     
     <item>
       <title>Lích sử Thế giới</title>
-      <link>https://phamkhachung.github.io/ebooks/history/worldhistory/</link>
+      <link>phamkhachung.github.io/ebooks/history/worldhistory/</link>
       <pubDate>Sun, 07 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/worldhistory/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/worldhistory/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Nhật Bản sử lược&lt;/strong&gt;: tác giả: Nguyễn Văn Tần - xuất bản năm 1958: &lt;a href=&#34;&#34;&gt;tập 1&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;tập 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Lịch sử văn minh Trung Quốc&lt;/strong&gt;&lt;/a&gt;: tác giả: Will Durant, dịch giả: Nguyễn Hiến Lê - xuất bản năm 1972.&lt;/li&gt;
@@ -31,9 +31,9 @@
     
     <item>
       <title>Tư liệu lịch sử</title>
-      <link>https://phamkhachung.github.io/ebooks/history/reference/</link>
+      <link>phamkhachung.github.io/ebooks/history/reference/</link>
       <pubDate>Sun, 07 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/reference/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/reference/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hưng Đạo Vương&lt;/strong&gt;&lt;/a&gt;: tác giả: Lê Văn Phúc, Phan Kế Bính - xuất bản năm 1914.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Anh thư nước Việt&lt;/strong&gt;&lt;/a&gt;: tác giả: Phương Lan.&lt;/li&gt;
@@ -53,9 +53,9 @@
     
     <item>
       <title>Địa lý</title>
-      <link>https://phamkhachung.github.io/ebooks/history/geography/</link>
+      <link>phamkhachung.github.io/ebooks/history/geography/</link>
       <pubDate>Mon, 08 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/geography/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/geography/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hà Đông tỉnh địa dư chí&lt;/strong&gt;&lt;/a&gt;: tác giả: J. Rouan - xuất bản năm 1925.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Địa dư các tỉnh Bắc kỳ&lt;/strong&gt;&lt;/a&gt;: tác giả: Đỗ Đình Nghiêm, Ngô Vi Liễn, Pham Văn Thư - xuất bản năm 1930.&lt;/li&gt;

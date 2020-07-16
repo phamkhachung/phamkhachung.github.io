@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lập trình Go | Hưng</title>
-    <link>https://phamkhachung.github.io/courses/go/</link>
-      <atom:link href="https://phamkhachung.github.io/courses/go/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/courses/go/</link>
+      <atom:link href="phamkhachung.github.io/courses/go/index.xml" rel="self" type="application/rss+xml" />
     <description>Lập trình Go</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Lập trình Go</title>
-      <link>https://phamkhachung.github.io/courses/go/</link>
+      <link>phamkhachung.github.io/courses/go/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://phamkhachung.github.io/courses/go/example1/</link>
+      <link>phamkhachung.github.io/courses/go/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/example1/</guid>
+      <guid>phamkhachung.github.io/courses/go/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,9 +35,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>https://phamkhachung.github.io/courses/go/example2/</link>
+      <link>phamkhachung.github.io/courses/go/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/example2/</guid>
+      <guid>phamkhachung.github.io/courses/go/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hưng</title>
-    <link>https://phamkhachung.github.io/</link>
-      <atom:link href="https://phamkhachung.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/</link>
+      <atom:link href="phamkhachung.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Hưng</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Wed, 10 Jun 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Hưng</title>
-      <link>https://phamkhachung.github.io/</link>
+      <link>phamkhachung.github.io/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://phamkhachung.github.io/courses/go/example1/</link>
+      <link>phamkhachung.github.io/courses/go/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/example1/</guid>
+      <guid>phamkhachung.github.io/courses/go/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,9 +35,9 @@
     
     <item>
       <title>Tài liệu tham khảo</title>
-      <link>https://phamkhachung.github.io/ebooks/education/documentation/</link>
+      <link>phamkhachung.github.io/ebooks/education/documentation/</link>
       <pubDate>Fri, 05 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/education/documentation/</guid>
+      <guid>phamkhachung.github.io/ebooks/education/documentation/</guid>
       <description>&lt;p&gt;Bên dưới là danh sách các tài liệu tham khảo dùng trong nhà trường&lt;/p&gt;
 &lt;h1 id=&#34;chung&#34;&gt;Chung&lt;/h1&gt;
 &lt;ul&gt;
@@ -53,9 +53,9 @@
     
     <item>
       <title>Lưu trữ và biểu diễn dữ liệu máy tính</title>
-      <link>https://phamkhachung.github.io/courses/python/coreprogramming/data/</link>
+      <link>phamkhachung.github.io/courses/python/coreprogramming/data/</link>
       <pubDate>Sat, 02 May 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/courses/python/coreprogramming/data/</guid>
+      <guid>phamkhachung.github.io/courses/python/coreprogramming/data/</guid>
       <description>&lt;p&gt;Một chức năng quan trọng của máy tính bên cạnh chức năng tính toán là chức năng thu nhận và lưu trữ dữ liệu. Từ những dữ liệu này, thông qua các hình thức biểu diễn phù hợp, chúng ta sẽ có được những thông tin hữu ích phục vụ cho các nhu cầu khác nhau trong cuộc sống.&lt;/p&gt;
 &lt;h2 id=&#34;d-liu-v-d-liu-s&#34;&gt;Dữ liệu và dữ liệu số&lt;/h2&gt;
 &lt;p&gt;Trong lĩnh vực máy tính, dữ liệu (data) là kết quả quá trình đo đạc hay quan sát về một đại lượng biến đổi dưới dạng các số liệu, văn bản, âm thanh hay hình ảnh, v.v&amp;hellip; được biểu diễn trong máy tính dưới dạng quy ước nhằm tạo sự dễ dàng cho việc lưu trữ và xử lý.&lt;/p&gt;
@@ -333,9 +333,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Introduction</title>
-      <link>https://phamkhachung.github.io/courses/go/intro/example1/</link>
+      <link>phamkhachung.github.io/courses/go/intro/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/intro/example1/</guid>
+      <guid>phamkhachung.github.io/courses/go/intro/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -354,9 +354,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Example Page 2</title>
-      <link>https://phamkhachung.github.io/courses/go/example2/</link>
+      <link>phamkhachung.github.io/courses/go/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/example2/</guid>
+      <guid>phamkhachung.github.io/courses/go/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -375,9 +375,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Introduction</title>
-      <link>https://phamkhachung.github.io/courses/go/intro/example2/</link>
+      <link>phamkhachung.github.io/courses/go/intro/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/intro/example2/</guid>
+      <guid>phamkhachung.github.io/courses/go/intro/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -396,9 +396,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Luật</title>
-      <link>https://phamkhachung.github.io/ebooks/economy/law/</link>
+      <link>phamkhachung.github.io/ebooks/economy/law/</link>
       <pubDate>Fri, 05 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/economy/law/</guid>
+      <guid>phamkhachung.github.io/ebooks/economy/law/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1F38PlGQPEVq2nqHwYQiQ8orz-4dnWLU-/view?usp=sharing&#34;&gt;&lt;strong&gt;Nhân quyền&lt;/strong&gt;&lt;/a&gt;: tác giả: Phạm Huy Lục - xuất bản năm 1935.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1vbczuSHIEWgAOxWMaeVnNER2AMqoPF9Y/view?usp=sharing&#34;&gt;&lt;strong&gt;Hoàng Việt trung kỳ hộ luật&lt;/strong&gt;&lt;/a&gt;: tác giả: Bộ tư pháp - xuất bản năm 1944.&lt;/li&gt;
@@ -421,9 +421,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Basic</title>
-      <link>https://phamkhachung.github.io/courses/go/basic/example1/</link>
+      <link>phamkhachung.github.io/courses/go/basic/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/basic/example1/</guid>
+      <guid>phamkhachung.github.io/courses/go/basic/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -442,9 +442,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Lích sử Thế giới</title>
-      <link>https://phamkhachung.github.io/ebooks/history/worldhistory/</link>
+      <link>phamkhachung.github.io/ebooks/history/worldhistory/</link>
       <pubDate>Sun, 07 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/worldhistory/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/worldhistory/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Nhật Bản sử lược&lt;/strong&gt;: tác giả: Nguyễn Văn Tần - xuất bản năm 1958: &lt;a href=&#34;&#34;&gt;tập 1&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;tập 2&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Lịch sử văn minh Trung Quốc&lt;/strong&gt;&lt;/a&gt;: tác giả: Will Durant, dịch giả: Nguyễn Hiến Lê - xuất bản năm 1972.&lt;/li&gt;
@@ -459,9 +459,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Basic</title>
-      <link>https://phamkhachung.github.io/courses/go/basic/example2/</link>
+      <link>phamkhachung.github.io/courses/go/basic/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://phamkhachung.github.io/courses/go/basic/example2/</guid>
+      <guid>phamkhachung.github.io/courses/go/basic/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -480,9 +480,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Tư liệu lịch sử</title>
-      <link>https://phamkhachung.github.io/ebooks/history/reference/</link>
+      <link>phamkhachung.github.io/ebooks/history/reference/</link>
       <pubDate>Sun, 07 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/reference/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/reference/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hưng Đạo Vương&lt;/strong&gt;&lt;/a&gt;: tác giả: Lê Văn Phúc, Phan Kế Bính - xuất bản năm 1914.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Anh thư nước Việt&lt;/strong&gt;&lt;/a&gt;: tác giả: Phương Lan.&lt;/li&gt;
@@ -502,9 +502,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Địa lý</title>
-      <link>https://phamkhachung.github.io/ebooks/history/geography/</link>
+      <link>phamkhachung.github.io/ebooks/history/geography/</link>
       <pubDate>Mon, 08 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/history/geography/</guid>
+      <guid>phamkhachung.github.io/ebooks/history/geography/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hà Đông tỉnh địa dư chí&lt;/strong&gt;&lt;/a&gt;: tác giả: J. Rouan - xuất bản năm 1925.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Địa dư các tỉnh Bắc kỳ&lt;/strong&gt;&lt;/a&gt;: tác giả: Đỗ Đình Nghiêm, Ngô Vi Liễn, Pham Văn Thư - xuất bản năm 1930.&lt;/li&gt;
@@ -518,9 +518,9 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Hán Nôm</title>
-      <link>https://phamkhachung.github.io/ebooks/language/hannom/</link>
+      <link>phamkhachung.github.io/ebooks/language/hannom/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/hannom/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/hannom/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán học tứ tự thành ngữ&lt;/strong&gt;&lt;/a&gt;: tác giả: Hồ Đắc Đàm - xuất bản năm 1961.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Chữ Nôm - Nguồn gốc, cấu tạo, diễn biến&lt;/strong&gt;&lt;/a&gt;: tác giả: Đào Duy Anh - xuất bản năm 1975.&lt;/li&gt;
@@ -531,17 +531,17 @@ ${123^{10}= 01111011^2}$ và ${-123^{10}= 10000101^2}$ bởi vì tổng của 2 
     
     <item>
       <title>Tiếng Anh</title>
-      <link>https://phamkhachung.github.io/ebooks/language/english/</link>
+      <link>phamkhachung.github.io/ebooks/language/english/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/english/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Từ điển</title>
-      <link>https://phamkhachung.github.io/ebooks/language/dictionary/</link>
+      <link>phamkhachung.github.io/ebooks/language/dictionary/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/dictionary/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/dictionary/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Tầm nguyên từ điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Lê Văn Hòe - xuất bản năm 1941.
 VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
@@ -560,10 +560,10 @@ VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
     
     <item>
       <title>Làm chủ một trang web miễn phí (phần 2)</title>
-      <link>https://phamkhachung.github.io/posts/static-web-academic/</link>
+      <link>phamkhachung.github.io/posts/static-web-academic/</link>
       <pubDate>Mon, 20 Apr 2020 05:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/posts/static-web-academic/</guid>
-      <description>&lt;p&gt;Như đã giới thiệu ở &lt;a href=&#34;https://phamkhachung.github.io/posts/static-web&#34;&gt;bài trước&lt;/a&gt; trong bài này, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là Academic, là theme tôi dùng ở trang web này. Các phần trình bày bên dưới có một số phần khá đặc thù do tôi dùng theme academic, các bạn xem rồi tự rút ra cách thực hiện riêng cho mình.&lt;/p&gt;
+      <guid>phamkhachung.github.io/posts/static-web-academic/</guid>
+      <description>&lt;p&gt;Như đã giới thiệu ở &lt;a href=&#34;phamkhachung.github.io/posts/static-web&#34;&gt;bài trước&lt;/a&gt; trong bài này, tôi sẽ giới thiệu cách tạo, viết nội dung và triển khai trang web tĩnh với Hugo và một theme cụ thể là Academic, là theme tôi dùng ở trang web này. Các phần trình bày bên dưới có một số phần khá đặc thù do tôi dùng theme academic, các bạn xem rồi tự rút ra cách thực hiện riêng cho mình.&lt;/p&gt;
 &lt;p&gt;Nội dung gồm có:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Tạo bộ source website tĩnh với theme Academic&lt;/li&gt;
@@ -632,9 +632,9 @@ VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
     
     <item>
       <title>Làm chủ một trang web miễn phí</title>
-      <link>https://phamkhachung.github.io/posts/static-web/</link>
+      <link>phamkhachung.github.io/posts/static-web/</link>
       <pubDate>Fri, 10 Apr 2020 05:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/posts/static-web/</guid>
+      <guid>phamkhachung.github.io/posts/static-web/</guid>
       <description>&lt;p&gt;Sở hữu một website là nhu cầu không chỉ của công ty, tổ chức mà còn của các cá nhân có nhu cầu chia sẻ thông tin. Thông thường họ sẽ chọn các blog miễn phí để đăng bài bởi các nhà cung cấp blog đã cung cấp nhiều công cụ viết và đăng bài, người dùng chỉ cần quan tâm nội dung thôi.&lt;/p&gt;
 &lt;p&gt;Hôm nay tôi sẽ giới thiệu một cách làm website đẹp, đa dụng và hoàn toàn miễn phí để các anh chị có nhiều hơn sự lựa chọn bên cạnh blog. Không những vậy, những doanh nghiệp cần trang web đơn giản giới thiệu thông tin công ty có thể sử dụng nó mà không mất chi phí nào.&lt;/p&gt;
 &lt;h2 id=&#34;gii-thiu-cng-c-to-web-tnh&#34;&gt;Giới thiệu công cụ tạo web tĩnh&lt;/h2&gt;
@@ -670,9 +670,9 @@ VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
     
     <item>
       <title>Writing technical content in Academic</title>
-      <link>https://phamkhachung.github.io/posts/writing-technical-content/</link>
+      <link>phamkhachung.github.io/posts/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://phamkhachung.github.io/posts/writing-technical-content/</guid>
+      <guid>phamkhachung.github.io/posts/writing-technical-content/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;

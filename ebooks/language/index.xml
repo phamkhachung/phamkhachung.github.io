@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tiếng Việt | Hưng</title>
-    <link>https://phamkhachung.github.io/ebooks/language/</link>
-      <atom:link href="https://phamkhachung.github.io/ebooks/language/index.xml" rel="self" type="application/rss+xml" />
+    <link>phamkhachung.github.io/ebooks/language/</link>
+      <atom:link href="phamkhachung.github.io/ebooks/language/index.xml" rel="self" type="application/rss+xml" />
     <description>Tiếng Việt</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>vi</language><copyright>© 2020 hung@phamkhac.com</copyright><lastBuildDate>Wed, 10 Jun 2020 04:00:00 +0700</lastBuildDate>
     <image>
-      <url>https://phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
+      <url>/phamkhachung.github.io/images/logo_hu81cc276ab928b9f01c35e44af214d513_4263_300x300_fit_lanczos_2.png</url>
       <title>Tiếng Việt</title>
-      <link>https://phamkhachung.github.io/ebooks/language/</link>
+      <link>phamkhachung.github.io/ebooks/language/</link>
     </image>
     
     <item>
       <title>Hán Nôm</title>
-      <link>https://phamkhachung.github.io/ebooks/language/hannom/</link>
+      <link>phamkhachung.github.io/ebooks/language/hannom/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/hannom/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/hannom/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Hán học tứ tự thành ngữ&lt;/strong&gt;&lt;/a&gt;: tác giả: Hồ Đắc Đàm - xuất bản năm 1961.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Chữ Nôm - Nguồn gốc, cấu tạo, diễn biến&lt;/strong&gt;&lt;/a&gt;: tác giả: Đào Duy Anh - xuất bản năm 1975.&lt;/li&gt;
@@ -27,17 +27,17 @@
     
     <item>
       <title>Tiếng Anh</title>
-      <link>https://phamkhachung.github.io/ebooks/language/english/</link>
+      <link>phamkhachung.github.io/ebooks/language/english/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/english/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Từ điển</title>
-      <link>https://phamkhachung.github.io/ebooks/language/dictionary/</link>
+      <link>phamkhachung.github.io/ebooks/language/dictionary/</link>
       <pubDate>Wed, 10 Jun 2020 04:00:00 +0700</pubDate>
-      <guid>https://phamkhachung.github.io/ebooks/language/dictionary/</guid>
+      <guid>phamkhachung.github.io/ebooks/language/dictionary/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;strong&gt;Tầm nguyên từ điển&lt;/strong&gt;&lt;/a&gt;: tác giả: Lê Văn Hòe - xuất bản năm 1941.
 VietNguTinhNghiaTuDien2-NguyenVanMinh-1950.pdf&lt;/li&gt;
